@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro';
+import content from '../content/index.json';
+---
+
+<Layout title="Accueil — Formation IA & Prestations numériques">
+  <section class="py-24 md:py-32">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+      <span class="inline-block text-xs font-bold tracking-widest uppercase text-sauge-fonce bg-sauge-clair rounded-full px-4 py-1.5 mb-8">
+        {content.hero.badge}
+      </span>
+      <h1 class="font-serif text-4xl md:text-6xl text-anthracite leading-[1.1]">
+        {content.hero.title}<br>
+        {content.hero.subtitle}
+      </h1>
+      <p class="text-lg md:text-xl text-texte/70 mt-6 max-w-2xl mx-auto leading-relaxed">
+        {content.hero.description}
+      </p>
+      <div class="flex flex-wrap justify-center gap-3 mt-10">
+        <a href="/formation/" class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-6 py-3 rounded-lg text-sm font-bold transition-all hover:bg-dore/90">
+          {content.hero.ctaFormation}
+        </a>
+        <a href="/prestations/" class="inline-flex items-center gap-1.5 border border-sauge text-sauge-fonce px-6 py-3 rounded-lg text-sm font-bold transition-all hover:bg-sauge-clair">
+          {content.hero.ctaPrestations}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-sauge-clair/50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl md:text-4xl text-anthracite text-center mb-12">
+        {content.aiguillage.titre}
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        {content.aiguillage.cartes.map(carte => (
+          <a href={carte.lien} class="bg-white border border-sauge-clair rounded-xl p-6 transition-all hover:border-sauge hover:-translate-y-0.5">
+            <span class="text-3xl block mb-3">{carte.icone}</span>
+            <h3 class="font-bold text-anthracite">{carte.titre}</h3>
+            <p class="text-sm text-texte/60 mt-1 leading-relaxed">{carte.texte}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+      <p class="text-base text-texte/50">{content.bio}</p>
+      <a href="/qui-suis-je/" class="inline-flex items-center gap-1 text-sm text-sauge-fonce font-medium mt-4 hover:underline">
+        {content.ctaBio}
+      </a>
+    </div>
+  </section>
+
+  <section class="py-16 bg-anthracite text-center">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-2xl md:text-3xl text-white mb-4">
+        {content.ctaFinal.titre}
+      </h2>
+      <p class="text-sm text-white/60 mb-6">
+        {content.ctaFinal.sousTitre}
+      </p>
+      <a href="tel:+33646246199" class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-6 py-3 rounded-lg text-sm font-bold transition-all hover:bg-dore/90">
+        {content.ctaFinal.cta}
+      </a>
+    </div>
+  </section>
+</Layout>

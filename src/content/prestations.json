@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "title": "Un site qui vous ramène des appels.",
+    "subtitle": "En ligne vite, sans que vous ayez rien à écrire.",
+    "description": "Pour les artisans, commerçants, associations et petites structures du Sud-Ardèche. Prix affichés, pas de mauvaise surprise.",
+    "ctaTel": "Appeler le 06 46 24 61 99",
+    "ctaMail": "Réserver un appel"
+  },
+  "constat": {
+    "titre": "Quand on vous cherche sur Google, que voit-on ?",
+    "texte1": "Tapez votre métier et votre commune. Votre fiche est-elle complète ? Votre site s'affiche-t-il correctement sur un téléphone ? Existe-t-il seulement ?",
+    "texte2": "C'est presque toujours là que se perdent les appels. Je ne vous vends pas « un site » : je corrige ce qui vous fait perdre des clients."
+  },
+  "offres": {
+    "titre": "Trois façons de commencer.",
+    "lignes": [
+      { "nom": "Page unique", "detail": "une page claire, avec votre fiche Google complétée et validée", "prix": "690 € HT", "delai": "48h" },
+      { "nom": "Site vitrine", "detail": "4 à 6 pages, fiche Google incluse", "prix": "1 290 € HT", "delai": "2-3 sem." },
+      { "nom": "Reprise d'un site existant", "detail": "Wix, Jimdo, ou site cassé", "prix": "dès 890 € HT", "delai": "selon état" },
+      { "nom": "Maintenance", "detail": "hébergement, sauvegardes, modifications", "prix": "25 € / mois", "delai": "—" }
+    ],
+    "note": "Association ou particulier : prix TTC. 50 % à la commande, solde à la livraison.",
+    "wordpress": "Option WordPress éditable par le client : + 300 €"
+  },
+  "processus": {
+    "titre": "Vous n'avez rien à rédiger.",
+    "etapes": [
+      "Un entretien de 20 minutes chez vous ou au téléphone : vous me parlez de votre métier, je note vos mots.",
+      "Votre fiche Google créée ou revendiquée avec vous, validée sur place.",
+      "Je rédige et je construis avec vos propres mots.",
+      "Vous relisez, vous corrigez, et c'est en ligne. Le site est à vous."
+    ]
+  },
+  "ia": {
+    "titre": "Oui, on peut le faire avec l'IA.",
+    "texte": "L'IA écrit une page en quelques minutes, et je m'en sers moi-même. Ce qu'elle ne fait pas : venir chez vous, prendre vos photos, valider votre fiche Google, écrire avec vos mots — et répondre quand ça ne marche plus.",
+    "note": "Vous préférez le faire vous-même ? C'est possible aussi : voir les formations.",
+    "lienFormation": "/formation/"
+  },
+  "preuves": {
+    "titre": "Des sites qui existent, pas des maquettes.",
+    "sites": [
+      { "nom": "opentek.fr", "url": "https://opentek.fr", "description": "le site du fablab d'électronique de Payzac" },
+      { "nom": "Vivahop", "url": "https://www.vivahop.fr", "description": "agenda des sorties et événements du Sud-Ardèche" }
+    ]
+  },
+  "prestations": {
+    "titre": "Et pour aller plus loin : sur devis.",
+    "sousTitre": "Ces prestations se chiffrent après un appel. Je vous réponds avec une proposition claire.",
+    "cartes": [
+      { "titre": "Automatisations et bots", "texte": "Faire disparaître les tâches répétitives avec n8n. Exemple : un bot qui crée automatiquement les fiches événements sur Vivahop." },
+      { "titre": "Votre second cerveau", "texte": "Base de connaissances structurée qu'un assistant IA sait lire et tenir à jour. Mise en place individuelle." },
+      { "titre": "Prise en main", "texte": "Une séance pour utiliser votre nouvel outil en autonomie après livraison." },
+      { "titre": "Communication", "texte": "Flyers, pages d'événement, textes de diffusion cohérents entre eux." },
+      { "titre": "Édition", "texte": "Accompagnement à l'auto-édition sur Amazon KDP : coûts réels, ISBN, formalités, aide à la création du livre à l'aide de l'IA." }
+    ],
+    "enPrep": {
+      "titre": "En préparation",
+      "texte": "Infrastructure indépendante, CRM Twenty, conseil IA — je les mets en place pour moi-même avant de les proposer."
+    },
+    "cta": "Décrire mon besoin →"
+  },
+  "qui": {
+    "titre": "Vincent Hermitant",
+    "texte": "Ingénieur, 25 ans d'enseignement à l'université, aujourd'hui installé à Payzac. J'ai construit Vivahop seul, avec l'IA. Je travaille en local et par téléphone.",
+    "cta": "En savoir plus →"
+  },
+  "faq": [
+    {
+      "question": "Combien de temps pour être en ligne ?",
+      "reponse": "Page unique : 48h. Site vitrine : 2-3 semaines. Fiche Google validée sous 5 jours ouvrés par Google."
+    },
+    {
+      "question": "Je n'ai pas de texte, pas de photos.",
+      "reponse": "C'est prévu : l'entretien et les photos prises sur place servent exactement à ça."
+    },
+    {
+      "question": "Le site m'appartient-il ?",
+      "reponse": "Oui, ainsi que le nom de domaine. Vous pouvez partir avec."
+    },
+    {
+      "question": "Vous facturez comment ?",
+      "reponse": "Par POLLEN, la coopérative d'activité qui m'héberge. 50 % à la commande, solde à la livraison."
+    }
+  ],
+  "ctaFinal": {
+    "titre": "Envoyez-moi le nom de votre entreprise.",
+    "sousTitre": "Je regarde comment on vous trouve aujourd'hui, et je vous dis ce que je corrigerais.",
+    "ctaTel": "Appeler le 06 46 24 61 99",
+    "ctaMail": "Réserver un appel"
+  }
+}

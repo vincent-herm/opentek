@@ -1,0 +1,208 @@
+{
+  "hero": {
+    "badge": "Formation présentiel · Partout en France · Qualiopi via POLLEN",
+    "title": "Avec l'IA, faites dix fois plus vite.",
+    "subtitle": "Et surtout : faites ce que vous pensiez impossible.",
+    "description": "La formation qui vous rend autonome avec l'IA — sans jargon, sans prestataire, sans dépendre de personne. Finançable.",
+    "cta1": "Trouver mon financement →",
+    "cta2": "Voir les formations",
+    "badges": [
+      "Financement possible selon votre statut",
+      "De la demi-journée à 2 jours · 6 participants max",
+      "Chez vous partout en France, ou en Ardèche"
+    ],
+    "temoignage": "Depuis que j'ai intégré l'IA dans mon quotidien, je travaille dix fois plus vite, avec une charge mentale allégée, et je fais des choses que je n'aurais jamais pensé pouvoir faire."
+  },
+  "probleme": {
+    "titre": "Vous savez que l'IA pourrait vous aider... ",
+    "texte1": "Mais entre les outils qui changent tous les trois mois, les tutoriels faits pour des ingénieurs et les offres qui promettent tout… vous ne savez pas par où commencer.",
+    "texte2": "En France, 34 % des PME utilisent déjà l'IA. Mais 5 % seulement automatisent réellement une tâche. La plupart discutent avec un chatbot ; très peu transforment leur façon de travailler. C'est exactement cet écart que cette formation comble.",
+    "stat1_valeur": "34 %",
+    "stat1_texte": "des PME utilisent déjà l'IA — deux fois plus qu'il y a un an",
+    "stat2_valeur": "5 %",
+    "stat2_texte": "seulement automatisent réellement une tâche",
+    "chute": "Et une chose que presque personne ne sait : ce budget, vous le payez déjà."
+  },
+  "promesse": {
+    "titre": "Quelques jours pour passer de « je teste » à « je délègue ».",
+    "texte": "Vous apprenez à confier à l'IA du travail. Lui donner votre contexte — vos documents, vos projets — et la laisser avancer étape par étape, sous votre contrôle.",
+    "cards": [
+      { "icone": "🎯", "titre": "Obtenir exactement ce que vous voulez", "texte": "Finie la réponse générique. Vous apprenez à formuler pour que l'IA vous rende un travail qui sort du lot." },
+      { "icone": "⏱️", "titre": "Gagner des heures chaque semaine", "texte": "Ce qui vous prenait 2 heures se fait en 10 minutes. Mails, synthèses, plans, analyses." },
+      { "icone": "🛠️", "titre": "Produire ce que vous sous-traitiez", "texte": "Documents, visuels, tableaux de bord, mini-outils, votre site web — vous les faites vous-même." },
+      { "icone": "✨", "titre": "Passer de consommateur à créateur", "texte": "L'IA devient le moyen de réaliser des idées que vous n'auriez jamais concrétisées seul." }
+    ]
+  },
+  "preuve": {
+    "titre": "J'ai construit Vivahop. Sans être développeur.",
+    "paragraphes": [
+      "Ingénieur de formation, j'ai enseigné 25 ans à l'université en génie électrique et électronique. J'ai toujours programmé des systèmes — mais jamais codé une vraie application web, déployée, utilisée par des gens.",
+      "Avec l'IA, je l'ai faite. Vivahop tourne aujourd'hui, et sert les habitants et les visiteurs de mon territoire.",
+      "Ce qui a changé : je fais maintenant des choses que je croyais hors de portée. Et ce n'est pas réservé aux ingénieurs.",
+      "Cette formation, c'est celle que j'aurais voulu avoir quand j'ai commencé."
+    ]
+  },
+  "financement": {
+    "titre": "Ce budget FORMATION, vous le payez déjà.",
+    "intro": "Quels que soient votre statut et la taille de votre structure, vous cotisez chaque année pour votre formation. Cet argent est déjà sorti de votre trésorerie. La seule question est de savoir si vous l'utilisez.",
+    "statuts": [
+      {
+        "titre": "Vous êtes salarié ou dirigeant assimilé salarié",
+        "texte": "Vous passez par l'OPCO de votre entreprise. Votre interlocuteur, c'est votre RH ou votre N+1.",
+        "citation": "« Bonjour, je souhaite me former à l'IA appliquée à mon poste. Avons-nous un budget formation cette année ? »"
+      },
+      {
+        "titre": "Vous êtes indépendant, gérant majoritaire ou profession libérale",
+        "texte": "Vous passez par votre fonds d'assurance formation : le FIFPL (professions libérales) ou l'AGEFICE (commerçants). Vous déposez vous-même."
+      },
+      {
+        "titre": "Vous dirigez votre propre boîte",
+        "texte": "Vous êtes des deux côtés du dossier en même temps. Vous n'avez personne à convaincre."
+      }
+    ],
+    "cpf": {
+      "titre": "Le CPF, c'est pour bientôt",
+      "texte": "La certification RS7344 est en cours de référencement CPF. Laissez votre email pour être prévenu en priorité.",
+      "cta": "Voir la certification →"
+    },
+    "reserve": {
+      "titre": "Et si je ne qualifie pour rien ?",
+      "texte": "Réserve honnête : les plafonds varient, certains budgets se ferment, un micro-entrepreneur sans déclaration n'a pas de droits ouverts. Je ne peux promettre ni montant ni acceptation. Ce qui est certain : je produis les trois pièces du dossier (programme, devis, convention).",
+      "cta": "Trouver mon financement en 3 questions →"
+    }
+  },
+  "pourQui": {
+    "titre": "Pour vous si…",
+    "items": [
+      "Vous n'avez jamais vraiment utilisé l'IA — on démarre avec vous, sans jargon",
+      "Vous avez testé une ou deux fois sans être convaincu",
+      "Vous vous en servez pour quelques mails, mais c'est 5 % de ce qu'elle peut faire",
+      "Vous voulez arrêter de dépendre de prestataires pour des choses simples",
+      "Vous voulez que votre équipe adopte l'IA avec méthode",
+      "Vous avez une idée dans un coin de la tête depuis longtemps"
+    ]
+  },
+  "format": {
+    "titre": "Du vrai présentiel. Pas un webinar.",
+    "items": [
+      "Groupe limité : 6 participants maximum pour les ateliers sur ordinateur",
+      "Horaires : 10h – 18h, pause déjeuner libre",
+      "Vos données restent les vôtres : rien n'est hébergé chez un tiers",
+      "Prérequis : savoir utiliser un ordinateur",
+      "À apporter : un ordinateur portable + compte Claude Pro ou Max"
+    ]
+  },
+  "offres": {
+    "titre": "Une porte d'entrée, deux parcours, trois journées — et une certification.",
+    "initiation": {
+      "titre": "Initiation à l'IA — comprendre, nommer, décider",
+      "badge": "La porte d'entrée",
+      "texte": "Une demi-journée, en intra, à partir de 6 personnes. Trois heures et demie pour que toute l'équipe parte avec les mêmes repères. Aucun ordinateur, rien à installer.",
+      "infos": "Public : toute l'équipe. Aucun prérequis. · Financement : OPCO, FIFPL ou AGEFICE.",
+      "cta": "Demander un devis pour mon équipe →"
+    },
+    "n1n2": {
+      "titre": "N1 + N2 — De zéro à l'autonomie",
+      "prix": "870 € net",
+      "texte": "2 jours en présentiel · par personne. Un seul parcours, pas deux formations à la carte. Support de cours inclus. Prix net, exonéré de TVA · 435 €/jour.",
+      "n1": { "titre": "N1 — Les fondamentaux", "texte": "Parler à l'IA, obtenir des résultats concrets, éviter les pièges, prendre en main Cowork et Claude Code." },
+      "n2": { "titre": "N2 — L'autonomie", "texte": "Projets structurés, délégation avec Cowork, automatisation avec Routines, gouvernance et cadre légal." },
+      "infos": "Financement : OPCO, FIFPL ou AGEFICE. · En intra : 3 000 € le groupe (2 jours), jusqu'à 6 personnes.",
+      "cta": "Réserver ma place →"
+    },
+    "n3n4": {
+      "titre": "N3 + N4 — Automatiser sans dépendre",
+      "prix": "870 € net",
+      "texte": "2 jours en présentiel · par personne. Le second parcours, pour qui a les fondamentaux.",
+      "badge": "Session pilote",
+      "infos": "Prérequis : N1+N2 ou équivalent. · Financement : OPCO, FIFPL ou AGEFICE.",
+      "cta": "Rejoindre la liste de la session pilote"
+    },
+    "n5": {
+      "titre": "N5 — Sécuriser l'IA dans votre entreprise",
+      "prix": "470 € net",
+      "texte": "1 journée présentiel · par personne. Où vont vos données, comment on vous vole avec des deepfakes, ce que le RGPD et l'AI Act vous demandent vraiment. Atelier charte d'usage : chacun repart avec la sienne.",
+      "infos": "Public : dirigeants, RH — aucun prérequis technique. · Financement : OPCO, FIFPL ou AGEFICE.",
+      "cta": "Réserver cette journée →"
+    },
+    "certification": {
+      "titre": "Certification RS7344",
+      "badge": "En préparation",
+      "texte": "Une fois N1 à N5 acquis ou maîtrisés : préparation du dossier de certification et soutenance devant jury. Financement CPF.",
+      "cta": "Voir la certification →"
+    },
+    "themes": {
+      "titre": "D'autres journées à thèmes ?",
+      "prix": "Sur devis",
+      "texte": "Une journée, un sujet, un résultat — le programme se construit avec vous.",
+      "cta": "Discuter de mon thème →"
+    }
+  },
+  "intraInter": {
+    "titre": "Intra ou inter : à vous de choisir.",
+    "intra": {
+      "titre": "En intra",
+      "texte": "Votre entreprise, vos collaborateurs, formés ensemble. Dans vos locaux ou en Ardèche. Programme adapté à votre secteur."
+    },
+    "inter": {
+      "titre": "En inter",
+      "texte": "Plusieurs entreprises, un seul lieu en Ardèche. Les croisements d'expérience valent ce qu'ils coûtent."
+    },
+    "calcul": {
+      "titre": "Le calcul est vite fait",
+      "texte": "À partir de 4 personnes, l'intra revient moins cher que l'inter.",
+      "lignes": [
+        ["Initiation · ½ journée", "—", "850 € le groupe"],
+        ["N1+N2 · 2 jours", "870 € / pers.", "3 000 € le groupe"],
+        ["N3+N4 · 2 jours", "870 € / pers.", "3 000 € le groupe"],
+        ["N5 · 1 jour", "470 € / pers.", "1 500 € le groupe"]
+      ],
+      "note": "Jusqu'à 6 participants. Prix nets, exonérés de TVA (art. 261-4-4°a du CGI)."
+    },
+    "cta1": "Réserver ma place en inter",
+    "cta2": "Demander un devis intra"
+  },
+  "lieu": {
+    "titre": "Chez vous, ou en Ardèche.",
+    "texte": "En intra, je me déplace partout en France. En inter, les sessions se tiennent en Ardèche méridionale.",
+    "cta": "Me contacter →"
+  },
+  "formateur": {
+    "titre": "Vincent Hermitant",
+    "paragraphes": [
+      "Ingénieur généraliste (ENI Metz), j'ai enseigné 25 ans à l'université de Lorraine en génie électrique et électronique. En 2021, j'ai quitté l'enseignement pour conduire mes propres projets.",
+      "L'IA a tout changé dans ma façon de travailler. Depuis, j'ai construit des choses que je n'aurais jamais imaginé pouvoir faire seul — dont Vivahop.",
+      "Ingénieur par curiosité, enseignant par vocation, musicien par cœur."
+    ],
+    "email": "hermitant.ecolibre@gmail.com",
+    "tel": "06 46 24 61 99"
+  },
+  "faq": [
+    {
+      "question": "La formation est-elle finançable ?",
+      "reponse": "Oui, mais le guichet dépend de votre statut. N1 à N5 passent par votre OPCO, FIFPL ou AGEFICE. La certification RS7344 passera par le CPF. Je fournis les trois pièces du dossier."
+    },
+    {
+      "question": "Faut-il des compétences techniques ?",
+      "reponse": "Non. La formation est conçue pour les débutants curieux. Il suffit d'être à l'aise avec un ordinateur."
+    },
+    {
+      "question": "Faut-il un compte IA payant ?",
+      "reponse": "Pour N1 à N4, oui : un compte Claude Pro ou Max (~20 €/mois). Je vous guide avant la formation. Pour l'Initiation, non."
+    },
+    {
+      "question": "Que faut-il apporter ?",
+      "reponse": "Un ordinateur portable chargé, votre compte Claude actif, et votre curiosité."
+    },
+    {
+      "question": "Quelle est la politique d'annulation ?",
+      "reponse": "Plus de 14 jours : 5 % · jusqu'à 3 jours : 30 % · jusqu'à 24h : 50 % · moins de 24h : pas de remboursement."
+    }
+  ],
+  "ctaFinal": {
+    "titre": "Qu'est-ce que vous feriez si plus rien ne vous bloquait ?",
+    "sousTitre": "Deux jours peuvent suffire à débloquer tout ça.",
+    "cta": "Réserver ma place",
+    "mentions": "6 places maximum par session · Financement possible selon votre statut"
+  }
+}

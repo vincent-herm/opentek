@@ -1,0 +1,44 @@
+<footer class="border-t border-sauge-clair mt-24 bg-creme">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <a href="/" class="font-serif text-lg text-anthracite no-underline">
+          <span class="text-sauge">Open</span>tek
+        </a>
+        <p class="text-sm text-texte/60 mt-3 leading-relaxed">
+          Formation IA, certification et prestations numériques — par Vincent Hermitant, Ardèche.
+        </p>
+        <a href="tel:+33646246199" class="text-sm text-sauge-fonce font-medium mt-3 inline-block">06 46 24 61 99</a>
+      </div>
+      <div>
+        <h3 class="font-bold text-sm text-anthracite mb-4">Navigation</h3>
+        <ul class="space-y-2">
+          {[
+            { label: 'Formation IA', href: '/formation/' },
+            { label: 'Certification IA', href: '/certification/' },
+            { label: 'Prestations', href: '/prestations/' },
+            { label: 'Qui suis-je', href: '/qui-suis-je/' },
+          ].map(link => (
+            <li><a href={link.href} class="text-sm text-texte/60 hover:text-sauge-fonce transition-colors">{link.label}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-sm text-anthracite mb-4">Contact</h3>
+        <ul class="space-y-2 text-sm text-texte/60">
+          <li>593 route de Brès, 07230 Payzac</li>
+          <li><a href="mailto:hermitant.ecolibre@gmail.com" class="hover:text-sauge-fonce transition-colors">hermitant.ecolibre@gmail.com</a></li>
+          <li><a href="tel:+33646246199" class="hover:text-sauge-fonce transition-colors">06 46 24 61 99</a></li>
+        </ul>
+        <p class="text-xs text-texte/40 mt-4">Formation Qualiopi via POLLEN</p>
+      </div>
+    </div>
+    <div class="border-t border-sauge-clair mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-texte/40">
+      <span>&copy; {new Date().getFullYear()} Vincent Hermitant</span>
+      <div class="flex gap-3">
+        <a href="/mentions-legales" class="hover:text-sauge-fonce transition-colors">Mentions légales</a>
+        <a href="/confidentialite" class="hover:text-sauge-fonce transition-colors">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,327 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import content from '../../content/formation.json';
+---
+
+<Layout title="Formation IA — De zéro à l'autonomie">
+
+  <span id="assistant-financement" class="block h-0 scroll-mt-24"></span>
+
+  <section class="py-16 md:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <span class="inline-block text-xs font-bold tracking-widest uppercase text-sauge-fonce bg-sauge-clair rounded-full px-4 py-1.5 mb-6">
+        {content.hero.badge}
+      </span>
+      <h1 class="font-serif text-4xl md:text-5xl text-anthracite leading-[1.1]">
+        {content.hero.title}<br>
+        {content.hero.subtitle}
+      </h1>
+      <p class="text-lg md:text-xl text-texte/80 mt-4 max-w-2xl">
+        {content.hero.description}
+      </p>
+      <div class="flex flex-wrap gap-3 mt-8">
+        <a href="#assistant-financement" class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-6 py-3 rounded-lg text-sm font-bold transition-all hover:bg-dore/90">
+          {content.hero.cta1}
+        </a>
+        <a href="#offres" class="inline-flex items-center gap-1.5 border border-sauge text-sauge-fonce px-6 py-3 rounded-lg text-sm font-bold transition-all hover:bg-sauge-clair">
+          {content.hero.cta2}
+        </a>
+      </div>
+      <ul class="flex flex-wrap gap-3 mt-8 text-sm text-texte/60">
+        {content.hero.badges.map(b => <li class="bg-white border border-sauge-clair rounded-full px-3 py-1.5">{b}</li>)}
+      </ul>
+      <blockquote class="mt-12 text-lg text-texte/70 italic border-l-4 border-sauge pl-4">
+        {content.hero.temoignage}
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="py-16 bg-sauge-clair/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl md:text-4xl text-anthracite mb-4">{content.probleme.titre}</h2>
+      <p class="text-texte/80 max-w-2xl">{content.probleme.texte1}</p>
+      <p class="text-texte/70 mt-4 max-w-2xl">{content.probleme.texte2}</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+        <div class="bg-white border-l-4 border-sauge rounded-r-lg px-5 py-4">
+          <span class="font-serif text-3xl text-sauge-fonce">{content.probleme.stat1_valeur}</span>
+          <p class="text-sm text-texte/60">{content.probleme.stat1_texte}</p>
+        </div>
+        <div class="bg-white border-l-4 border-sauge rounded-r-lg px-5 py-4">
+          <span class="font-serif text-3xl text-sauge-fonce">{content.probleme.stat2_valeur}</span>
+          <p class="text-sm text-texte/60">{content.probleme.stat2_texte}</p>
+        </div>
+      </div>
+      <p class="mt-8 text-texte/70 font-medium">{content.probleme.chute}</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl md:text-3xl text-anthracite mb-4">{content.promesse.titre}</h2>
+      <p class="text-texte/80 max-w-2xl">{content.promesse.texte}</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+        {content.promesse.cards.map(c => (
+          <div class="bg-white border border-sauge-clair rounded-xl p-5">
+            <span class="text-2xl block mb-2">{c.icone}</span>
+            <h3 class="font-bold text-anthracite">{c.titre}</h3>
+            <p class="text-sm text-texte/60 mt-1">{c.texte}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-anthracite">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl md:text-3xl text-white mb-4">{content.preuve.titre}</h2>
+      <div class="text-white/70 space-y-4 text-[17px]">
+        {content.preuve.paragraphes.map((p, i) => (
+          <p>{p}</p>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="financement" class="py-16 bg-sauge-clair/50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl md:text-3xl text-anthracite mb-4">{content.financement.titre}</h2>
+      <div class="text-texte/80 space-y-4">
+        <p>{content.financement.intro}</p>
+      </div>
+
+      {content.financement.statuts.map(s => (
+        <div class="bg-white border-l-4 border-sauge rounded-r-xl p-5 mt-6">
+          <h3 class="font-bold text-anthracite">{s.titre}</h3>
+          <p class="text-sm text-texte/70 mt-1">{s.texte}</p>
+          {s.citation && <blockquote class="text-xs text-texte/50 italic mt-2 bg-sauge-clair rounded-lg px-3 py-2">{s.citation}</blockquote>}
+        </div>
+      ))}
+
+      <div class="bg-anthracite text-white/80 rounded-xl p-6 mt-6 border-t-4 border-dore">
+        <h3 class="font-serif text-xl text-white">{content.financement.cpf.titre}</h3>
+        <p class="text-sm mt-2">{content.financement.cpf.texte}</p>
+        <a href="/certification/" class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-5 py-2.5 rounded-lg text-sm font-bold transition-all hover:bg-dore/90 mt-4">
+          {content.financement.cpf.cta}
+        </a>
+      </div>
+
+      <div class="bg-white border border-dashed border-sauge rounded-xl p-5 mt-4">
+        <h3 class="font-bold text-anthracite">{content.financement.reserve.titre}</h3>
+        <p class="text-sm text-texte/70 mt-1">{content.financement.reserve.texte}</p>
+        <a href="#assistant-financement" class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-5 py-2.5 rounded-lg text-sm font-bold transition-all hover:bg-dore/90 mt-3">
+          {content.financement.reserve.cta}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl md:text-3xl text-anthracite mb-6">{content.pourQui.titre}</h2>
+      <ul class="space-y-3">
+        {content.pourQui.items.map(item => (
+          <li class="flex gap-3 text-texte/80"><span class="text-sauge mt-1">●</span> {item}</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="py-16 bg-anthracite">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl md:text-3xl text-white mb-4">{content.format.titre}</h2>
+      <ul class="space-y-2 text-white/70">
+        {content.format.items.map(item => (
+          <li class="flex gap-2"><span class="text-sauge">→</span> {item}</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <span id="offres" class="block h-0 scroll-mt-24"></span>
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl md:text-3xl text-anthracite mb-8">{content.offres.titre}</h2>
+
+      <div class="bg-white border border-sauge-clair rounded-xl p-6 mb-4 border-l-4 border-l-dore">
+        <div class="flex flex-wrap items-baseline gap-3 mb-3">
+          <h3 class="font-serif text-xl text-anthracite">{content.offres.initiation.titre}</h3>
+          <span class="text-xs font-bold uppercase bg-dore text-anthracite rounded-full px-2.5 py-1">{content.offres.initiation.badge}</span>
+        </div>
+        <p class="text-sm text-texte/70">{content.offres.initiation.texte}</p>
+        <p class="text-sm text-texte/60 mt-3">{content.offres.initiation.infos}</p>
+        <a href="#contact" class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-5 py-2.5 rounded-lg text-sm font-bold transition-all hover:bg-dore/90 mt-3">
+          {content.offres.initiation.cta}
+        </a>
+      </div>
+
+      <div class="bg-white border border-sauge-clair rounded-xl p-6 mb-4">
+        <div class="flex flex-wrap items-baseline gap-3 mb-3">
+          <h3 class="font-serif text-xl text-anthracite">{content.offres.n1n2.titre}</h3>
+          <span class="font-serif text-xl text-sauge-fonce">{content.offres.n1n2.prix}</span>
+        </div>
+        <p class="text-sm text-texte/70">{content.offres.n1n2.texte}</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+          <div class="bg-sauge-clair/30 rounded-lg p-4">
+            <h4 class="font-bold text-sm text-anthracite">{content.offres.n1n2.n1.titre}</h4>
+            <p class="text-xs text-texte/60 mt-1">{content.offres.n1n2.n1.texte}</p>
+          </div>
+          <div class="bg-sauge-clair/30 rounded-lg p-4">
+            <h4 class="font-bold text-sm text-anthracite">{content.offres.n1n2.n2.titre}</h4>
+            <p class="text-xs text-texte/60 mt-1">{content.offres.n1n2.n2.texte}</p>
+          </div>
+        </div>
+        <p class="text-sm text-texte/60 mt-3">{content.offres.n1n2.infos}</p>
+        <a href="#contact" class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-5 py-2.5 rounded-lg text-sm font-bold transition-all hover:bg-dore/90 mt-3">
+          {content.offres.n1n2.cta}
+        </a>
+      </div>
+
+      <div class="bg-white border border-sauge-clair rounded-xl p-6 mb-4">
+        <div class="flex flex-wrap items-baseline gap-3 mb-3">
+          <h3 class="font-serif text-xl text-anthracite">{content.offres.n3n4.titre}</h3>
+          <span class="font-serif text-xl text-sauge-fonce">{content.offres.n3n4.prix}</span>
+        </div>
+        <p class="text-sm text-texte/70">{content.offres.n3n4.texte} <span class="bg-dore/20 text-dore font-bold text-xs uppercase rounded-full px-2 py-0.5">{content.offres.n3n4.badge}</span></p>
+        <p class="text-sm text-texte/60 mt-3">{content.offres.n3n4.infos}</p>
+        <a href="#contact" class="inline-flex items-center gap-1.5 border border-sauge text-sauge-fonce px-5 py-2.5 rounded-lg text-sm font-bold transition-all hover:bg-sauge-clair mt-3">
+          {content.offres.n3n4.cta}
+        </a>
+      </div>
+
+      <div class="bg-white border border-sauge-clair rounded-xl p-6 mb-4">
+        <div class="flex flex-wrap items-baseline gap-3 mb-3">
+          <h3 class="font-serif text-xl text-anthracite">{content.offres.n5.titre}</h3>
+          <span class="font-serif text-xl text-sauge-fonce">{content.offres.n5.prix}</span>
+        </div>
+        <p class="text-sm text-texte/70">{content.offres.n5.texte}</p>
+        <p class="text-sm text-texte/60 mt-3">{content.offres.n5.infos}</p>
+        <a href="#contact" class="inline-flex items-center gap-1.5 border border-sauge text-sauge-fonce px-5 py-2.5 rounded-lg text-sm font-bold transition-all hover:bg-sauge-clair mt-3">
+          {content.offres.n5.cta}
+        </a>
+      </div>
+
+      <div class="bg-white border border-sauge-clair rounded-xl p-6 mb-4">
+        <div class="flex flex-wrap items-baseline gap-3 mb-3">
+          <h3 class="font-serif text-xl text-anthracite">{content.offres.certification.titre}</h3>
+          <span class="text-xs font-bold uppercase bg-sauge-clair text-sauge-fonce rounded-full px-2.5 py-1">{content.offres.certification.badge}</span>
+        </div>
+        <p class="text-sm text-texte/70">{content.offres.certification.texte}</p>
+        <a href="/certification/" class="inline-flex items-center gap-1.5 border border-sauge text-sauge-fonce px-5 py-2.5 rounded-lg text-sm font-bold transition-all hover:bg-sauge-clair mt-3">
+          {content.offres.certification.cta}
+        </a>
+      </div>
+
+      <div class="bg-white border border-sauge-clair rounded-xl p-6">
+        <h3 class="font-serif text-xl text-anthracite">{content.offres.themes.titre}</h3>
+        <span class="font-serif text-xl text-sauge-fonce">{content.offres.themes.prix}</span>
+        <p class="text-sm text-texte/70 mt-2">{content.offres.themes.texte}</p>
+        <a href="#contact" class="inline-flex items-center gap-1.5 border border-sauge text-sauge-fonce px-5 py-2.5 rounded-lg text-sm font-bold transition-all hover:bg-sauge-clair mt-3">
+          {content.offres.themes.cta}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-sauge-clair/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl md:text-3xl text-anthracite mb-6">{content.intraInter.titre}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white border border-sauge-clair rounded-xl p-6">
+          <h3 class="font-bold text-anthracite">{content.intraInter.intra.titre}</h3>
+          <p class="text-sm text-texte/70 mt-2">{content.intraInter.intra.texte}</p>
+        </div>
+        <div class="bg-white border border-sauge-clair rounded-xl p-6">
+          <h3 class="font-bold text-anthracite">{content.intraInter.inter.titre}</h3>
+          <p class="text-sm text-texte/70 mt-2">{content.intraInter.inter.texte}</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-sauge rounded-xl p-6 mt-4">
+        <h3 class="font-bold text-anthracite">{content.intraInter.calcul.titre}</h3>
+        <p class="text-sm text-texte/70 mt-2">{content.intraInter.calcul.texte}</p>
+        <div class="overflow-x-auto mt-4">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="text-xs uppercase text-sauge-fonce">
+                <th class="text-left py-2 pr-4"></th>
+                <th class="text-left py-2 pr-4">Inter (Ardèche)</th>
+                <th class="text-left py-2">Intra (chez vous)</th>
+              </tr>
+            </thead>
+            <tbody class="text-texte/70">
+              {content.intraInter.calcul.lignes.map(l => (
+                <tr class="border-t border-sauge-clair">
+                  <td class="py-2 pr-4">{l[0]}</td>
+                  <td class="py-2 pr-4">{l[1]}</td>
+                  <td class="py-2"><strong>{l[2]}</strong></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-texte/50 mt-3">{content.intraInter.calcul.note}</p>
+        <div class="flex flex-wrap gap-3 mt-4">
+          <a href="#contact" class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-5 py-2.5 rounded-lg text-sm font-bold transition-all hover:bg-dore/90">
+            {content.intraInter.cta1}
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-1.5 border border-sauge text-sauge-fonce px-5 py-2.5 rounded-lg text-sm font-bold transition-all hover:bg-sauge-clair">
+            {content.intraInter.cta2}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-anthracite mb-4">{content.lieu.titre}</h2>
+      <p class="text-texte/80">{content.lieu.texte}</p>
+      <a href="#contact" class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-5 py-2.5 rounded-lg text-sm font-bold transition-all hover:bg-dore/90 mt-4">
+        {content.lieu.cta}
+      </a>
+    </div>
+  </section>
+
+  <section class="py-16 bg-anthracite">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-white mb-4">{content.formateur.titre}</h2>
+      <div class="text-white/70 space-y-3 text-[17px]">
+        {content.formateur.paragraphes.map(p => <p>{p}</p>)}
+      </div>
+      <p class="mt-4 text-sm">
+        <a href="mailto:hermitant.ecolibre@gmail.com" class="text-dore hover:underline">{content.formateur.email}</a>
+        · <a href="tel:+33646246199" class="text-dore hover:underline">{content.formateur.tel}</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-anthracite mb-6">Questions fréquentes</h2>
+      <div class="border-t border-sauge-clair">
+        {content.faq.map((item, i) => (
+          <details class="border-b border-sauge-clair py-4" {i === 0 ? 'open' : ''}>
+            <summary class="cursor-pointer list-none font-bold text-anthracite flex justify-between items-center">
+              {item.question}
+              <span class="text-sauge text-xl">{i === 0 ? '−' : '+'}</span>
+            </summary>
+            <p class="text-sm text-texte/70 mt-2">{item.reponse}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-sauge-clair/50 text-center">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-anthracite mb-4">{content.ctaFinal.titre}</h2>
+      <p class="text-texte/70 mb-6">{content.ctaFinal.sousTitre}</p>
+      <a href="#contact" class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-6 py-3 rounded-lg text-sm font-bold transition-all hover:bg-dore/90">
+        {content.ctaFinal.cta}
+      </a>
+      <p class="text-xs text-texte/50 mt-4">{content.ctaFinal.mentions}</p>
+    </div>
+  </section>
+
+  <span id="contact" class="block h-0 scroll-mt-24"></span>
+</Layout>

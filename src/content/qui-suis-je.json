@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "titre": "Vincent Hermitant",
+    "sousTitre": "Ingénieur · Enseignant · Musicien",
+    "paragraphe1": "Ingénieur généraliste (ENI Metz), j'ai enseigné 25 ans à l'université de Lorraine en génie électrique et électronique, de la mesure-régulation à la programmation temps réel. En 2021, j'ai quitté l'enseignement pour conduire mes propres projets : accompagner des entrepreneurs, construire des outils, et transmettre — différemment.",
+    "paragraphe2": "L'IA est arrivée à ce moment-là, et elle a tout changé dans ma façon de travailler. Depuis, j'ai construit des choses que je n'aurais jamais imaginé pouvoir faire seul — dont Vivahop, une plateforme d'événements en Ardèche entièrement codée avec l'aide de l'IA."
+  },
+  "pedagogie": {
+    "titre": "Ma pédagogie",
+    "texte1": "Viser l'essentiel, rester concret, rendre ça ludique. Pas de jargon, pas de slides interminables. On pratique, on teste, on crée ensemble.",
+    "texte2": "Chaque participant repart avec des réflexes qu'il utilise dès le lendemain.",
+    "cartes": [
+      { "icone": "🎯", "titre": "Concret", "texte": "On travaille sur vos vrais documents" },
+      { "icone": "🤝", "titre": "Petits groupes", "texte": "6 personnes max, suivi réel" },
+      { "icone": "🔐", "titre": "Données privées", "texte": "Rien chez un tiers, tout chez vous" }
+    ]
+  },
+  "activites": {
+    "titre": "Ce que je fais",
+    "cartes": [
+      { "titre": "Formation IA", "texte": "N1 à N5 — de l'initiation à l'autonomie, en présentiel, finançable OPCO/FIFPL/AGEFICE.", "lien": "/formation/" },
+      { "titre": "Certification RS7344", "texte": "Faites certifier votre maîtrise de l'IA, financé par le CPF (en préparation).", "lien": "/certification/" },
+      { "titre": "Sites et prestations", "texte": "Pages uniques, sites vitrines, automatisations, second cerveau — prix affichés ou sur devis.", "lien": "/prestations/" },
+      { "titre": "Fablab ESP32", "texte": "Ateliers d'électronique et MicroPython en Ardèche — voir opentek.fr.", "lien": "https://opentek.fr" }
+    ]
+  },
+  "contact": {
+    "titre": "Contact",
+    "email": "hermitant.ecolibre@gmail.com",
+    "tel": "06 46 24 61 99",
+    "adresse": "593 route de Brès, 07230 Payzac, Ardèche",
+    "qualifi": "Formation Qualiopi via POLLEN"
+  }
+}

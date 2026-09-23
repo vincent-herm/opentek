@@ -1,0 +1,60 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import content from '../../content/qui-suis-je.json';
+---
+
+<Layout title="Qui suis-je — Vincent Hermitant">
+  <section class="py-16 md:py-24">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h1 class="font-serif text-4xl md:text-5xl text-anthracite leading-[1.1]">{content.hero.titre}</h1>
+      <p class="text-lg text-texte/60 mt-1">{content.hero.sousTitre}</p>
+      <p class="text-texte/80 text-[17px] mt-6 leading-relaxed">{content.hero.paragraphe1}</p>
+      <p class="text-texte/80 text-[17px] mt-4 leading-relaxed">{content.hero.paragraphe2}</p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-sauge-clair/50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-anthracite mb-4">{content.pedagogie.titre}</h2>
+      <div class="text-texte/80 space-y-3">
+        <p>{content.pedagogie.texte1}</p>
+        <p>{content.pedagogie.texte2}</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6">
+        {content.pedagogie.cartes.map(c => (
+          <div class="bg-white border border-sauge-clair rounded-xl p-4 text-center">
+            <span class="text-2xl block">{c.icone}</span>
+            <span class="text-sm font-bold text-anthracite">{c.titre}</span>
+            <p class="text-xs text-texte/60 mt-1">{c.texte}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-anthracite mb-6">{content.activites.titre}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {content.activites.cartes.map(c => (
+          <a href={c.lien} class="bg-white border border-sauge-clair rounded-xl p-5 transition-all hover:border-sauge">
+            <h3 class="font-bold text-anthracite">{c.titre}</h3>
+            <p class="text-sm text-texte/60 mt-1">{c.texte}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-sauge-clair/50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-anthracite mb-4">{content.contact.titre}</h2>
+      <div class="text-texte/80 space-y-2">
+        <p>📧 <a href="mailto:{content.contact.email}" class="text-sauge-fonce underline">{content.contact.email}</a></p>
+        <p>📞 <a href="tel:{content.contact.tel}" class="text-sauge-fonce underline">{content.contact.tel}</a></p>
+        <p>📍 {content.contact.adresse}</p>
+      </div>
+      <p class="text-xs text-texte/50 mt-4">{content.contact.qualifi}</p>
+    </div>
+  </section>
+</Layout>

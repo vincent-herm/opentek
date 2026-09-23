@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "badge": "Certification professionnelle · Éligible CPF · Qualiopi via POLLEN",
+    "title": "Faites certifier ce que vous savez faire avec l'IA.",
+    "sousTitre": "Une certification professionnelle inscrite au Répertoire spécifique de France Compétences (RS7344), préparée à distance en 4 semaines ou en présentiel en 5 jours.",
+    "alerteTitre": "Ouverture en préparation",
+    "alerteTexte": "Inscrivez-vous à la liste prioritaire — les premières places vont aux inscrits, dans l'ordre.",
+    "alerteCta": "Rejoindre la liste prioritaire →"
+  },
+  "distinction": {
+    "titre": "Ce n'est pas la même chose qu'une formation.",
+    "texte": "Une formation vous apprend à faire. Une certification atteste que vous savez le faire, devant un jury : un titre que vous pouvez mettre sur un CV, montrer à un client, valoriser dans votre activité.",
+    "note": "Ce n'est pas la suite des formations N1 à N5 : c'est un autre parcours, avec son propre contenu et son propre financement. Vous choisissez l'un ou l'autre.",
+    "cta": "Voir les formations N1 à N5 →"
+  },
+  "projet": {
+    "titre": "Un projet sur votre propre activité.",
+    "texte": "Le fil rouge, c'est votre entreprise ou votre activité : vous construisez un plan d'intégration de l'IA, vous le mettez en œuvre, puis vous en mesurez l'effet. C'est ce travail qui est présenté au jury."
+  },
+  "formats": {
+    "titre": "Deux formats, la même certification.",
+    "distance": {
+      "titre": "À distance · 4 semaines",
+      "texte": "Cours en vidéo à votre rythme + 7 webinaires d'une heure en direct pour poser vos questions et avancer sur votre dossier."
+    },
+    "presentiel": {
+      "titre": "En présentiel · 5 jours",
+      "texte": "Les mêmes vidéos, mais vous les suivez sur place, chacun à son rythme, avec moi à côté de vous."
+    }
+  },
+  "financement": {
+    "titre": "Le CPF peut tout financer.",
+    "prix": "Prix : 1 650 € net. Le CPF mobilise jusqu'à 1 500 € de droits ; il reste une participation personnelle de 150 €.",
+    "exoneration": "Demandeur d'emploi accompagné par France Travail : cette participation est exonérée.",
+    "note": "Vos droits CPF sur Mon Compte Formation. Je ne peux promettre ni montant ni acceptation."
+  },
+  "ctaFinal": {
+    "titre": "Soyez prévenu à l'ouverture.",
+    "sousTitre": "Laissez votre email pour être informé en premier dès l'ouverture des inscriptions.",
+    "cta": "hermitant.ecolibre@gmail.com",
+    "lien": "mailto:hermitant.ecolibre@gmail.com?subject=Liste%20prioritaire%20RS7344"
+  }
+}

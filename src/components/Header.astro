@@ -1,0 +1,60 @@
+---
+const currentPath = Astro.url.pathname;
+
+const navItems = [
+  { label: 'Accueil', href: '/' },
+  { label: 'Formation IA', href: '/formation/' },
+  { label: 'Certification IA', href: '/certification/' },
+  { label: 'Prestations', href: '/prestations/' },
+  { label: 'Qui suis-je', href: '/qui-suis-je/' },
+];
+---
+
+<header class="sticky top-0 z-50 border-b border-sauge-clair/60 bg-creme/90 backdrop-blur-md">
+  <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="font-serif text-xl text-anthracite no-underline">
+        <span class="text-sauge">Open</span>tek
+      </a>
+      <div class="hidden md:flex items-center gap-1">
+        {navItems.map(item => (
+          <a
+            href={item.href}
+            class={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+              currentPath === item.href
+                ? 'bg-sauge-clair text-sauge-fonce'
+                : 'text-texte/70 hover:text-texte hover:bg-sauge-clair/50'
+            }`}
+          >
+            {item.label}
+          </a>
+        ))}
+      </div>
+      <div class="flex items-center gap-3">
+        <a
+          href="#contact"
+          class="hidden sm:inline-flex items-center gap-1.5 bg-dore text-anthracite px-4 py-2 rounded-lg text-sm font-bold transition-all hover:bg-dore/90"
+        >
+          Me contacter
+        </a>
+        <div class="md:hidden">
+          <details class="relative">
+            <summary class="list-none px-3 py-2 rounded-lg cursor-pointer text-texte/70 hover:text-texte hover:bg-sauge-clair/50 text-sm font-medium">
+              Menu
+            </summary>
+            <div class="absolute right-0 top-full mt-2 w-48 bg-creme border border-sauge-clair rounded-lg shadow-lg py-2">
+              {navItems.map(item => (
+                <a href={item.href} class="block px-4 py-2 text-sm text-texte/70 hover:text-texte hover:bg-sauge-clair/50">
+                  {item.label}
+                </a>
+              ))}
+              <a href="#contact" class="block px-4 py-2 text-sm font-bold text-dore hover:bg-sauge-clair/50">
+                Me contacter
+              </a>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

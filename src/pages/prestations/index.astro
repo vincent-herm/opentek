@@ -1,0 +1,155 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import content from '../../content/prestations.json';
+---
+
+<Layout title="Prestations — Sites web, automatisations, accompagnement">
+  <section class="py-16 md:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <h1 class="font-serif text-4xl md:text-5xl text-anthracite leading-[1.1]">
+        {content.hero.title}<br>
+        <span class="text-2xl md:text-3xl">{content.hero.subtitle}</span>
+      </h1>
+      <p class="text-lg text-texte/80 mt-4 max-w-2xl">{content.hero.description}</p>
+      <div class="flex flex-wrap gap-3 mt-8">
+        <a href="tel:+33646246199" class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-6 py-3 rounded-lg text-sm font-bold transition-all hover:bg-dore/90">
+          {content.hero.ctaTel}
+        </a>
+        <a href="mailto:hermitant.ecolibre@gmail.com" class="inline-flex items-center gap-1.5 border border-sauge text-sauge-fonce px-6 py-3 rounded-lg text-sm font-bold transition-all hover:bg-sauge-clair">
+          {content.hero.ctaMail}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-sauge-clair/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-anthracite mb-4">{content.constat.titre}</h2>
+      <p class="text-texte/80 max-w-2xl">{content.constat.texte1}</p>
+      <p class="text-texte/70 mt-3 max-w-2xl">{content.constat.texte2}</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-anthracite mb-6">{content.offres.titre}</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="text-xs uppercase text-sauge-fonce border-b border-sauge-clair">
+              <th class="text-left py-3 pr-4">Offre</th>
+              <th class="text-right py-3 pr-4">Prix</th>
+              <th class="text-right py-3">Délai</th>
+            </tr>
+          </thead>
+          <tbody class="text-texte/80">
+            {content.offres.lignes.map(l => (
+              <tr class="border-b border-sauge-clair">
+                <td class="py-3 pr-4"><strong>{l.nom}</strong><br><span class="text-xs text-texte/50">{l.detail}</span></td>
+                <td class="text-right py-3 pr-4 whitespace-nowrap"><strong>{l.prix}</strong></td>
+                <td class="text-right py-3 whitespace-nowrap">{l.delai}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-texte/50 mt-3">{content.offres.note}</p>
+      <p class="text-sm text-texte/70 mt-2">{content.offres.wordpress}</p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-sauge-clair/50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-anthracite mb-6">{content.processus.titre}</h2>
+      <ol class="space-y-4">
+        {content.processus.etapes.map((e, i) => (
+          <li class="flex gap-4">
+            <span class="font-bold text-sauge-fonce text-lg">{i + 1}</span>
+            <div>{e}</div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-anthracite mb-4">{content.ia.titre}</h2>
+      <p class="text-texte/80">{content.ia.texte}</p>
+      <p class="text-sm text-texte/60 mt-2">{content.ia.note} <a href={content.ia.lienFormation} class="text-sauge-fonce underline">les formations</a>.</p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-sauge-clair/50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-anthracite mb-4">{content.preuves.titre}</h2>
+      <ul class="space-y-2">
+        {content.preuves.sites.map(s => (
+          <li><a href={s.url} class="text-sauge-fonce underline" target="_blank" rel="noopener">{s.nom}</a> — {s.description}</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-anthracite mb-6">{content.prestations.titre}</h2>
+      <p class="text-sm text-texte/60 mb-6">{content.prestations.sousTitre}</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {content.prestations.cartes.map(c => (
+          <div class="bg-white border border-sauge-clair rounded-xl p-5">
+            <h3 class="font-bold text-anthracite">{c.titre}</h3>
+            <p class="text-sm text-texte/60 mt-1">{c.texte}</p>
+          </div>
+        ))}
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mt-4">
+        <h3 class="font-bold text-amber-800 text-sm">{content.prestations.enPrep.titre}</h3>
+        <p class="text-xs text-amber-700 mt-1">{content.prestations.enPrep.texte}</p>
+      </div>
+      <a href="mailto:hermitant.ecolibre@gmail.com" class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-5 py-2.5 rounded-lg text-sm font-bold transition-all hover:bg-dore/90 mt-6">
+        {content.prestations.cta}
+      </a>
+    </div>
+  </section>
+
+  <section class="py-16 bg-sauge-clair/50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-anthracite mb-4">{content.qui.titre}</h2>
+      <p class="text-texte/80">{content.qui.texte}</p>
+      <a href="/qui-suis-je/" class="text-sm text-sauge-fonce font-medium mt-3 inline-block hover:underline">{content.qui.cta}</a>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-3xl text-anthracite mb-6">Questions fréquentes</h2>
+      <div class="border-t border-sauge-clair">
+        {content.faq.map((item, i) => (
+          <details class="border-b border-sauge-clair py-4" {i === 0 ? 'open' : ''}>
+            <summary class="cursor-pointer list-none font-bold text-anthracite flex justify-between items-center">
+              {item.question}
+              <span class="text-sauge text-xl">{i === 0 ? '−' : '+'}</span>
+            </summary>
+            <p class="text-sm text-texte/70 mt-2">{item.reponse}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-anthracite text-center">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6">
+      <h2 class="font-serif text-2xl text-white mb-4">{content.ctaFinal.titre}</h2>
+      <p class="text-white/60 text-sm mb-6">{content.ctaFinal.sousTitre}</p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="tel:+33646246199" class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-6 py-3 rounded-lg text-sm font-bold transition-all hover:bg-dore/90">
+          {content.ctaFinal.ctaTel}
+        </a>
+        <a href="mailto:hermitant.ecolibre@gmail.com" class="inline-flex items-center gap-1.5 border border-sauge/50 text-white px-6 py-3 rounded-lg text-sm font-bold transition-all hover:bg-white/10">
+          {content.ctaFinal.ctaMail}
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
