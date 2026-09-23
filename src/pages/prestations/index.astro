@@ -98,7 +98,7 @@ import content from '../../content/prestations.json';
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         {content.prestations.cartes.map(c => (
           <div class="bg-white border border-sauge-clair rounded-xl p-5">
-            <h3 class="font-bold text-anthracite">{c.titre}</h3>
+            <h3 class="titre-carte">{c.titre}</h3>
             <p class="text-sm text-texte/60 mt-1">{c.texte}</p>
           </div>
         ))}
@@ -127,7 +127,7 @@ import content from '../../content/prestations.json';
       <div class="border-t border-sauge-clair">
         {content.faq.map((item, i) => (
           <details class="border-b border-sauge-clair py-4" {i === 0 ? 'open' : ''}>
-            <summary class="cursor-pointer list-none font-bold text-anthracite flex justify-between items-center">
+            <summary class="cursor-pointer list-none titre-carte flex justify-between items-center">
               {item.question}
               <span class="text-sauge text-xl">{i === 0 ? '−' : '+'}</span>
             </summary>

@@ -14,10 +14,10 @@
   "offres": {
     "titre": "Trois façons de commencer.",
     "lignes": [
-      { "nom": "Page unique", "detail": "une page claire, avec votre fiche Google complétée et validée", "prix": "690 € HT", "delai": "48h" },
-      { "nom": "Site vitrine", "detail": "4 à 6 pages, fiche Google incluse", "prix": "1 290 € HT", "delai": "2-3 sem." },
-      { "nom": "Reprise d'un site existant", "detail": "Wix, Jimdo, ou site cassé", "prix": "dès 890 € HT", "delai": "selon état" },
-      { "nom": "Maintenance", "detail": "hébergement, sauvegardes, modifications", "prix": "25 € / mois", "delai": "—" }
+      { "nom": "Page unique", "detail": "une page claire, avec votre fiche Google complétée et validée", "prix": "570 € HT", "delai": "48h" },
+      { "nom": "Site vitrine", "detail": "4 à 6 pages, fiche Google incluse", "prix": "970 € HT", "delai": "2-3 sem." },
+      { "nom": "Reprise d'un site existant", "detail": "Wix, Jimdo, ou site cassé", "prix": "dès 670 € HT", "delai": "selon état" },
+      { "nom": "Maintenance", "detail": "hébergement, sauvegardes, modifications", "prix": "17 € / mois", "delai": "—" }
     ],
     "note": "Association ou particulier : prix TTC. 50 % à la commande, solde à la livraison.",
     "wordpress": "Option WordPress éditable par le client : + 300 €"
@@ -48,7 +48,7 @@
     "titre": "Et pour aller plus loin : sur devis.",
     "sousTitre": "Ces prestations se chiffrent après un appel. Je vous réponds avec une proposition claire.",
     "cartes": [
-      { "titre": "Automatisations et bots", "texte": "Faire disparaître les tâches répétitives avec n8n. Exemple : un bot qui crée automatiquement les fiches événements sur Vivahop." },
+      { "titre": "Automatisations et bots", "texte": "Faire disparaître les tâches répétitives avec n8n." },
       { "titre": "Votre second cerveau", "texte": "Base de connaissances structurée qu'un assistant IA sait lire et tenir à jour. Mise en place individuelle." },
       { "titre": "Prise en main", "texte": "Une séance pour utiliser votre nouvel outil en autonomie après livraison." },
       { "titre": "Communication", "texte": "Flyers, pages d'événement, textes de diffusion cohérents entre eux." },

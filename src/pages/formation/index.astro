@@ -63,7 +63,7 @@ import content from '../../content/formation.json';
 
       {content.financement.statuts.map(s => (
         <div class="bg-white border-l-4 border-sauge rounded-r-xl p-5 mt-6">
-          <h3 class="font-bold text-anthracite">{s.titre}</h3>
+          <h3 class="titre-carte">{s.titre}</h3>
           <p class="text-sm text-texte/70 mt-1">{s.texte}</p>
           {s.citation && <blockquote class="text-xs text-texte/50 italic mt-2 bg-sauge-clair rounded-lg px-3 py-2">{s.citation}</blockquote>}
         </div>
@@ -78,7 +78,7 @@ import content from '../../content/formation.json';
       </div>
 
       <div class="bg-white border border-dashed border-sauge rounded-xl p-5 mt-4">
-        <h3 class="font-bold text-anthracite">{content.financement.reserve.titre}</h3>
+        <h3 class="titre-carte">{content.financement.reserve.titre}</h3>
         <p class="text-sm text-texte/70 mt-1">{content.financement.reserve.texte}</p>
         <a href="#assistant-financement" class="btn btn-or mt-3">
           {content.financement.reserve.cta}
@@ -95,7 +95,7 @@ import content from '../../content/formation.json';
         {content.promesse.cards.map(c => (
           <div class="bg-white border border-sauge-clair rounded-xl p-5">
             <span class="text-2xl block mb-2">{c.icone}</span>
-            <h3 class="font-bold text-anthracite">{c.titre}</h3>
+            <h3 class="titre-carte">{c.titre}</h3>
             <p class="text-sm text-texte/60 mt-1">{c.texte}</p>
           </div>
         ))}
@@ -163,11 +163,11 @@ import content from '../../content/formation.json';
         <p class="text-sm text-texte/70">{content.offres.n1n2.texte}</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
           <div class="bg-sauge-clair/30 rounded-lg p-4">
-            <h4 class="font-bold text-sm text-anthracite">{content.offres.n1n2.n1.titre}</h4>
+            <h4 class="titre-mini">{content.offres.n1n2.n1.titre}</h4>
             <p class="text-xs text-texte/60 mt-1">{content.offres.n1n2.n1.texte}</p>
           </div>
           <div class="bg-sauge-clair/30 rounded-lg p-4">
-            <h4 class="font-bold text-sm text-anthracite">{content.offres.n1n2.n2.titre}</h4>
+            <h4 class="titre-mini">{content.offres.n1n2.n2.titre}</h4>
             <p class="text-xs text-texte/60 mt-1">{content.offres.n1n2.n2.texte}</p>
           </div>
         </div>
@@ -228,17 +228,17 @@ import content from '../../content/formation.json';
       <h2 class="titre-section mb-6">{content.intraInter.titre}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="bg-white border border-sauge-clair rounded-xl p-6">
-          <h3 class="font-bold text-anthracite">{content.intraInter.intra.titre}</h3>
+          <h3 class="titre-carte">{content.intraInter.intra.titre}</h3>
           <p class="text-sm text-texte/70 mt-2">{content.intraInter.intra.texte}</p>
         </div>
         <div class="bg-white border border-sauge-clair rounded-xl p-6">
-          <h3 class="font-bold text-anthracite">{content.intraInter.inter.titre}</h3>
+          <h3 class="titre-carte">{content.intraInter.inter.titre}</h3>
           <p class="text-sm text-texte/70 mt-2">{content.intraInter.inter.texte}</p>
         </div>
       </div>
 
       <div class="bg-white border border-sauge rounded-xl p-6 mt-4">
-        <h3 class="font-bold text-anthracite">{content.intraInter.calcul.titre}</h3>
+        <h3 class="titre-carte">{content.intraInter.calcul.titre}</h3>
         <p class="text-sm text-texte/70 mt-2">{content.intraInter.calcul.texte}</p>
         <div class="overflow-x-auto mt-4">
           <table class="w-full text-sm">
@@ -300,7 +300,7 @@ import content from '../../content/formation.json';
       <div class="border-t border-sauge-clair">
         {content.faq.map((item, i) => (
           <details class="border-b border-sauge-clair py-4" {i === 0 ? 'open' : ''}>
-            <summary class="cursor-pointer list-none font-bold text-anthracite flex justify-between items-center">
+            <summary class="cursor-pointer list-none titre-carte flex justify-between items-center">
               {item.question}
               <span class="text-sauge text-xl">{i === 0 ? '−' : '+'}</span>
             </summary>
