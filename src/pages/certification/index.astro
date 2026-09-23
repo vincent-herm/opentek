@@ -4,44 +4,44 @@ import content from '../../content/certification.json';
 ---
 
 <Layout title="Certification IA — RS7344">
-  <section class="py-16 md:py-24">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6">
-      <span class="inline-block text-xs font-bold tracking-widest uppercase text-sauge-fonce bg-sauge-clair rounded-full px-4 py-1.5 mb-6">
+  <section class="section-hero">
+    <div class="wrap">
+      <span class="badge mb-6">
         {content.hero.badge}
       </span>
-      <h1 class="font-serif text-4xl md:text-5xl text-anthracite leading-[1.1]">
+      <h1 class="titre-page">
         {content.hero.title}
       </h1>
-      <p class="text-lg text-texte/80 mt-4">{content.hero.sousTitre}</p>
+      <p class="chapo mt-4">{content.hero.sousTitre}</p>
       <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mt-6">
         <p class="text-sm font-bold text-amber-800">{content.hero.alerteTitre}</p>
         <p class="text-sm text-amber-700 mt-1">{content.hero.alerteTexte}</p>
-        <a href="#liste-cpf" class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-5 py-2.5 rounded-lg text-sm font-bold transition-all hover:bg-dore/90 mt-3">
+        <a href="#liste-cpf" class="btn btn-or mt-3">
           {content.hero.alerteCta}
         </a>
       </div>
     </div>
   </section>
 
-  <section class="py-16 bg-sauge-clair/50">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6">
-      <h2 class="font-serif text-3xl text-anthracite mb-4">{content.distinction.titre}</h2>
-      <p class="text-texte/80">{content.distinction.texte}</p>
-      <p class="text-texte/70 mt-3">{content.distinction.note}</p>
+  <section class="section bg-sauge-clair/50">
+    <div class="wrap">
+      <h2 class="titre-section mb-4">{content.distinction.titre}</h2>
+      <p class="mesure text-texte/80">{content.distinction.texte}</p>
+      <p class="mesure text-texte/70 mt-3">{content.distinction.note}</p>
       <a href="/formation/" class="text-sm text-sauge-fonce font-medium mt-3 inline-block hover:underline">{content.distinction.cta}</a>
     </div>
   </section>
 
-  <section class="py-16">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6">
-      <h2 class="font-serif text-3xl text-anthracite mb-4">{content.projet.titre}</h2>
-      <p class="text-texte/80">{content.projet.texte}</p>
+  <section class="section">
+    <div class="wrap">
+      <h2 class="titre-section mb-4">{content.projet.titre}</h2>
+      <p class="mesure text-texte/80">{content.projet.texte}</p>
     </div>
   </section>
 
-  <section class="py-16 bg-sauge-clair/50">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6">
-      <h2 class="font-serif text-3xl text-anthracite mb-6">{content.formats.titre}</h2>
+  <section class="section bg-sauge-clair/50">
+    <div class="wrap">
+      <h2 class="titre-section mb-6">{content.formats.titre}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="bg-white border border-sauge-clair rounded-xl p-6">
           <h3 class="font-bold text-anthracite">{content.formats.distance.titre}</h3>
@@ -55,21 +55,21 @@ import content from '../../content/certification.json';
     </div>
   </section>
 
-  <section class="py-16">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6">
-      <h2 class="font-serif text-3xl text-anthracite mb-4">{content.financement.titre}</h2>
-      <p class="text-texte/80">{content.financement.prix}</p>
-      <p class="text-texte/70 mt-2">{content.financement.exoneration}</p>
+  <section class="section">
+    <div class="wrap">
+      <h2 class="titre-section mb-4">{content.financement.titre}</h2>
+      <p class="mesure text-texte/80">{content.financement.prix}</p>
+      <p class="mesure text-texte/70 mt-2">{content.financement.exoneration}</p>
       <p class="text-sm text-texte/50 mt-4">{content.financement.note}</p>
     </div>
   </section>
 
-  <section class="py-16 bg-anthracite text-center">
-    <div class="max-w-2xl mx-auto px-4 sm:px-6">
-      <h2 class="font-serif text-2xl text-white mb-4">{content.ctaFinal.titre}</h2>
+  <section class="section bg-anthracite text-center">
+    <div class="wrap">
+      <h2 class="titre-section text-white mb-4">{content.ctaFinal.titre}</h2>
       <span id="liste-cpf" class="block h-0 scroll-mt-24"></span>
       <p class="text-white/60 text-sm mb-6">{content.ctaFinal.sousTitre}</p>
-      <a href={content.ctaFinal.lien} class="inline-flex items-center gap-1.5 bg-dore text-anthracite px-6 py-3 rounded-lg text-sm font-bold transition-all hover:bg-dore/90">
+      <a href={content.ctaFinal.lien} class="btn btn-or">
         {content.ctaFinal.cta}
       </a>
     </div>
