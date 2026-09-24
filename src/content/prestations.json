@@ -1,23 +1,44 @@
 {
   "hero": {
-    "title": "Un site qui vous ramène des appels.",
-    "subtitle": "En ligne vite, sans que vous ayez rien à écrire.",
-    "description": "Pour les artisans, commerçants, associations et petites structures du Sud-Ardèche. Prix affichés, pas de mauvaise surprise.",
+    "title": "Des outils qui vous ramènent des clients et vous font gagner du temps.",
+    "subtitle": "Sites web, automatisations, IA appliquée. Fait sur mesure, avec vos mots.",
+    "description": "Pour les artisans, commerçants, associations et petites structures du Sud-Ardèche. Sites à prix affichés, le reste chiffré après un appel.",
     "ctaTel": "Appeler le 06 46 24 61 99",
     "ctaMail": "Réserver un appel"
   },
   "constat": {
     "titre": "Quand on vous cherche sur Google, que voit-on ?",
     "texte1": "Tapez votre métier et votre commune. Votre fiche est-elle complète ? Votre site s'affiche-t-il correctement sur un téléphone ? Existe-t-il seulement ?",
-    "texte2": "C'est presque toujours là que se perdent les appels. Je ne vous vends pas « un site » : je corrige ce qui vous fait perdre des clients."
+    "texte2": "C'est presque toujours là que se perdent les appels. Je ne vous vends pas « un site » : je corrige ce qui vous fait perdre des clients.",
+    "etiquette": "Sites web"
   },
   "offres": {
     "titre": "Trois façons de commencer.",
     "lignes": [
-      { "nom": "Page unique", "detail": "une page claire, avec votre fiche Google complétée et validée", "prix": "570 € HT", "delai": "48h" },
-      { "nom": "Site vitrine", "detail": "4 à 6 pages, fiche Google incluse", "prix": "970 € HT", "delai": "2-3 sem." },
-      { "nom": "Reprise d'un site existant", "detail": "Wix, Jimdo, ou site cassé", "prix": "dès 670 € HT", "delai": "selon état" },
-      { "nom": "Maintenance", "detail": "hébergement, sauvegardes, modifications", "prix": "17 € / mois", "delai": "—" }
+      {
+        "nom": "Page unique",
+        "detail": "une page claire, avec votre fiche Google complétée et validée",
+        "prix": "570 € HT",
+        "delai": "48h"
+      },
+      {
+        "nom": "Site vitrine",
+        "detail": "4 à 6 pages, fiche Google incluse",
+        "prix": "970 € HT",
+        "delai": "2-3 sem."
+      },
+      {
+        "nom": "Reprise d'un site existant",
+        "detail": "Wix, Jimdo, ou site cassé",
+        "prix": "dès 670 € HT",
+        "delai": "selon état"
+      },
+      {
+        "nom": "Maintenance",
+        "detail": "hébergement, sauvegardes, modifications",
+        "prix": "17 € / mois",
+        "delai": "—"
+      }
     ],
     "note": "Association ou particulier : prix TTC. 50 % à la commande, solde à la livraison.",
     "wordpress": "Option WordPress éditable par le client : + 300 €"
@@ -40,24 +61,44 @@
   "preuves": {
     "titre": "Des sites qui existent, pas des maquettes.",
     "sites": [
-      { "nom": "opentek.fr", "url": "https://opentek.fr", "description": "le site du fablab d'électronique de Payzac" },
-      { "nom": "Vivahop", "url": "https://www.vivahop.fr", "description": "agenda des sorties et événements du Sud-Ardèche" }
+      {
+        "nom": "opentek.fr",
+        "url": "https://opentek.fr",
+        "description": "le site du fablab d'électronique de Payzac"
+      },
+      {
+        "nom": "Vivahop",
+        "url": "https://www.vivahop.fr",
+        "description": "agenda des sorties et événements du Sud-Ardèche"
+      }
     ]
   },
   "prestations": {
-    "titre": "Et pour aller plus loin : sur devis.",
-    "sousTitre": "Ces prestations se chiffrent après un appel. Je vous réponds avec une proposition claire.",
+    "etiquette": "Automatisation et IA",
+    "titre": "Ce qui vous prend du temps, un outil peut le faire.",
+    "sousTitre": "Chaque mission se chiffre après un appel de 20 minutes. Je vous réponds avec une proposition claire.",
     "cartes": [
-      { "titre": "Automatisations et bots", "texte": "Faire disparaître les tâches répétitives avec n8n." },
-      { "titre": "Votre second cerveau", "texte": "Base de connaissances structurée qu'un assistant IA sait lire et tenir à jour. Mise en place individuelle." },
-      { "titre": "Prise en main", "texte": "Une séance pour utiliser votre nouvel outil en autonomie après livraison." },
-      { "titre": "Communication", "texte": "Flyers, pages d'événement, textes de diffusion cohérents entre eux." },
-      { "titre": "Édition", "texte": "Accompagnement à l'auto-édition sur Amazon KDP : coûts réels, ISBN, formalités, aide à la création du livre à l'aide de l'IA." }
+      {
+        "titre": "Vous recopiez les mêmes informations à la main ?",
+        "texte": "Je construis l'automatisation qui s'en charge : saisie, tri, relances, publication."
+      },
+      {
+        "titre": "Vous ne retrouvez plus vos documents, vos décisions, vos consignes ?",
+        "texte": "Votre second cerveau : une base de connaissances qu'un assistant IA sait lire et tenir à jour. Mise en place individuelle."
+      },
+      {
+        "titre": "Votre outil est livré mais vous ne l'utilisez pas ?",
+        "texte": "Une séance de prise en main, pour l'utiliser en autonomie."
+      },
+      {
+        "titre": "Vos flyers, pages d'événement et textes ne se ressemblent pas ?",
+        "texte": "Des supports cohérents entre eux, écrits avec vos mots."
+      },
+      {
+        "titre": "Vous voulez publier un livre ?",
+        "texte": "Accompagnement à l'auto-édition sur Amazon KDP : coûts réels, ISBN, formalités, aide à la rédaction avec l'IA."
+      }
     ],
-    "enPrep": {
-      "titre": "En préparation",
-      "texte": "Infrastructure indépendante, CRM Twenty, conseil IA — je les mets en place pour moi-même avant de les proposer."
-    },
     "cta": "Décrire mon besoin →"
   },
   "qui": {

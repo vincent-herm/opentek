@@ -35,7 +35,7 @@ import content from '../content/index.json';
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
         {content.aiguillage.cartes.map(carte => (
           <a href={carte.lien} class="bg-white border border-sauge-clair rounded-xl p-6 transition-all hover:border-sauge hover:-translate-y-0.5">
-            <span class="text-3xl block mb-3">{carte.icone}</span>
+            <span class="block w-8 h-0.5 bg-dore mb-4"></span>
             <h3 class="titre-carte">{carte.titre}</h3>
             <p class="text-sm text-texte/60 mt-1 leading-relaxed">{carte.texte}</p>
           </a>

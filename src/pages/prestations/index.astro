@@ -24,6 +24,7 @@ import content from '../../content/prestations.json';
 
   <section class="section bg-sauge-clair/50">
     <div class="wrap">
+      <p class="text-xs uppercase tracking-wide text-sauge-fonce mb-2">{content.constat.etiquette}</p>
       <h2 class="titre-section mb-4">{content.constat.titre}</h2>
       <p class="text-texte/80 mesure">{content.constat.texte1}</p>
       <p class="text-texte/70 mt-3 mesure">{content.constat.texte2}</p>
@@ -58,7 +59,26 @@ import content from '../../content/prestations.json';
     </div>
   </section>
 
-  <section class="section bg-sauge-clair/50">
+  <section id="automatisation" class="section bg-sauge-clair/50">
+    <div class="wrap">
+      <p class="text-xs uppercase tracking-wide text-sauge-fonce mb-2">{content.prestations.etiquette}</p>
+      <h2 class="titre-section mb-3">{content.prestations.titre}</h2>
+      <p class="text-sm text-texte/60 mb-6">{content.prestations.sousTitre}</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {content.prestations.cartes.map(c => (
+          <div class="bg-white border border-sauge-clair rounded-xl p-5">
+            <h3 class="titre-carte">{c.titre}</h3>
+            <p class="text-sm text-texte/60 mt-1">{c.texte}</p>
+          </div>
+        ))}
+      </div>
+      <a href="mailto:hermitant.ecolibre@gmail.com" class="btn btn-or mt-6">
+        {content.prestations.cta}
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
     <div class="wrap">
       <h2 class="titre-section mb-6">{content.processus.titre}</h2>
       <ol class="space-y-4">
@@ -72,7 +92,7 @@ import content from '../../content/prestations.json';
     </div>
   </section>
 
-  <section class="section">
+  <section class="section bg-sauge-clair/50">
     <div class="wrap">
       <h2 class="titre-section mb-4">{content.ia.titre}</h2>
       <p class="mesure text-texte/80">{content.ia.texte}</p>
@@ -80,7 +100,7 @@ import content from '../../content/prestations.json';
     </div>
   </section>
 
-  <section class="section bg-sauge-clair/50">
+  <section class="section">
     <div class="wrap">
       <h2 class="titre-section mb-4">{content.preuves.titre}</h2>
       <ul class="mesure space-y-2">
@@ -88,28 +108,6 @@ import content from '../../content/prestations.json';
           <li><a href={s.url} class="text-sauge-fonce underline" target="_blank" rel="noopener">{s.nom}</a> — {s.description}</li>
         ))}
       </ul>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <h2 class="titre-section mb-6">{content.prestations.titre}</h2>
-      <p class="text-sm text-texte/60 mb-6">{content.prestations.sousTitre}</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {content.prestations.cartes.map(c => (
-          <div class="bg-white border border-sauge-clair rounded-xl p-5">
-            <h3 class="titre-carte">{c.titre}</h3>
-            <p class="text-sm text-texte/60 mt-1">{c.texte}</p>
-          </div>
-        ))}
-      </div>
-      <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mt-4">
-        <h3 class="font-bold text-amber-800 text-sm">{content.prestations.enPrep.titre}</h3>
-        <p class="text-xs text-amber-700 mt-1">{content.prestations.enPrep.texte}</p>
-      </div>
-      <a href="mailto:hermitant.ecolibre@gmail.com" class="btn btn-or mt-6">
-        {content.prestations.cta}
-      </a>
     </div>
   </section>
 
