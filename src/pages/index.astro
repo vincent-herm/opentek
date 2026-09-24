@@ -1,29 +1,42 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import content from '../content/index.json';
+import imageHero from '../assets/accueil/muret-ardeche.jpg';
+import imageBio from '../assets/accueil/table-atelier.jpg';
 ---
 
 <Layout title="Accueil — Formation IA & Prestations numériques">
   <section class="section-hero">
-    <div class="wrap text-center">
-      <span class="badge mb-8">
-        {content.hero.badge}
-      </span>
-      <h1 class="titre-page">
-        {content.hero.title}<br>
-        {content.hero.subtitle}
-      </h1>
-      <p class="chapo mt-6 mx-auto">
-        {content.hero.description}
-      </p>
-      <div class="flex flex-wrap justify-center gap-3 mt-10">
-        <a href="/formation/" class="btn btn-or">
-          {content.hero.ctaFormation}
-        </a>
-        <a href="/prestations/" class="btn btn-ligne">
-          {content.hero.ctaPrestations}
-        </a>
+    <div class="wrap grid grid-cols-1 md:grid-cols-[1.4fr_1fr] gap-10 items-center">
+      <div>
+        <span class="badge mb-6">
+          {content.hero.badge}
+        </span>
+        <h1 class="titre-page">
+          {content.hero.title} {content.hero.subtitle}
+        </h1>
+        <p class="chapo mt-6">
+          {content.hero.description}
+        </p>
+        <div class="flex flex-wrap gap-3 mt-8">
+          <a href="/formation/" class="btn btn-or">
+            {content.hero.ctaFormation}
+          </a>
+          <a href="/prestations/" class="btn btn-ligne">
+            {content.hero.ctaPrestations}
+          </a>
+        </div>
       </div>
+      <Image
+        src={imageHero}
+        alt={content.images.hero.alt}
+        widths={[400, 600, 800]}
+        sizes="(min-width: 768px) 384px, 100vw"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full aspect-[4/3] md:aspect-[4/5] object-cover rounded-xl"
+      />
     </div>
   </section>
 
@@ -45,11 +58,20 @@ import content from '../content/index.json';
   </section>
 
   <section class="section">
-    <div class="wrap text-center">
-      <p class="mesure mx-auto text-texte/70">{content.bio}</p>
-      <a href="/qui-suis-je/" class="inline-flex items-center gap-1 text-sm text-sauge-fonce font-medium mt-4 hover:underline">
-        {content.ctaBio}
-      </a>
+    <div class="wrap grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-10 items-center">
+      <Image
+        src={imageBio}
+        alt={content.images.bio.alt}
+        widths={[400, 600, 800]}
+        sizes="(min-width: 768px) 384px, 100vw"
+        class="w-full aspect-[4/3] object-cover rounded-xl"
+      />
+      <div>
+        <p class="mesure text-texte/80">{content.bio}</p>
+        <a href="/qui-suis-je/" class="inline-flex items-center gap-1 text-sm text-sauge-fonce font-medium mt-4 hover:underline">
+          {content.ctaBio}
+        </a>
+      </div>
     </div>
   </section>
 
