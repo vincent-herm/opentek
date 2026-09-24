@@ -37,7 +37,7 @@ import content from '../content/index.json';
           <a href={carte.lien} class="bg-white border border-sauge-clair rounded-xl p-6 transition-all hover:border-sauge hover:-translate-y-0.5">
             <span class="block w-8 h-0.5 bg-dore mb-4"></span>
             <h3 class="titre-carte">{carte.titre}</h3>
-            <p class="text-sm text-texte/60 mt-1 leading-relaxed">{carte.texte}</p>
+            <p class="texte-secondaire mt-1 leading-relaxed">{carte.texte}</p>
           </a>
         ))}
       </div>
@@ -46,7 +46,7 @@ import content from '../content/index.json';
 
   <section class="section">
     <div class="wrap text-center">
-      <p class="mesure mx-auto text-texte/60">{content.bio}</p>
+      <p class="mesure mx-auto text-texte/70">{content.bio}</p>
       <a href="/qui-suis-je/" class="inline-flex items-center gap-1 text-sm text-sauge-fonce font-medium mt-4 hover:underline">
         {content.ctaBio}
       </a>

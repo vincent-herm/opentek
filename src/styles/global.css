@@ -9,6 +9,8 @@
   --color-creme: #F6F5EF;
   --color-dore: #C9A24B;
   --font-serif: Georgia, 'Times New Roman', serif;
+  --text-sm: 0.9375rem;
+  --text-xs: 0.8125rem;
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -70,6 +72,11 @@ html { scroll-behavior: smooth; }
     .titre-page { font-size: 3rem; }
     .titre-section { font-size: 2.125rem; }
   }
+
+  /* Rôles de texte secondaire : on choisit un rôle, jamais une taille ni une opacité.
+     Plancher de lisibilité : 70 % d'opacité minimum pour tout texte porteur d'information. */
+  .texte-secondaire { font-size: var(--text-sm); color: color-mix(in srgb, var(--color-texte) 70%, var(--color-creme)); }
+  .legende { font-size: var(--text-xs); color: color-mix(in srgb, var(--color-texte) 70%, var(--color-creme)); }
 
   /* Chapô : le paragraphe d'accroche sous un titre */
   .chapo {

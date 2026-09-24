@@ -10,9 +10,9 @@
     "texte1": "Viser l'essentiel, rester concret, rendre ça ludique. Pas de jargon, pas de slides interminables. On pratique, on teste, on crée ensemble.",
     "texte2": "Chaque participant repart avec des réflexes qu'il utilise dès le lendemain.",
     "cartes": [
-      { "icone": "🎯", "titre": "Concret", "texte": "On travaille sur vos vrais documents" },
-      { "icone": "🤝", "titre": "Petits groupes", "texte": "6 personnes max, suivi réel" },
-      { "icone": "🔐", "titre": "Données privées", "texte": "Rien chez un tiers, tout chez vous" }
+      { "titre": "Concret", "texte": "On travaille sur vos vrais documents" },
+      { "titre": "Petits groupes", "texte": "6 personnes max, suivi réel" },
+      { "titre": "Données privées", "texte": "Rien chez un tiers, tout chez vous" }
     ]
   },
   "activites": {

@@ -5,7 +5,7 @@
         <a href="/" class="titre-carte no-underline">
           <span class="text-sauge">Open</span>tek
         </a>
-        <p class="text-sm text-texte/60 mt-3 leading-relaxed">
+        <p class="texte-secondaire mt-3 leading-relaxed">
           Formation IA, certification et prestations numériques — par Vincent Hermitant, Ardèche.
         </p>
         <a href="tel:+33646246199" class="text-sm text-sauge-fonce font-medium mt-3 inline-block">06 46 24 61 99</a>
@@ -19,21 +19,21 @@
             { label: 'Prestations', href: '/prestations/' },
             { label: 'Qui suis-je', href: '/qui-suis-je/' },
           ].map(link => (
-            <li><a href={link.href} class="text-sm text-texte/60 hover:text-sauge-fonce transition-colors">{link.label}</a></li>
+            <li><a href={link.href} class="texte-secondaire hover:text-sauge-fonce transition-colors">{link.label}</a></li>
           ))}
         </ul>
       </div>
       <div>
         <h3 class="font-bold text-sm text-anthracite mb-4">Contact</h3>
-        <ul class="space-y-2 text-sm text-texte/60">
+        <ul class="space-y-2 texte-secondaire">
           <li>593 route de Brès, 07230 Payzac</li>
           <li><a href="mailto:hermitant.ecolibre@gmail.com" class="hover:text-sauge-fonce transition-colors">hermitant.ecolibre@gmail.com</a></li>
           <li><a href="tel:+33646246199" class="hover:text-sauge-fonce transition-colors">06 46 24 61 99</a></li>
         </ul>
-        <p class="text-xs text-texte/40 mt-4">Formation Qualiopi via POLLEN</p>
+        <p class="legende mt-4">Formation Qualiopi via POLLEN</p>
       </div>
     </div>
-    <div class="border-t border-sauge-clair mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-texte/40">
+    <div class="border-t border-sauge-clair mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 legende">
       <span>&copy; {new Date().getFullYear()} Vincent Hermitant</span>
       <div class="flex gap-3">
         <a href="/mentions-legales/" class="hover:text-sauge-fonce transition-colors">Mentions légales</a>

@@ -27,10 +27,10 @@
     "titre": "Quelques jours pour passer de « je teste » à « je délègue ».",
     "texte": "Vous apprenez à confier à l'IA du travail. Lui donner votre contexte — vos documents, vos projets — et la laisser avancer étape par étape, sous votre contrôle.",
     "cards": [
-      { "icone": "🎯", "titre": "Obtenir exactement ce que vous voulez", "texte": "Finie la réponse générique. Vous apprenez à formuler pour que l'IA vous rende un travail qui sort du lot." },
-      { "icone": "⏱️", "titre": "Gagner des heures chaque semaine", "texte": "Ce qui vous prenait 2 heures se fait en 10 minutes. Mails, synthèses, plans, analyses." },
-      { "icone": "🛠️", "titre": "Produire ce que vous sous-traitiez", "texte": "Documents, visuels, tableaux de bord, mini-outils, votre site web — vous les faites vous-même." },
-      { "icone": "✨", "titre": "Passer de consommateur à créateur", "texte": "L'IA devient le moyen de réaliser des idées que vous n'auriez jamais concrétisées seul." }
+      { "titre": "Obtenir exactement ce que vous voulez", "texte": "Finie la réponse générique. Vous apprenez à formuler pour que l'IA vous rende un travail qui sort du lot." },
+      { "titre": "Gagner des heures chaque semaine", "texte": "Ce qui vous prenait 2 heures se fait en 10 minutes. Mails, synthèses, plans, analyses." },
+      { "titre": "Produire ce que vous sous-traitiez", "texte": "Documents, visuels, tableaux de bord, mini-outils, votre site web — vous les faites vous-même." },
+      { "titre": "Passer de consommateur à créateur", "texte": "L'IA devient le moyen de réaliser des idées que vous n'auriez jamais concrétisées seul." }
     ]
   },
   "preuve": {

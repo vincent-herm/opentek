@@ -7,7 +7,7 @@ import content from '../../content/qui-suis-je.json';
   <section class="section-hero">
     <div class="wrap">
       <h1 class="titre-page">{content.hero.titre}</h1>
-      <p class="text-lg text-texte/60 mt-1">{content.hero.sousTitre}</p>
+      <p class="text-lg text-texte/70 mt-1">{content.hero.sousTitre}</p>
       <p class="mesure text-texte/80 mt-6">{content.hero.paragraphe1}</p>
       <p class="mesure text-texte/80 mt-4">{content.hero.paragraphe2}</p>
     </div>
@@ -25,7 +25,7 @@ import content from '../../content/qui-suis-je.json';
           <div class="bg-white border border-sauge-clair rounded-xl p-4 text-center">
             <span class="block w-8 h-0.5 bg-dore mb-3 mx-auto"></span>
             <span class="titre-mini">{c.titre}</span>
-            <p class="text-xs text-texte/60 mt-1">{c.texte}</p>
+            <p class="legende mt-1">{c.texte}</p>
           </div>
         ))}
       </div>
@@ -39,7 +39,7 @@ import content from '../../content/qui-suis-je.json';
         {content.activites.cartes.map(c => (
           <a href={c.lien} class="bg-white border border-sauge-clair rounded-xl p-5 transition-all hover:border-sauge">
             <h3 class="titre-carte">{c.titre}</h3>
-            <p class="text-sm text-texte/60 mt-1">{c.texte}</p>
+            <p class="texte-secondaire mt-1">{c.texte}</p>
           </a>
         ))}
       </div>
@@ -50,11 +50,11 @@ import content from '../../content/qui-suis-je.json';
     <div class="wrap">
       <h2 class="titre-section mb-4">{content.contact.titre}</h2>
       <div class="text-texte/80 space-y-2">
-        <p>📧 <a href="mailto:{content.contact.email}" class="text-sauge-fonce underline">{content.contact.email}</a></p>
-        <p>📞 <a href="tel:{content.contact.tel}" class="text-sauge-fonce underline">{content.contact.tel}</a></p>
-        <p>📍 {content.contact.adresse}</p>
+        <p><a href="mailto:{content.contact.email}" class="text-sauge-fonce underline">{content.contact.email}</a></p>
+        <p><a href="tel:{content.contact.tel}" class="text-sauge-fonce underline">{content.contact.tel}</a></p>
+        <p>{content.contact.adresse}</p>
       </div>
-      <p class="text-xs text-texte/50 mt-4">{content.contact.qualifi}</p>
+      <p class="legende mt-4">{content.contact.qualifi}</p>
     </div>
   </section>
 </Layout>

@@ -10,9 +10,9 @@
   "aiguillage": {
     "titre": "Que cherchez-vous ?",
     "cartes": [
-      { "icone": "🎓", "titre": "Formation IA", "texte": "De l'initiation à l'autonomie : N1 à N5, en inter ou intra, finançable OPCO/FIFPL/AGEFICE.", "lien": "/formation/" },
-      { "icone": "📜", "titre": "Certification IA", "texte": "RS7344 — faites certifier votre maîtrise de l'IA, financé par le CPF.", "lien": "/certification/" },
-      { "icone": "🛠️", "titre": "Prestations", "texte": "Sites web, automatisations, second cerveau — pour les petites structures du Sud-Ardèche.", "lien": "/prestations/" }
+      { "titre": "Formation IA", "texte": "De l'initiation à l'autonomie : N1 à N5, en inter ou intra, finançable OPCO/FIFPL/AGEFICE.", "lien": "/formation/" },
+      { "titre": "Certification IA", "texte": "RS7344 — faites certifier votre maîtrise de l'IA, financé par le CPF.", "lien": "/certification/" },
+      { "titre": "Prestations", "texte": "Sites web, automatisations, second cerveau — pour les petites structures du Sud-Ardèche.", "lien": "/prestations/" }
     ]
   },
   "bio": "Ingénieur généraliste (ENI Metz), 25 ans d'enseignement à l'université. Aujourd'hui à Payzac, en Ardèche, j'accompagne celles et ceux qui veulent passer à l'action avec l'IA.",
