@@ -1,20 +1,20 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import content from '../../content/prestations.json';
+import content from '../../content/site-internet.json';
 ---
 
-<Layout title="Prestations — Sites web, automatisations, accompagnement">
+<Layout title="Site internet — Création de site et fiche Google, Sud-Ardèche" description="Site web et fiche Google pour artisans, commerçants et associations du Sud-Ardèche. Prix affichés, vous n'avez rien à rédiger.">
   <section class="section-hero">
     <div class="wrap">
       <h1 class="titre-page">{content.hero.title}</h1>
       <p class="chapo mt-4">{content.hero.subtitle}</p>
       <p class="mesure mt-3 text-texte/80">{content.hero.description}</p>
       <div class="flex flex-wrap gap-3 mt-8">
-        <a href="tel:+33646246199" class="btn btn-or">
-          {content.hero.ctaTel}
-        </a>
-        <a href="mailto:vincent@opentek.fr" class="btn btn-ligne">
+        <a href="mailto:vincent@opentek.fr?subject=Mon%20entreprise" class="btn btn-or">
           {content.hero.ctaMail}
+        </a>
+        <a href="tel:+33646246199" class="btn btn-ligne">
+          {content.hero.ctaTel}
         </a>
       </div>
     </div>
@@ -57,26 +57,7 @@ import content from '../../content/prestations.json';
     </div>
   </section>
 
-  <section id="automatisation" class="section bg-sauge-clair/50">
-    <div class="wrap">
-      <p class="text-xs uppercase tracking-wide text-sauge-fonce mb-2">{content.prestations.etiquette}</p>
-      <h2 class="titre-section mb-3">{content.prestations.titre}</h2>
-      <p class="texte-secondaire mb-6">{content.prestations.sousTitre}</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {content.prestations.cartes.map(c => (
-          <div class="bg-white border border-sauge-clair rounded-xl p-5">
-            <h3 class="titre-carte">{c.titre}</h3>
-            <p class="texte-secondaire mt-1">{c.texte}</p>
-          </div>
-        ))}
-      </div>
-      <a href="mailto:vincent@opentek.fr" class="btn btn-or mt-6">
-        {content.prestations.cta}
-      </a>
-    </div>
-  </section>
-
-  <section class="section">
+  <section class="section bg-sauge-clair/50">
     <div class="wrap">
       <h2 class="titre-section mb-6">{content.processus.titre}</h2>
       <ol class="space-y-4">
@@ -90,7 +71,7 @@ import content from '../../content/prestations.json';
     </div>
   </section>
 
-  <section class="section bg-sauge-clair/50">
+  <section class="section">
     <div class="wrap">
       <h2 class="titre-section mb-4">{content.ia.titre}</h2>
       <p class="mesure text-texte/80">{content.ia.texte}</p>
@@ -98,7 +79,7 @@ import content from '../../content/prestations.json';
     </div>
   </section>
 
-  <section class="section">
+  <section class="section bg-sauge-clair/50">
     <div class="wrap">
       <h2 class="titre-section mb-4">{content.preuves.titre}</h2>
       <ul class="mesure space-y-2">
@@ -106,6 +87,25 @@ import content from '../../content/prestations.json';
           <li><a href={s.url} class="text-sauge-fonce underline" target="_blank" rel="noopener">{s.nom}</a> — {s.description}</li>
         ))}
       </ul>
+    </div>
+  </section>
+
+  <section id="autre-besoin" class="section">
+    <div class="wrap">
+      <p class="text-xs uppercase tracking-wide text-sauge-fonce mb-2">{content.autre.etiquette}</p>
+      <h2 class="titre-section mb-3">{content.autre.titre}</h2>
+      <p class="texte-secondaire mb-6">{content.autre.sousTitre}</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {content.autre.cartes.map(c => (
+          <div class="bg-white border border-sauge-clair rounded-xl p-5">
+            <h3 class="titre-carte">{c.titre}</h3>
+            <p class="texte-secondaire mt-1">{c.texte}</p>
+          </div>
+        ))}
+      </div>
+      <a href="mailto:vincent@opentek.fr" class="btn btn-or mt-6">
+        {content.autre.cta}
+      </a>
     </div>
   </section>
 
@@ -139,11 +139,11 @@ import content from '../../content/prestations.json';
       <h2 class="titre-section text-white mb-4">{content.ctaFinal.titre}</h2>
       <p class="text-white/60 text-sm mb-6">{content.ctaFinal.sousTitre}</p>
       <div class="flex flex-wrap justify-center gap-3">
-        <a href="tel:+33646246199" class="btn btn-or">
-          {content.ctaFinal.ctaTel}
-        </a>
-        <a href="mailto:vincent@opentek.fr" class="btn btn-ligne-sombre">
+        <a href="mailto:vincent@opentek.fr?subject=Mon%20entreprise" class="btn btn-or">
           {content.ctaFinal.ctaMail}
+        </a>
+        <a href="tel:+33646246199" class="btn btn-ligne-sombre">
+          {content.ctaFinal.ctaTel}
         </a>
       </div>
     </div>

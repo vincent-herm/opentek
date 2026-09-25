@@ -1,19 +1,19 @@
 {
   "hero": {
-    "title": "Des outils qui vous ramènent des clients et vous font gagner du temps.",
-    "subtitle": "Sites web, automatisations, IA appliquée. Fait sur mesure, avec vos mots.",
-    "description": "Pour les artisans, commerçants, associations et petites structures du Sud-Ardèche. Sites à prix affichés, le reste chiffré après un appel.",
-    "ctaTel": "Appeler le 06 46 24 61 99",
-    "ctaMail": "Réserver un appel"
+    "title": "Quand on vous cherche sur Google, que voit-on ?",
+    "subtitle": "Je crée votre site et je complète votre fiche Google, avec vos mots. Pour les artisans, commerçants et associations du Sud-Ardèche.",
+    "description": "Prix affichés. Vous n'avez rien à rédiger.",
+    "ctaMail": "Envoyer le nom de mon entreprise",
+    "ctaTel": "Appeler le 06 46 24 61 99"
   },
   "constat": {
-    "titre": "Quand on vous cherche sur Google, que voit-on ?",
+    "etiquette": "Site internet",
+    "titre": "C'est là que se perdent les appels.",
     "texte1": "Tapez votre métier et votre commune. Votre fiche est-elle complète ? Votre site s'affiche-t-il correctement sur un téléphone ? Existe-t-il seulement ?",
-    "texte2": "C'est presque toujours là que se perdent les appels. Je ne vous vends pas « un site » : je corrige ce qui vous fait perdre des clients.",
-    "etiquette": "Sites web"
+    "texte2": "Je ne vous vends pas « un site » : je corrige ce qui vous fait perdre des clients."
   },
   "offres": {
-    "titre": "Trois façons de commencer.",
+    "titre": "Des prix affichés, sans devis.",
     "lignes": [
       {
         "nom": "Page unique",
@@ -35,13 +35,13 @@
       },
       {
         "nom": "Maintenance",
-        "detail": "hébergement, sauvegardes, modifications",
+        "detail": "hébergement, sauvegardes, modifications, une fois le site en ligne",
         "prix": "17 € / mois",
         "delai": "—"
       }
     ],
     "note": "Association ou particulier : prix TTC. 50 % à la commande, solde à la livraison.",
-    "wordpress": "Option WordPress éditable par le client : + 300 €"
+    "wordpress": "Vous voulez modifier votre site vous-même ? Option WordPress éditable : + 300 €."
   },
   "processus": {
     "titre": "Vous n'avez rien à rédiger.",
@@ -55,7 +55,7 @@
   "ia": {
     "titre": "Oui, on peut le faire avec l'IA.",
     "texte": "L'IA écrit une page en quelques minutes, et je m'en sers moi-même. Ce qu'elle ne fait pas : venir chez vous, prendre vos photos, valider votre fiche Google, écrire avec vos mots — et répondre quand ça ne marche plus.",
-    "note": "Vous préférez le faire vous-même ? C'est possible aussi : voir les formations.",
+    "note": "Vous préférez le faire vous-même ? C'est possible aussi : voir",
     "lienFormation": "/formation/"
   },
   "preuves": {
@@ -64,13 +64,13 @@
       {
         "nom": "Vivahop",
         "url": "https://www.vivahop.fr",
-        "description": "agenda des sorties et événements du Sud-Ardèche"
+        "description": "agenda des sorties et événements du Sud-Ardèche, construit seul avec l'IA"
       }
     ]
   },
-  "prestations": {
-    "etiquette": "Automatisation et IA",
-    "titre": "Ce qui vous prend du temps, un outil peut le faire.",
+  "autre": {
+    "etiquette": "Autre besoin ?",
+    "titre": "Au-delà du site, deux prestations sur mesure.",
     "sousTitre": "Chaque mission se chiffre après un appel de 20 minutes. Je vous réponds avec une proposition claire.",
     "cartes": [
       {
@@ -78,20 +78,8 @@
         "texte": "Je construis l'automatisation qui s'en charge : saisie, tri, relances, publication."
       },
       {
-        "titre": "Vous ne retrouvez plus vos documents, vos décisions, vos consignes ?",
-        "texte": "Votre second cerveau : une base de connaissances qu'un assistant IA sait lire et tenir à jour. Mise en place individuelle."
-      },
-      {
         "titre": "Votre outil est livré mais vous ne l'utilisez pas ?",
         "texte": "Une séance de prise en main, pour l'utiliser en autonomie."
-      },
-      {
-        "titre": "Vos flyers, pages d'événement et textes ne se ressemblent pas ?",
-        "texte": "Des supports cohérents entre eux, écrits avec vos mots."
-      },
-      {
-        "titre": "Vous voulez publier un livre ?",
-        "texte": "Accompagnement à l'auto-édition sur Amazon KDP : coûts réels, ISBN, formalités, aide à la rédaction avec l'IA."
       }
     ],
     "cta": "Décrire mon besoin →"
@@ -115,14 +103,14 @@
       "reponse": "Oui, ainsi que le nom de domaine. Vous pouvez partir avec."
     },
     {
-      "question": "Vous facturez comment ?",
-      "reponse": "Par POLLEN, la coopérative d'activité qui m'héberge. 50 % à la commande, solde à la livraison."
+      "question": "Qui me facture ?",
+      "reponse": "POLLEN, la coopérative d'activité qui m'héberge : la facture vous est adressée par cette coopérative, avec son numéro de SIRET, comme pour n'importe quel prestataire. 50 % à la commande, solde à la livraison."
     }
   ],
   "ctaFinal": {
     "titre": "Envoyez-moi le nom de votre entreprise.",
     "sousTitre": "Je regarde comment on vous trouve aujourd'hui, et je vous dis ce que je corrigerais.",
-    "ctaTel": "Appeler le 06 46 24 61 99",
-    "ctaMail": "Réserver un appel"
+    "ctaMail": "Envoyer le nom de mon entreprise",
+    "ctaTel": "Appeler le 06 46 24 61 99"
   }
 }

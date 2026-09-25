@@ -4,7 +4,7 @@ Site principal de Vincent (formation, certification, prestations). Astro 6 + Tai
 
 ## Où vit quoi
 
-- **Le texte** : cinq fichiers JSON dans `src/content/` (`index`, `formation`, `certification`, `prestations`, `qui-suis-je`). Changer un prix, une FAQ, une accroche ne demande aucun changement de code.
+- **Le texte** : cinq fichiers JSON dans `src/content/` (`index`, `formation`, `certification`, `site-internet`, `qui-suis-je`). Changer un prix, une FAQ, une accroche ne demande aucun changement de code.
 - **Le style** : `src/styles/global.css`, une seule définition pour toutes les pages. Si un réglage manque, on l'ajoute là, jamais dans une page.
 - **Ne pas toucher** : `src/pages/shop.astro` et `test.astro` (mises en page à part), `public/choeur/` (répétiteur livré à un client, lien fixe), le tableau `ancienFablab` d'`astro.config.mjs` (34 redirections).
 
@@ -42,8 +42,8 @@ anthracite `#282A26` · texte `#3D403A` · crème `#F6F5EF` (fond) · sauge `#7C
 3. **Jamais d'emoji.** Pour marquer une carte : le filet doré `<span class="block w-8 h-0.5 bg-dore mb-3"></span>`.
 4. **Un titre de page = un `<h1>` + un `.chapo`.** Le sous-titre ne va pas dans le `<h1>`.
 5. **Deux paragraphes de même rang ont la même taille.** Ne pas mettre `text-sm` sur un paragraphe isolé d'un bloc de texte (vécu sur les mentions légales).
-6. **Vocabulaire** : « formation », « stagiaire » restent sur les pages Formation et Certification (cadre Qualiopi de POLLEN). Sur la page Prestations : atelier, accompagnement, prestation, participants.
-7. **Prix** : les prix affichés viennent de `prestations.json` et font foi. Relire ce fichier avant toute communication.
+6. **Vocabulaire** : « formation », « stagiaire » restent sur les pages Formation et Certification (cadre Qualiopi de POLLEN). Sur la page Site internet : atelier, accompagnement, prestation, participants.
+7. **Prix** : les prix affichés viennent de `site-internet.json` et font foi. Relire ce fichier avant toute communication.
 
 ## Avant de publier
 

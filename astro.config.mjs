@@ -45,9 +45,13 @@ const ancienFablab = [
   '/legal',
 ];
 
-const redirects = Object.fromEntries(
-  ancienFablab.map((chemin) => [chemin, `${FABLAB}${chemin}/`])
-);
+const redirects = {
+  ...Object.fromEntries(
+    ancienFablab.map((chemin) => [chemin, `${FABLAB}${chemin}/`])
+  ),
+  // La page Prestations est devenue Site internet (25/09/2026).
+  '/prestations': '/site-internet/',
+};
 
 export default defineConfig({
   site: 'https://opentek.fr',
