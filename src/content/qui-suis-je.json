@@ -10,18 +10,38 @@
     "texte1": "Viser l'essentiel, rester concret, rendre ça ludique. Pas de jargon, pas de slides interminables. On pratique, on teste, on crée ensemble.",
     "texte2": "Chaque participant repart avec des réflexes qu'il utilise dès le lendemain.",
     "cartes": [
-      { "titre": "Concret", "texte": "On travaille sur vos vrais documents" },
-      { "titre": "Petits groupes", "texte": "6 personnes max en atelier, suivi réel" },
-      { "titre": "Données privées", "texte": "Rien chez un tiers, tout chez vous" }
+      {
+        "titre": "Concret",
+        "texte": "On travaille sur vos vrais documents"
+      },
+      {
+        "titre": "Petits groupes",
+        "texte": "6 personnes max en atelier, suivi réel"
+      },
+      {
+        "titre": "Données privées",
+        "texte": "Rien chez un tiers, tout chez vous"
+      }
     ]
   },
   "activites": {
     "titre": "Ce que je fais",
     "cartes": [
-      { "titre": "Formation IA", "texte": "N1 à N5 — de l'initiation à l'autonomie, en présentiel, finançable OPCO/FIFPL/AGEFICE.", "lien": "/formation/" },
-      { "titre": "Certification RS7344", "texte": "Faites certifier votre maîtrise de l'IA, financement CPF en cours de référencement.", "lien": "/certification/" },
-      { "titre": "Sites et prestations", "texte": "Pages uniques, sites vitrines, automatisations, second cerveau — prix affichés ou sur devis.", "lien": "/prestations/" },
-      { "titre": "Fablab ESP32", "texte": "Ateliers d'électronique et MicroPython en Ardèche — fablab.opentek.fr.", "lien": "https://fablab.opentek.fr" }
+      {
+        "titre": "Formation IA",
+        "texte": "N1 à N5 — de l'initiation à l'autonomie, en présentiel, finançable OPCO/FIFPL/AGEFICE.",
+        "lien": "/formation/"
+      },
+      {
+        "titre": "Certification RS7344",
+        "texte": "Faites certifier votre maîtrise de l'IA, financement CPF en cours de référencement.",
+        "lien": "/certification/"
+      },
+      {
+        "titre": "Sites et prestations",
+        "texte": "Pages uniques, sites vitrines, automatisations, second cerveau — prix affichés ou sur devis.",
+        "lien": "/prestations/"
+      }
     ]
   },
   "contact": {

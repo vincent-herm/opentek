@@ -62,11 +62,6 @@
     "titre": "Des sites qui existent, pas des maquettes.",
     "sites": [
       {
-        "nom": "opentek.fr",
-        "url": "https://opentek.fr",
-        "description": "le site du fablab d'électronique de Payzac"
-      },
-      {
         "nom": "Vivahop",
         "url": "https://www.vivahop.fr",
         "description": "agenda des sorties et événements du Sud-Ardèche"
