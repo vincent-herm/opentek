@@ -8,7 +8,7 @@
     "cta2": "Voir les formations",
     "badges": [
       "Financement possible selon votre statut",
-      "De la demi-journée à 2 jours · 6 participants max",
+      "De la demi-journée à 2 jours · 6 participants max en atelier",
       "Chez vous partout en France, ou en Ardèche"
     ],
     "temoignage": "Depuis que j'ai intégré l'IA dans mon quotidien, je travaille dix fois plus vite, avec une charge mentale allégée, et je fais des choses que je n'aurais jamais pensé pouvoir faire."
@@ -93,7 +93,7 @@
     ]
   },
   "offres": {
-    "titre": "Une porte d'entrée, deux parcours, trois journées — et une certification.",
+    "titre": "Une porte d'entrée, deux parcours de deux jours, une journée sécurité — et une certification.",
     "initiation": {
       "titre": "Initiation à l'IA — comprendre, nommer, décider",
       "badge": "La porte d'entrée",
@@ -128,7 +128,7 @@
     "certification": {
       "titre": "Certification RS7344",
       "badge": "En préparation",
-      "texte": "Une fois N1 à N5 acquis ou maîtrisés : préparation du dossier de certification et soutenance devant jury. Financement CPF.",
+      "texte": "Un parcours à part, avec son propre contenu : préparation du dossier de certification et soutenance devant jury. Financement CPF, en cours de référencement.",
       "cta": "Voir la certification →"
     },
     "themes": {
@@ -157,7 +157,7 @@
         ["N3+N4 · 2 jours", "870 € / pers.", "3 000 € le groupe"],
         ["N5 · 1 jour", "470 € / pers.", "1 500 € le groupe"]
       ],
-      "note": "Jusqu'à 6 participants. Prix nets, exonérés de TVA (art. 261-4-4°a du CGI)."
+      "note": "Jusqu'à 6 participants pour les ateliers sur ordinateur, jusqu'à 12 pour l'Initiation. Prix nets, exonérés de TVA (art. 261-4-4°a du CGI)."
     },
     "cta1": "Réserver ma place en inter",
     "cta2": "Demander un devis intra"

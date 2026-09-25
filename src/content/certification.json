@@ -1,6 +1,6 @@
 {
   "hero": {
-    "badge": "Certification professionnelle · Éligible CPF · Qualiopi via POLLEN",
+    "badge": "Certification professionnelle · CPF en cours de référencement · Qualiopi via POLLEN",
     "title": "Faites certifier ce que vous savez faire avec l'IA.",
     "sousTitre": "Une certification professionnelle inscrite au Répertoire spécifique de France Compétences (RS7344), préparée à distance en 4 semaines ou en présentiel en 5 jours.",
     "alerteTitre": "Ouverture en préparation",
@@ -29,9 +29,9 @@
     }
   },
   "financement": {
-    "titre": "Le CPF peut tout financer.",
-    "prix": "Prix : 1 650 € net. Le CPF mobilise jusqu'à 1 500 € de droits ; il reste une participation personnelle de 150 €.",
-    "exoneration": "Demandeur d'emploi accompagné par France Travail : cette participation est exonérée.",
+    "titre": "Le CPF pourra tout financer.",
+    "prix": "Prix : 1 650 € net. Une fois la certification référencée, le CPF mobilisera jusqu'à 1 500 € de droits ; il restera une participation personnelle de 150 €.",
+    "exoneration": "Demandeur d'emploi accompagné par France Travail : cette participation sera exonérée.",
     "note": "Vos droits CPF sur Mon Compte Formation. Je ne peux promettre ni montant ni acceptation."
   },
   "ctaFinal": {
