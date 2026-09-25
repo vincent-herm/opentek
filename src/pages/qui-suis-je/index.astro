@@ -1,15 +1,27 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
 import content from '../../content/qui-suis-je.json';
+import portrait from '../../assets/qui-suis-je/portrait-vincent.jpg';
 ---
 
 <Layout title="Qui suis-je — Vincent Hermitant">
   <section class="section-hero">
-    <div class="wrap">
-      <h1 class="titre-page">{content.hero.titre}</h1>
-      <p class="text-lg text-texte/70 mt-1">{content.hero.sousTitre}</p>
-      <p class="mesure text-texte/80 mt-6">{content.hero.paragraphe1}</p>
-      <p class="mesure text-texte/80 mt-4">{content.hero.paragraphe2}</p>
+    <div class="wrap flex flex-col-reverse gap-8 md:flex-row md:items-center md:justify-between md:gap-12">
+      <div>
+        <h1 class="titre-page">{content.hero.titre}</h1>
+        <p class="text-lg text-texte/70 mt-1">{content.hero.sousTitre}</p>
+        <p class="mesure text-texte/80 mt-6">{content.hero.paragraphe1}</p>
+        <p class="mesure text-texte/80 mt-4">{content.hero.paragraphe2}</p>
+      </div>
+      <Image
+        src={portrait}
+        alt={content.hero.photoAlt}
+        width={576}
+        height={576}
+        loading="eager"
+        class="h-40 w-40 shrink-0 rounded-full object-cover ring-4 ring-sauge-clair md:h-72 md:w-72"
+      />
     </div>
   </section>
 
