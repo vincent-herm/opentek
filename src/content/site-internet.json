@@ -2,7 +2,7 @@
   "hero": {
     "title": "Quand on vous cherche sur Google, que voit-on ?",
     "subtitle": "Je crée votre site et je complète votre fiche Google, avec vos mots. Pour les artisans, commerçants et associations du Sud-Ardèche.",
-    "description": "Prix affichés. Vous n'avez rien à rédiger.",
+    "description": "Prix affichés. Vous parlez, j'écris.",
     "ctaMail": "Envoyer le nom de mon entreprise",
     "ctaTel": "Appeler le 06 46 24 61 99"
   },
@@ -40,11 +40,12 @@
         "delai": "—"
       }
     ],
-    "note": "Association ou particulier : prix TTC. 50 % à la commande, solde à la livraison.",
+    "note": "Association ou particulier : prix TTC. 50 % à la commande, solde à la livraison. Les délais courent à partir de l'entretien et des photos.",
     "wordpress": "Vous voulez modifier votre site vous-même ? Option WordPress éditable : + 300 €."
   },
   "processus": {
-    "titre": "Vous n'avez rien à rédiger.",
+    "titre": "Vous n'avez rien à rédiger : vous parlez, j'écris.",
+    "note": "Ce que j'attends de vous : 20 minutes d'entretien, une relecture, votre SIRET et votre adresse, et le code de validation que Google enverra à votre établissement.",
     "etapes": [
       "Un entretien de 20 minutes chez vous ou au téléphone : vous me parlez de votre métier, je note vos mots.",
       "Votre fiche Google créée ou revendiquée avec vous, validée sur place.",
@@ -92,7 +93,7 @@
   "faq": [
     {
       "question": "Combien de temps pour être en ligne ?",
-      "reponse": "Page unique : 48h. Site vitrine : 2-3 semaines. Fiche Google validée sous 5 jours ouvrés par Google."
+      "reponse": "Page unique : 48h après l'entretien et les photos. Site vitrine : 2-3 semaines. La fiche Google, elle, dépend de Google : sa validation peut prendre jusqu'à 5 jours ouvrés."
     },
     {
       "question": "Je n'ai pas de texte, pas de photos.",
