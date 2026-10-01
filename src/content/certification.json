@@ -1,16 +1,16 @@
 {
   "hero": {
     "badge": "Formation certifiante · CPF en cours de référencement · Qualiopi via POLLEN",
-    "title": "Apprenez, puis faites certifier ce que vous savez faire avec l'IA.",
-    "sousTitre": "Une formation qui prépare à la certification professionnelle RS7344, inscrite au Répertoire spécifique de France Compétences, suivie du passage devant un jury. À distance en 4 semaines (22 h) ou en présentiel en 5 jours (35 h).",
+    "title": "La certification professionnelle « Développer son activité avec l'Intelligence Artificielle ».",
+    "sousTitre": "RS7344, inscrite au Répertoire spécifique de France Compétences — pour les dirigeants de TPE/PME et leurs collaborateurs directs. Vous repartez avec un plan d'intégration de l'IA dans votre activité, présenté devant un jury. À distance en 4 semaines (22 h) ou en présentiel en 5 jours (35 h).",
     "alerteTitre": "Ouverture en préparation",
     "alerteTexte": "Inscrivez-vous à la liste prioritaire — les premières places vont aux inscrits, dans l'ordre.",
     "alerteCta": "Rejoindre la liste prioritaire →"
   },
   "distinction": {
     "titre": "Une formation, et un titre à la clé.",
-    "texte": "La formation vous prépare, pas à pas, à démontrer ce que vous savez faire. La certification l'atteste devant un jury : un titre que vous pouvez mettre sur un CV, montrer à un client, valoriser dans votre activité. Les deux sont réunis dans un même parcours et un même prix.",
-    "note": "Ce n'est pas la suite des formations N1 à N5, qui rendent autonome sans titre à la clé : c'est un autre parcours, avec son propre contenu et son propre financement. Vous choisissez l'un ou l'autre.",
+    "texte": "Dans ce parcours, la formation et le passage de la certification sont compris dans un prix unique : vous apprenez, puis vous démontrez ce que vous savez faire devant un jury, qui vous délivre un titre — à mettre sur un CV, montrer à un client, valoriser dans votre activité.",
+    "note": "Ce parcours RS7344 n'est pas une suite aux formations N1 à N5 : c'est une autre offre, avec son propre contenu et son propre financement. À vous de choisir entre les deux offres — pas entre deux étapes d'un même parcours.",
     "cta": "Voir les formations N1 à N5 →"
   },
   "projet": {
@@ -29,7 +29,7 @@
     }
   },
   "financement": {
-    "titre": "Le CPF pourra tout financer.",
+    "titre": "Le CPF financera l'essentiel — bientôt.",
     "prix": "Prix : 1 650 € net, formation et passage de la certification compris. Une fois la certification référencée, le CPF mobilisera jusqu'à 1 500 € de droits ; il restera une participation personnelle de 150 €.",
     "exoneration": "Demandeur d'emploi accompagné par France Travail : cette participation sera exonérée.",
     "note": "Vos droits CPF sur Mon Compte Formation. Je ne peux promettre ni montant ni acceptation."
