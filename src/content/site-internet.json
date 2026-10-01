@@ -17,13 +17,13 @@
     "lignes": [
       {
         "nom": "Page unique",
-        "detail": "une page claire, avec votre fiche Google complétée et validée",
+        "detail": "une page claire, avec votre fiche Google complétée (validation Google en sus, voir FAQ)",
         "prix": "570 € HT",
         "delai": "48h"
       },
       {
         "nom": "Site vitrine",
-        "detail": "4 à 6 pages, fiche Google incluse",
+        "detail": "4 à 6 pages, fiche Google incluse (validation Google en sus, voir FAQ)",
         "prix": "970 € HT",
         "delai": "2-3 sem."
       },
@@ -45,22 +45,22 @@
   },
   "processus": {
     "titre": "Vous n'avez rien à rédiger : vous parlez, j'écris.",
-    "note": "Ce que j'attends de vous : 20 minutes d'entretien, une relecture, votre SIRET et votre adresse, et le code de validation que Google enverra à votre établissement.",
+    "note": "Ce que j'attends de vous : 20 minutes d'entretien, une relecture, votre adresse, votre SIRET si vous en avez un, et le code de validation que Google enverra à votre établissement.",
     "etapes": [
       "Un entretien de 20 minutes chez vous ou au téléphone : vous me racontez votre métier, je prends des notes — et des photos si on se voit sur place.",
-      "Votre fiche Google créée ou revendiquée avec vous, validée sur place.",
+      "Votre fiche Google créée ou revendiquée avec vous sur place ; sa validation par Google arrive ensuite, par un code envoyé à votre adresse.",
       "Je rédige et je construis le site, avec ce que vous m'avez raconté.",
       "Vous relisez, vous corrigez, et c'est en ligne. Le site est à vous."
     ]
   },
   "ia": {
     "titre": "Oui, on peut le faire avec l'IA.",
-    "texte": "L'IA écrit une page en quelques minutes, et je m'en sers moi-même. Ce qu'elle ne fait pas : venir chez vous, prendre vos photos, valider votre fiche Google, écrire avec vos mots — et répondre quand ça ne marche plus.",
+    "texte": "L'IA écrit une page en quelques minutes, et je m'en sers moi-même. Ce qu'elle ne fait pas : venir chez vous, prendre vos photos, lancer et suivre la validation de votre fiche Google, écrire avec vos mots — et répondre quand ça ne marche plus.",
     "note": "Vous préférez le faire vous-même ? C'est possible aussi : voir",
     "lienFormation": "/formation/"
   },
   "preuves": {
-    "titre": "Des sites qui existent, pas des maquettes.",
+    "titre": "Un site qui existe, pas une maquette.",
     "sites": [
       {
         "nom": "Vivahop",
