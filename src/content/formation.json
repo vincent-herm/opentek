@@ -16,7 +16,7 @@
   "probleme": {
     "titre": "Vous savez que l'IA pourrait vous aider... ",
     "texte1": "Mais entre les outils qui changent tous les trois mois, les tutoriels faits pour des ingénieurs et les offres qui promettent tout… vous ne savez pas par où commencer.",
-    "texte2": "En France, 34 % des PME utilisent déjà l'IA. Mais 5 % seulement automatisent réellement une tâche. La plupart discutent avec un chatbot ; très peu transforment leur façon de travailler. C'est exactement cet écart que cette formation comble.",
+    "texte2": "La plupart discutent avec un chatbot ; très peu transforment leur façon de travailler. C'est exactement cet écart que cette formation comble.",
     "stat1_valeur": "34 %",
     "stat1_texte": "des PME utilisent déjà l'IA — deux fois plus qu'il y a un an",
     "stat2_valeur": "5 %",
@@ -67,7 +67,7 @@
     },
     "reserve": {
       "titre": "Et si je ne qualifie pour rien ?",
-      "texte": "Réserve honnête : les plafonds varient, certains budgets se ferment, un micro-entrepreneur sans déclaration n'a pas de droits ouverts. Je ne peux promettre ni montant ni acceptation. Ce qui est certain : je produis les trois pièces du dossier (programme, devis, convention).",
+      "texte": "Réserve honnête : les plafonds et taux horaires varient selon votre OPCO, votre profession ou votre cotisation — ils peuvent couvrir tout ou partie du prix affiché, certains budgets se ferment, un micro-entrepreneur sans déclaration n'a pas de droits ouverts. Je ne peux promettre ni montant ni acceptation. Ce qui est certain : je produis les trois pièces du dossier (programme, devis, convention).",
       "cta": "Trouver mon financement en 3 questions →"
     }
   },

@@ -2,7 +2,7 @@
   "hero": {
     "title": "Quand on vous cherche sur Google, que voit-on ?",
     "subtitle": "Je crée votre site et je complète votre fiche Google, avec vos mots. Pour les artisans, commerçants et associations du Sud-Ardèche.",
-    "description": "Prix affichés. Vous parlez, j'écris.",
+    "description": "Un prix fixe, affiché avant qu'on se parle. Pas de devis à négocier.",
     "ctaMail": "Envoyer le nom de mon entreprise",
     "ctaTel": "Appeler le 06 46 24 61 99"
   },
@@ -47,9 +47,9 @@
     "titre": "Vous n'avez rien à rédiger : vous parlez, j'écris.",
     "note": "Ce que j'attends de vous : 20 minutes d'entretien, une relecture, votre SIRET et votre adresse, et le code de validation que Google enverra à votre établissement.",
     "etapes": [
-      "Un entretien de 20 minutes chez vous ou au téléphone : vous me parlez de votre métier, je note vos mots.",
+      "Un entretien de 20 minutes chez vous ou au téléphone : vous me racontez votre métier, je prends des notes — et des photos si on se voit sur place.",
       "Votre fiche Google créée ou revendiquée avec vous, validée sur place.",
-      "Je rédige et je construis avec vos propres mots.",
+      "Je rédige et je construis le site, avec ce que vous m'avez raconté.",
       "Vous relisez, vous corrigez, et c'est en ligne. Le site est à vous."
     ]
   },
