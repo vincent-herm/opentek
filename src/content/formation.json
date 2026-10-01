@@ -37,11 +37,13 @@
   "preuve": {
     "titre": "J'ai construit Vivahop. Sans être développeur.",
     "paragraphes": [
-      "Ingénieur de formation, j'ai enseigné 25 ans à l'université en génie électrique et électronique. J'ai toujours programmé des systèmes — mais jamais codé une vraie application web, déployée, utilisée par des gens.",
+      "Ingénieur généraliste (ENI Metz), j'ai enseigné 25 ans à l'université de Lorraine en génie électrique et électronique. En 2021, j'ai quitté l'enseignement pour conduire mes propres projets. J'ai toujours programmé des systèmes — mais jamais codé une vraie application web, déployée, utilisée par des gens.",
       "Avec l'IA, je l'ai faite. Vivahop tourne aujourd'hui, et sert les habitants et les visiteurs de mon territoire.",
-      "Ce qui a changé : je fais maintenant des choses que je croyais hors de portée. Et ce n'est pas réservé aux ingénieurs.",
-      "Cette formation, c'est celle que j'aurais voulu avoir quand j'ai commencé."
-    ]
+      "Ce qui a changé : je fais maintenant des choses que je croyais hors de portée. Et ce n'est pas réservé aux ingénieurs. Cette formation, c'est celle que j'aurais voulu avoir quand j'ai commencé.",
+      "Ingénieur par curiosité, enseignant par vocation, musicien par cœur."
+    ],
+    "email": "vincent@opentek.fr",
+    "tel": "06 46 24 61 99"
   },
   "financement": {
     "titre": "Ce budget FORMATION, vous le payez déjà.",
@@ -84,11 +86,10 @@
     ]
   },
   "format": {
-    "titre": "Du vrai présentiel. Pas un webinar.",
+    "titre": "Du vrai présentiel. Pas un webinaire.",
     "items": [
       "Groupe limité : 6 participants maximum pour les ateliers sur ordinateur",
       "Horaires : 10h – 18h, pause déjeuner libre",
-      "Vos données restent les vôtres : rien n'est hébergé chez un tiers",
       "Prérequis : savoir utiliser un ordinateur",
       "À apporter : un ordinateur portable + compte Claude Pro ou Max"
     ]
@@ -98,9 +99,10 @@
     "initiation": {
       "titre": "Initiation à l'IA — comprendre, nommer, décider",
       "badge": "La porte d'entrée",
-      "texte": "Une demi-journée, en intra, à partir de 6 personnes. Trois heures et demie pour que toute l'équipe parte avec les mêmes repères. Aucun ordinateur, rien à installer.",
+      "prix": "850 € net le groupe",
+      "texte": "Une demi-journée, en intra, à partir de 6 personnes (jusqu'à 12). Trois heures et demie pour que toute l'équipe parte avec les mêmes repères. Aucun ordinateur, rien à installer.",
       "infos": "Public : toute l'équipe. Aucun prérequis. · Financement : OPCO, FIFPL ou AGEFICE.",
-      "cta": "Demander un devis pour mon équipe →"
+      "cta": "Réserver pour mon équipe →"
     },
     "n1n2": {
       "titre": "N1 + N2 — De zéro à l'autonomie",
@@ -167,16 +169,6 @@
     "titre": "Chez vous, ou en Ardèche.",
     "texte": "En intra, je me déplace partout en France. En inter, les sessions se tiennent en Ardèche méridionale.",
     "cta": "Me contacter →"
-  },
-  "formateur": {
-    "titre": "Vincent Hermitant",
-    "paragraphes": [
-      "Ingénieur généraliste (ENI Metz), j'ai enseigné 25 ans à l'université de Lorraine en génie électrique et électronique. En 2021, j'ai quitté l'enseignement pour conduire mes propres projets.",
-      "L'IA a tout changé dans ma façon de travailler. Depuis, j'ai construit des choses que je n'aurais jamais imaginé pouvoir faire seul — dont Vivahop.",
-      "Ingénieur par curiosité, enseignant par vocation, musicien par cœur."
-    ],
-    "email": "vincent@opentek.fr",
-    "tel": "06 46 24 61 99"
   },
   "faq": [
     {
