@@ -69,8 +69,8 @@
       "cta": "Voir la certification →"
     },
     "reserve": {
-      "titre": "Et si je ne qualifie pour rien ?",
-      "texte": "Réserve honnête : les plafonds et taux horaires varient selon votre OPCO, votre profession ou votre cotisation — ils peuvent couvrir tout ou partie du prix affiché, certains budgets se ferment, un micro-entrepreneur sans déclaration n'a pas de droits ouverts. Je ne peux promettre ni montant ni acceptation. Ce qui est certain : je produis les trois pièces du dossier (programme, devis, convention).",
+      "titre": "Et si je ne suis éligible à rien ?",
+      "texte": "Réserve honnête : les plafonds et taux horaires varient selon votre OPCO, votre profession ou votre cotisation. Ils peuvent couvrir tout ou partie du prix affiché, et certains budgets se ferment en cours d'année. Un micro-entrepreneur qui n'a jamais déclaré de chiffre d'affaires n'a pas de droits ouverts. Je ne peux promettre ni montant ni acceptation. Ce qui est certain : je produis les trois pièces du dossier (programme, devis, convention).",
       "cta": "Trouver le bon guichet →"
     }
   },
