@@ -1,0 +1,80 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import content from '../../content/financement.json';
+---
+
+<Layout title="Comprendre le financement — OPCO, AGEFICE, FIFPL, CPF" description="Qui peut mobiliser l'OPCO, l'AGEFICE, le FIFPL ou le CPF pour financer une formation, qui paie, et qui fait la démarche.">
+  <section class="section-hero">
+    <div class="wrap">
+      <h1 class="titre-page">{content.hero.title}</h1>
+      <p class="chapo mt-4">{content.hero.subtitle}</p>
+    </div>
+  </section>
+
+  <section class="section bg-sauge-clair/50">
+    <div class="wrap">
+      <h2 class="titre-section mb-4">{content.tri.titre}</h2>
+      <p class="text-texte/80 mesure">{content.tri.texte}</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+        {content.tri.cartes.map(c => (
+          <div class="bg-white border-l-4 border-sauge rounded-r-xl p-5">
+            <h3 class="titre-carte">{c.titre}</h3>
+            <p class="texte-secondaire mt-1">{c.detail}</p>
+            <p class="titre-mini text-sauge-fonce mt-3">→ {c.guichet}</p>
+          </div>
+        ))}
+      </div>
+      <p class="texte-secondaire mt-6 mesure">{content.tri.note}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="titre-section mb-6">{content.opco.titre}</h2>
+
+      <h3 class="titre-sous-section mb-2">{content.opco.quiPaie.titre}</h3>
+      <p class="text-texte/80 mesure">{content.opco.quiPaie.texte}</p>
+
+      <h3 class="titre-sous-section mt-8 mb-2">{content.opco.quiDemande.titre}</h3>
+      <p class="text-texte/80 mesure">{content.opco.quiDemande.texte}</p>
+
+      <h3 class="titre-sous-section mt-8 mb-4">{content.opco.etapes.titre}</h3>
+      <ol class="space-y-4">
+        {content.opco.etapes.liste.map((e, i) => (
+          <li class="flex gap-4">
+            <span class="font-bold text-sauge-fonce text-lg">{i + 1}</span>
+            <div class="mesure text-texte/80">{e}</div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section bg-sauge-clair/50">
+    <div class="wrap">
+      <h2 class="titre-section mb-4">{content.independants.titre}</h2>
+      <p class="text-texte/80 mesure">{content.independants.texte}</p>
+      <p class="texte-secondaire mt-3 mesure">{content.independants.note}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="titre-section mb-4">{content.cpf.titre}</h2>
+      <p class="text-texte/80 mesure">{content.cpf.texte}</p>
+      <a href="/certification/" class="btn btn-ligne mt-4">
+        {content.cpf.cta}
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="section bg-anthracite text-center">
+    <div class="wrap">
+      <h2 class="titre-section text-white mb-4">{content.ctaFinal.titre}</h2>
+      <p class="text-white/60 text-sm mb-6">{content.ctaFinal.sousTitre}</p>
+      <a href="mailto:vincent@opentek.fr?subject=Mon%20financement" class="btn btn-or">
+        {content.ctaFinal.cta}
+      </a>
+    </div>
+  </section>
+</Layout>

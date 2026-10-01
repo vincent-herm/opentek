@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "title": "Qui paie quoi, et comment ?",
+    "subtitle": "OPCO, AGEFICE, FIFPL, CPF : quatre guichets, quatre publics, aucun interchangeable. Voici comment s'y retrouver avant de déposer un dossier."
+  },
+  "tri": {
+    "titre": "Une seule question trie tout le reste.",
+    "texte": "Avant de parler montant ou démarche, il faut répondre à ça : êtes-vous salarié (ou dirigeant assimilé salarié), ou indépendant (gérant majoritaire, entrepreneur individuel, micro-entrepreneur, profession libérale) ? Les deux cas ne passent jamais par le même guichet.",
+    "cartes": [
+      {
+        "titre": "Salarié, ou dirigeant assimilé salarié",
+        "detail": "gérant minoritaire ou égalitaire de SARL, président de SAS/SASU",
+        "guichet": "OPCO"
+      },
+      {
+        "titre": "Indépendant",
+        "detail": "gérant majoritaire de SARL, entrepreneur individuel, micro-entrepreneur, profession libérale",
+        "guichet": "AGEFICE ou FIFPL"
+      }
+    ],
+    "note": "Les deux circuits ne sont pas deux guichets d'un même organisme avec des règles différentes : ce sont deux circuits de collecte et de redistribution complètement séparés. Se tromper de guichet, ce n'est pas être \"moins prioritaire\" — c'est frapper à une porte qui n'existe pas pour vous."
+  },
+  "opco": {
+    "titre": "OPCO — pour un salarié ou un dirigeant assimilé salarié",
+    "quiPaie": {
+      "titre": "Qui paie, avec quel argent ?",
+      "texte": "Toute entreprise qui emploie au moins un salarié verse chaque année une contribution à la formation professionnelle (0,55 % de la masse salariale en dessous de 11 salariés, 1 % au-delà), prélevée par l'URSSAF et reversée à l'OPCO de la branche. Cette contribution est mutualisée : l'argent part dans un pot commun, pas dans une ligne réservée à l'entreprise qui l'a versée. En dessous de 50 salariés, l'entreprise peut puiser dans ce pot même si ce qu'elle a versé est inférieur à ce qu'elle demande. Au-delà de 50 salariés, l'OPCO ne finance quasiment plus directement."
+    },
+    "quiDemande": {
+      "titre": "Qui fait la démarche ?",
+      "texte": "L'employeur, jamais le salarié seul. Contrairement au CPF, l'OPCO ne se mobilise que via l'entreprise : le salarié doit convaincre son employeur en interne, et c'est l'employeur (ou son service RH) qui dépose le dossier."
+    },
+    "etapes": {
+      "titre": "Le mécanisme, étape par étape",
+      "liste": [
+        "Identifier l'OPCO de l'entreprise, déterminé par sa convention collective (code IDCC) — pour l'artisanat et les professions libérales, c'est le plus souvent OPCO EP ; pour le commerce, L'Opcommerce.",
+        "Avant le début de la formation (règle stricte, aucune prise en charge rétroactive), l'employeur dépose le dossier sur l'espace en ligne de l'OPCO : devis, programme, preuve que l'organisme est certifié Qualiopi.",
+        "L'OPCO instruit la demande selon ses propres critères de priorité et ses plafonds, qui varient par branche.",
+        "Si accepté, l'OPCO finance soit en payant directement l'organisme de formation, soit en remboursant l'entreprise après paiement."
+      ]
+    }
+  },
+  "independants": {
+    "titre": "AGEFICE et FIFPL — pour un indépendant",
+    "texte": "Même logique de cotisation obligatoire reversée à un fonds mutualisé, mais la démarche est individuelle : c'est vous qui déposez, pas un employeur. L'AGEFICE couvre les commerçants et dirigeants non-salariés, le FIFPL les professions libérales — chacun avec ses propres plafonds annuels et horaires, fixés par sa commission professionnelle.",
+    "note": "Les plafonds varient trop d'un cas à l'autre pour être résumés en un chiffre unique ici — mieux vaut vérifier le vôtre avant toute promesse."
+  },
+  "cpf": {
+    "titre": "CPF — pour la certification RS7344",
+    "texte": "Le Compte Personnel de Formation est le seul des quatre dispositifs qui se mobilise seul, sans employeur ni commission professionnelle : chacun gère ses droits sur Mon Compte Formation. Il concernera la certification RS7344, une fois celle-ci référencée au Répertoire spécifique.",
+    "cta": "Voir la certification →"
+  },
+  "ctaFinal": {
+    "titre": "Vous ne savez pas encore lequel vous concerne ?",
+    "sousTitre": "Dites-moi votre statut, je vous dis le bon guichet et les pièces à réunir.",
+    "cta": "M'écrire →"
+  }
+}
