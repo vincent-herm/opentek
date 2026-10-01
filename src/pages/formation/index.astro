@@ -1,36 +1,49 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import content from '../../content/formation.json';
+import imageAtelier from '../../assets/formation/atelier-groupe.png';
 ---
 
 <Layout title="Formation IA — De zéro à l'autonomie">
 
   <section class="section-hero">
-    <div class="wrap">
-      <span class="badge mb-6">
-        {content.hero.badge}
-      </span>
-      <h1 class="titre-page">
-        {content.hero.title}<br>
-        {content.hero.subtitle}
-      </h1>
-      <p class="chapo mt-4">
-        {content.hero.description}
-      </p>
-      <div class="flex flex-wrap gap-3 mt-8">
-        <a href="#assistant-financement" class="btn btn-or">
-          {content.hero.cta1}
-        </a>
-        <a href="#offres" class="btn btn-ligne">
-          {content.hero.cta2}
-        </a>
+    <div class="wrap grid grid-cols-1 md:grid-cols-[1.4fr_1fr] gap-10 items-center">
+      <div>
+        <span class="badge mb-6">
+          {content.hero.badge}
+        </span>
+        <h1 class="titre-page">
+          {content.hero.title}<br>
+          {content.hero.subtitle}
+        </h1>
+        <p class="chapo mt-4">
+          {content.hero.description}
+        </p>
+        <div class="flex flex-wrap gap-3 mt-8">
+          <a href="#assistant-financement" class="btn btn-or">
+            {content.hero.cta1}
+          </a>
+          <a href="#offres" class="btn btn-ligne">
+            {content.hero.cta2}
+          </a>
+        </div>
+        <ul class="flex flex-wrap gap-3 mt-8 texte-secondaire">
+          {content.hero.badges.map(b => <li class="bg-white border border-sauge-clair rounded-full px-3 py-1.5">{b}</li>)}
+        </ul>
+        <blockquote class="mt-12 text-lg text-texte/70 italic border-l-4 border-sauge pl-4">
+          {content.hero.temoignage}
+        </blockquote>
       </div>
-      <ul class="flex flex-wrap gap-3 mt-8 texte-secondaire">
-        {content.hero.badges.map(b => <li class="bg-white border border-sauge-clair rounded-full px-3 py-1.5">{b}</li>)}
-      </ul>
-      <blockquote class="mt-12 text-lg text-texte/70 italic border-l-4 border-sauge pl-4">
-        {content.hero.temoignage}
-      </blockquote>
+      <Image
+        src={imageAtelier}
+        alt={content.hero.imageAlt}
+        widths={[400, 600, 800]}
+        sizes="(min-width: 768px) 384px, 100vw"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full aspect-[4/5] object-cover rounded-xl"
+      />
     </div>
   </section>
 
