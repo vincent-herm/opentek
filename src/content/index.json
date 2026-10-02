@@ -3,7 +3,7 @@
     "badge": "Vincent Hermitant · Ardèche",
     "title": "Arrêtez d'entendre parler de l'IA.",
     "subtitle": "Commencez à vous en servir.",
-    "description": "La formation qui vous rend autonome avec l'IA — sans jargon, sans dépendre de personne. Pour indépendants, TPE et petites structures. Pour qui préfère se faire certifier ou déléguer : une certification professionnelle (RS7344), un accompagnement sur mesure et des sites ou applications clé en main.",
+    "description": "La formation qui vous rend autonome avec l'IA — sans jargon, sans dépendre de personne. Pour indépendants, TPE et petites structures. Pour qui préfère se faire certifier ou déléguer : une certification professionnelle (RS7344), du sur-mesure et des sites clé en main.",
     "ctaFormation": "Voir les formations →",
     "ctaPrestations": "Voir les autres offres →"
   },
@@ -12,8 +12,8 @@
     "cartes": [
       { "titre": "Formation IA", "texte": "De l'initiation à l'autonomie : N1 à N5, en inter ou intra, finançable OPCO/FIFPL/AGEFICE.", "critere": "Pour vous si vous voulez maîtriser les outils et gagner du temps dès le lendemain.", "lien": "/formation/" },
       { "titre": "Certification IA", "texte": "RS7344 — une formation qui prépare à une certification professionnelle, financement CPF en cours de référencement.", "critere": "Pour vous si vous voulez conduire un projet d'intégration dans votre entreprise, et le faire reconnaître.", "lien": "/certification/" },
-      { "titre": "Accompagnement IA", "texte": "Automatisation, structuration des données, second cerveau, audit — sur devis, pour les TPE, PME et associations.", "critere": "Pour vous si vous préférez confier le travail plutôt que l'apprendre.", "lien": "/accompagnement/" },
-      { "titre": "Sites et applications", "texte": "Page unique, site vitrine, reprise d'un site existant, avec votre fiche Google — prix affichés. Applications sur mesure sur devis.", "critere": "Pour vous si on vous cherche sans vous trouver, ou s'il vous manque un outil sur mesure.", "lien": "/site-internet/" }
+      { "titre": "Sur mesure", "texte": "Automatisation, application, données, second cerveau, audit — sur devis, pour les TPE, PME et associations.", "critere": "Pour vous si vous avez un problème à résoudre, pas un produit à acheter.", "lien": "/sur-mesure/" },
+      { "titre": "Site internet", "texte": "Page unique, site vitrine, reprise d'un site existant, avec votre fiche Google — prix affichés.", "critere": "Pour vous si on vous cherche sur internet sans vous trouver.", "lien": "/site-internet/" }
     ]
   },
   "bio": "Ingénieur généraliste (ENI Metz), 25 ans d'enseignement à l'université. Aujourd'hui à Payzac, en Ardèche, j'accompagne celles et ceux qui veulent passer à l'action avec l'IA.",

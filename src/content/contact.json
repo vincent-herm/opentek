@@ -27,9 +27,8 @@
     { "valeur": "N5", "libelle": "N5 — Sécuriser l'IA dans votre entreprise, 1 jour" },
     { "valeur": "Certification RS7344", "libelle": "Certification RS7344" },
     { "valeur": "Audit", "libelle": "Audit — demi-journée, 590 € HT" },
-    { "valeur": "Accompagnement IA", "libelle": "Accompagnement IA — automatisation, données, second cerveau" },
+    { "valeur": "Accompagnement IA", "libelle": "Sur mesure — automatisation, application, données, second cerveau" },
     { "valeur": "Site internet", "libelle": "Site internet" },
-    { "valeur": "Application sur mesure", "libelle": "Application sur mesure" },
     { "valeur": "Autre / ne sait pas", "libelle": "Autre, ou je ne sais pas encore" }
   ],
   "statuts": [

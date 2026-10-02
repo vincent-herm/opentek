@@ -1,8 +1,8 @@
 {
   "hero": {
-    "badge": "TPE, PME et associations · Audit à prix affiché",
+    "badge": "TPE, PME et associations · Sur devis",
     "title": "Vous passez trop de temps à faire tourner la boutique.",
-    "sousTitre": "Ressaisir les mêmes informations, chercher un document, mettre à jour quatre tableurs qui se contredisent. Automatisation, structuration des données, second cerveau : je mets ça en place avec vous, et je vous le laisse en main.",
+    "sousTitre": "Ressaisir les mêmes informations, chercher un document, mettre à jour quatre tableurs qui se contredisent. Automatisation, outil sur mesure, second cerveau : je mets ça en place avec vous, et je vous le laisse en main.",
     "cta": "Décrire mon besoin →"
   },
   "constat": {
@@ -18,21 +18,21 @@
         "texte": "Saisie, relances, publication, facturation : je construis la chaîne qui s'en charge, je la documente, et je vous la laisse en main."
       },
       {
-        "titre": "Vous ne retrouvez pas ce que vous avez écrit il y a trois mois ?",
-        "texte": "Vos notes, vos projets et vos décisions dans un système que l'IA peut lire et où vous retrouvez tout. Pas un outil de plus : une méthode, et l'agent qui va avec."
+        "titre": "Il vous manque un outil qui n'existe pas ?",
+        "texte": "Je construis une application ou un outil sur mesure, pour votre activité. Vivahop, l'agenda des sorties du Sud-Ardèche, est né comme ça et tourne aujourd'hui en production."
       },
       {
-        "titre": "Vos chiffres changent selon le fichier qu'on ouvre ?",
-        "texte": "Un fichier clients que personne ne met à jour, quatre tableurs qui se contredisent : je remets ça dans une base propre, partagée, connectée au reste de vos outils."
+        "titre": "Vos informations sont éparpillées ?",
+        "texte": "Fichiers clients, chiffres, notes, décisions : je remets tout au même endroit. Une base de données partagée et, si vous le souhaitez, votre « second cerveau » : un système où tout se retrouve en trois secondes, et que l'IA sait lire."
       },
       {
         "titre": "Vous ne savez pas par où commencer ?",
         "prix": "590 € HT",
-        "texte": "Une demi-journée d'audit : ce qui mérite d'être automatisé chez vous, ce qui ne le mérite pas, et dans quel ordre. Vous repartez avec une feuille de route écrite. Il arrive que la conclusion soit de ne rien automatiser — vous le saurez avant d'avoir dépensé davantage.",
+        "texte": "Le premier appel de vingt minutes est gratuit. Si on creuse : une demi-journée d'audit, pour savoir ce qui mérite d'être automatisé chez vous, ce qui ne le mérite pas, et dans quel ordre — avec une feuille de route écrite. Il arrive que la conclusion soit de ne rien automatiser.",
         "note": "Déduits de la mission si vous décidez de la lancer."
       }
     ],
-    "note": "L'audit est le seul prix affiché : c'est la porte d'entrée. Les missions qui en découlent se chiffrent sur devis, parce qu'une automatisation de facturation et une mise en place de second cerveau n'ont ni le même périmètre ni la même durée."
+    "note": "L'audit est le seul prix affiché : c'est la porte d'entrée. Les missions qui en découlent se chiffrent sur devis, parce qu'une automatisation de facturation, une application et une mise en place de second cerveau n'ont ni le même périmètre ni la même durée."
   },
   "methode": {
     "titre": "Comment ça se passe.",
@@ -55,9 +55,9 @@
     "note": "Ces trois chantiers sont les miens, pas des références clients. C'est volontaire : je préfère ne vendre que ce que j'ai déjà construit et que je maintiens tous les jours."
   },
   "site": {
-    "titre": "Vous cherchez un site, ou une application ?",
-    "texte": "Les sites ont leurs prix affichés, les applications se chiffrent sur devis. Tout est sur une page : page unique, site vitrine, reprise d'un site existant, application sur mesure.",
-    "cta": "Voir sites et applications →"
+    "titre": "Vous cherchez simplement un site internet ?",
+    "texte": "C'est ma seule offre à prix affichés : page unique, site vitrine, ou reprise d'un site existant, avec votre fiche Google.",
+    "cta": "Voir les offres de site internet →"
   },
   "faq": [
     {

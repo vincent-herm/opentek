@@ -51,6 +51,8 @@ const redirects = {
   ),
   // La page Prestations est devenue Site internet (25/09/2026).
   '/prestations': '/site-internet/',
+  // La page Accompagnement est devenue Sur mesure (02/10/2026).
+  '/accompagnement': '/sur-mesure/',
 };
 
 export default defineConfig({
