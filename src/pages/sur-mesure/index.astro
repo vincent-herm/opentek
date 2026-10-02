@@ -32,6 +32,7 @@ import content from '../../content/sur-mesure.json';
         {content.offres.cartes.map(c => (
           <div class="bg-white border border-sauge-clair rounded-xl p-5">
             <span class="block w-8 h-0.5 bg-dore mb-3"></span>
+            <p class="text-xs uppercase tracking-wide text-sauge-fonce mb-1">{c.etiquette}</p>
             <h3 class="titre-carte">{c.titre}</h3>
             <p class="texte-secondaire mt-2">{c.texte}</p>
           </div>
