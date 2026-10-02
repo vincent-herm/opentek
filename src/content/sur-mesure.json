@@ -11,10 +11,10 @@
     "note": "Si vous préférez apprendre à le faire vous-même plutôt que me le confier, c'est exactement l'objet des formations."
   },
   "offres": {
-    "titre": "Quatre situations que je connais bien.",
+    "titre": "Trois situations que je connais bien.",
     "cartes": [
       {
-        "titre": "Vous recopiez les mêmes informations d'un outil à l'autre ?",
+        "titre": "Vous refaites les mêmes saisies à la main ?",
         "texte": "Saisie, relances, publication, facturation : je construis la chaîne qui s'en charge, je la documente, et je vous la laisse en main."
       },
       {
@@ -24,21 +24,13 @@
       {
         "titre": "Vos informations sont éparpillées ?",
         "texte": "Fichiers clients, chiffres, notes, décisions : je remets tout au même endroit. Une base de données partagée et, si vous le souhaitez, votre « second cerveau » : un système où tout se retrouve en trois secondes, et que l'IA sait lire."
-      },
-      {
-        "titre": "Vous ne savez pas par où commencer ?",
-        "prix": "590 € HT",
-        "texte": "Le premier appel de vingt minutes est gratuit. Si on creuse : une demi-journée d'audit, pour savoir ce qui mérite d'être automatisé chez vous, ce qui ne le mérite pas, et dans quel ordre — avec une feuille de route écrite. Il arrive que la conclusion soit de ne rien automatiser.",
-        "note": "Déduits de la mission si vous décidez de la lancer."
       }
     ],
-    "note": "L'audit est le seul prix affiché : c'est la porte d'entrée. Les missions qui en découlent se chiffrent sur devis, parce qu'une automatisation de facturation, une application et une mise en place de second cerveau n'ont ni le même périmètre ni la même durée."
+    "note": "Ces missions se chiffrent sur devis : une automatisation de facturation, une application et un second cerveau n'ont ni le même périmètre ni la même durée. C'est justement ce que le point de départ ci-dessous permet de fixer."
   },
   "methode": {
-    "titre": "Comment ça se passe.",
+    "titre": "Ensuite, comment ça se passe.",
     "etapes": [
-      "Un appel de vingt minutes : vous décrivez ce qui vous coûte du temps, je vous dis si c'est de mon ressort — et sinon, je vous le dis aussi.",
-      "L'audit d'une demi-journée, chez vous ou à distance : on regarde ensemble vos vrais fichiers et vos vraies habitudes.",
       "Une proposition écrite : ce que je fais, ce que ça coûte, en combien de temps.",
       "Je construis, vous testez à chaque étape plutôt qu'à la fin.",
       "Je vous forme à la prise en main : l'outil doit continuer à tourner sans moi."
@@ -82,5 +74,20 @@
     "sousTitre": "Vingt minutes au téléphone suffisent pour savoir si c'est de mon ressort, et ce que ça coûterait.",
     "ctaMail": "Décrire mon besoin",
     "ctaTel": "Appeler le 06 46 24 61 99"
+  },
+  "depart": {
+    "titre": "Par où commencer ?",
+    "etapes": [
+      {
+        "titre": "Un appel gratuit de 20 minutes",
+        "texte": "Vous décrivez ce qui vous coûte du temps. Je vous dis si c'est de mon ressort — et sinon, je vous le dis aussi."
+      },
+      {
+        "titre": "Un audit d'une demi-journée",
+        "prix": "270 € HT",
+        "texte": "Ce qui mérite d'être automatisé chez vous, ce qui ne le mérite pas, et dans quel ordre, avec une feuille de route écrite. Il arrive que la conclusion soit de ne rien automatiser.",
+        "note": "Déduits de la mission si vous décidez de la lancer."
+      }
+    ]
   }
 }

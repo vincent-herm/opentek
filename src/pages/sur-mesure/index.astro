@@ -28,20 +28,33 @@ import content from '../../content/sur-mesure.json';
   <section class="section">
     <div class="wrap">
       <h2 class="titre-section mb-6">{content.offres.titre}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         {content.offres.cartes.map(c => (
           <div class="bg-white border border-sauge-clair rounded-xl p-5">
             <span class="block w-8 h-0.5 bg-dore mb-3"></span>
-            <div class="flex flex-wrap items-baseline gap-3">
-              <h3 class="titre-carte">{c.titre}</h3>
-              {c.prix && <span class="titre-carte text-sauge-fonce">{c.prix}</span>}
-            </div>
+            <h3 class="titre-carte">{c.titre}</h3>
             <p class="texte-secondaire mt-2">{c.texte}</p>
-            {c.note && <p class="legende mt-2">{c.note}</p>}
           </div>
         ))}
       </div>
       <p class="texte-secondaire mt-5 mesure">{content.offres.note}</p>
+
+      <div class="bg-anthracite rounded-xl p-6 mt-8 border-t-4 border-dore">
+        <h3 class="titre-section text-white mb-5">{content.depart.titre}</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {content.depart.etapes.map((e, i) => (
+            <div>
+              <div class="flex flex-wrap items-baseline gap-3">
+                <span class="font-bold text-dore text-lg">{i + 1}</span>
+                <h4 class="titre-carte text-white">{e.titre}</h4>
+                {e.prix && <span class="titre-carte text-dore">{e.prix}</span>}
+              </div>
+              <p class="text-white/80 mt-2">{e.texte}</p>
+              {e.note && <p class="text-white/70 text-sm mt-2">{e.note}</p>}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   </section>
 
