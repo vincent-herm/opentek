@@ -1,0 +1,159 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import content from '../../content/contact.json';
+
+const champ = "w-full rounded-lg border border-sauge-clair bg-white px-3 py-2 text-texte focus:border-sauge focus:outline-none";
+const etiquette = "block titre-mini mb-1";
+---
+
+<Layout title="Me contacter" description="Dites-moi ce dont vous avez besoin : formation, certification, accompagnement IA ou site internet. Réponse sous 48 heures ouvrées.">
+  <section class="section-hero">
+    <div class="wrap">
+      <h1 class="titre-page">{content.hero.title}</h1>
+      <p class="chapo mt-4">{content.hero.sousTitre}</p>
+    </div>
+  </section>
+
+  <section class="section bg-sauge-clair/50">
+    <div class="wrap">
+
+      <form id="demande" class="mesure space-y-5">
+        <div>
+          <label class={etiquette} for="nom">{content.champs.nom}</label>
+          <input class={champ} type="text" id="nom" name="nom" required maxlength="120" autocomplete="name" />
+        </div>
+
+        <div>
+          <label class={etiquette} for="email">{content.champs.email}</label>
+          <input class={champ} type="email" id="email" name="email" required maxlength="150" autocomplete="email" />
+        </div>
+
+        <div>
+          <label class={etiquette} for="telephone">{content.champs.telephone}</label>
+          <input class={champ} type="tel" id="telephone" name="telephone" maxlength="40" autocomplete="tel" />
+          <p class="legende mt-1">{content.champs.telephoneAide}</p>
+        </div>
+
+        <div>
+          <label class={etiquette} for="structure">{content.champs.structure}</label>
+          <input class={champ} type="text" id="structure" name="structure" maxlength="150" autocomplete="organization" />
+          <p class="legende mt-1">{content.champs.structureAide}</p>
+        </div>
+
+        <div>
+          <label class={etiquette} for="offre">{content.champs.offre}</label>
+          <select class={champ} id="offre" name="offre">
+            {content.offres.map(o => <option value={o.valeur}>{o.libelle}</option>)}
+          </select>
+        </div>
+
+        <div>
+          <label class={etiquette} for="statut">{content.champs.statut}</label>
+          <select class={champ} id="statut" name="statut">
+            {content.statuts.map(s => <option value={s.valeur}>{s.libelle}</option>)}
+          </select>
+          <p class="legende mt-1">{content.champs.statutAide}</p>
+        </div>
+
+        <div>
+          <label class={etiquette} for="message">{content.champs.message}</label>
+          <textarea class={champ} id="message" name="message" rows="5" maxlength="4000" placeholder={content.champs.messagePlaceholder}></textarea>
+        </div>
+
+        <div aria-hidden="true" class="absolute left-[-9999px] h-0 w-0 overflow-hidden">
+          <label for="website">Ne rien écrire ici</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <div class="flex gap-3">
+          <input type="checkbox" id="consentement" name="consentement" required class="mt-1 shrink-0" />
+          <label class="texte-secondaire" for="consentement">{content.champs.consentement}</label>
+        </div>
+
+        <p class="legende">
+          {content.rgpd.texte} <a href="/confidentialite/" class="text-sauge-fonce underline">{content.rgpd.lien}</a>.
+        </p>
+
+        <button type="submit" id="envoyer" class="btn btn-or">{content.champs.envoyer}</button>
+      </form>
+
+      <div id="succes" hidden class="mesure bg-white border-l-4 border-sauge rounded-r-xl p-6">
+        <h2 class="titre-carte">{content.succes.titre}</h2>
+        <p class="texte-secondaire mt-2">{content.succes.texte}</p>
+      </div>
+
+      <div id="erreur" hidden class="mesure bg-white border-l-4 border-dore rounded-r-xl p-6">
+        <h2 class="titre-carte">{content.erreur.titre}</h2>
+        <p class="texte-secondaire mt-2">{content.erreur.texte}</p>
+        <p class="mt-3">
+          <a href="mailto:vincent@opentek.fr" class="text-sauge-fonce underline">vincent@opentek.fr</a>
+          · <a href="tel:+33646246199" class="text-sauge-fonce underline">06 46 24 61 99</a>
+        </p>
+      </div>
+
+      <noscript>
+        <div class="mesure bg-white border-l-4 border-dore rounded-r-xl p-6 mt-6">
+          <p class="texte-secondaire">
+            Ce formulaire a besoin de JavaScript. Écrivez-moi directement :
+            <a href="mailto:vincent@opentek.fr" class="text-sauge-fonce underline">vincent@opentek.fr</a>
+            · <a href="tel:+33646246199" class="text-sauge-fonce underline">06 46 24 61 99</a>
+          </p>
+        </div>
+      </noscript>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="titre-section mb-2">{content.repli.titre}</h2>
+      <p class="mesure text-texte/80">{content.repli.texte}</p>
+      <div class="flex flex-wrap gap-3 mt-5">
+        <a href="mailto:vincent@opentek.fr" class="btn btn-ligne">vincent@opentek.fr</a>
+        <a href="tel:+33646246199" class="btn btn-ligne">06 46 24 61 99</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script is:inline define:vars={{ enCours: content.champs.envoiEnCours, libelle: content.champs.envoyer }}>
+  (function () {
+    var form = document.getElementById('demande');
+    var bouton = document.getElementById('envoyer');
+    var params = new URLSearchParams(window.location.search);
+
+    // Pré-remplissage depuis l'URL : /contact/?offre=N1%2BN2&page=/formation/
+    var offre = params.get('offre');
+    if (offre) {
+      var select = document.getElementById('offre');
+      for (var i = 0; i < select.options.length; i++) {
+        if (select.options[i].value === offre) { select.selectedIndex = i; break; }
+      }
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      bouton.disabled = true;
+      bouton.textContent = enCours;
+
+      var data = Object.fromEntries(new FormData(form).entries());
+      data.consentement = document.getElementById('consentement').checked;
+      data.page = params.get('page') || document.referrer || '/contact/';
+
+      fetch('https://n8n.opentek.fr/webhook/opentek-demande', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      }).then(function (r) {
+        if (!r.ok) throw new Error('réponse ' + r.status);
+        form.hidden = true;
+        document.getElementById('succes').hidden = false;
+        document.getElementById('succes').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }).catch(function () {
+        bouton.disabled = false;
+        bouton.textContent = libelle;
+        document.getElementById('erreur').hidden = false;
+        document.getElementById('erreur').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    });
+  })();
+</script>

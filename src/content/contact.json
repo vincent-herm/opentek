@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "title": "Dites-moi ce dont vous avez besoin.",
+    "sousTitre": "Quelques lignes suffisent. Je réponds sous 48 heures ouvrées, avec les dates, le programme, et les pièces du dossier de financement si votre situation le permet."
+  },
+  "champs": {
+    "nom": "Votre nom",
+    "email": "Votre email",
+    "telephone": "Votre téléphone",
+    "telephoneAide": "facultatif, mais souvent plus rapide",
+    "structure": "Votre entreprise ou association",
+    "structureAide": "facultatif",
+    "offre": "Ce qui vous intéresse",
+    "statut": "Votre situation",
+    "statutAide": "pour vous orienter vers le bon financement — l'OPCO, le FIFPL, l'AGEFICE et le CPF ne s'adressent pas aux mêmes personnes",
+    "message": "Votre message",
+    "messagePlaceholder": "Dites-m'en un peu plus : combien de personnes, à quelles dates, et ce que vous cherchez à obtenir.",
+    "consentement": "J'accepte que ces informations soient enregistrées pour traiter ma demande et y répondre.",
+    "envoyer": "Envoyer ma demande",
+    "envoiEnCours": "Envoi en cours…"
+  },
+  "offres": [
+    { "valeur": "", "libelle": "— Choisir —" },
+    { "valeur": "Initiation", "libelle": "Initiation à l'IA — demi-journée, en intra" },
+    { "valeur": "N1+N2", "libelle": "N1 + N2 — De zéro à l'autonomie, 2 jours" },
+    { "valeur": "N3+N4", "libelle": "N3 + N4 — Automatiser sans dépendre, 2 jours" },
+    { "valeur": "N5", "libelle": "N5 — Sécuriser l'IA dans votre entreprise, 1 jour" },
+    { "valeur": "Certification RS7344", "libelle": "Certification RS7344" },
+    { "valeur": "Audit", "libelle": "Audit — demi-journée, 590 € HT" },
+    { "valeur": "Accompagnement IA", "libelle": "Accompagnement IA — automatisation, données, second cerveau" },
+    { "valeur": "Site internet", "libelle": "Site internet" },
+    { "valeur": "Autre / ne sait pas", "libelle": "Autre, ou je ne sais pas encore" }
+  ],
+  "statuts": [
+    { "valeur": "", "libelle": "— Choisir —" },
+    { "valeur": "Salarié", "libelle": "Salarié d'une entreprise" },
+    { "valeur": "Dirigeant assimilé salarié", "libelle": "Dirigeant assimilé salarié (gérant minoritaire, président de SAS ou SASU)" },
+    { "valeur": "Indépendant / gérant majoritaire", "libelle": "Indépendant, gérant majoritaire ou micro-entrepreneur" },
+    { "valeur": "Association", "libelle": "Association" },
+    { "valeur": "Particulier", "libelle": "Particulier" }
+  ],
+  "rgpd": {
+    "texte": "Vos coordonnées servent uniquement à répondre à cette demande et à en assurer le suivi. Elles ne sont ni revendues, ni utilisées pour de la prospection non sollicitée. Vous pouvez demander leur suppression à tout moment.",
+    "lien": "Politique de confidentialité"
+  },
+  "succes": {
+    "titre": "C'est envoyé.",
+    "texte": "Votre demande est bien arrivée. Vous allez recevoir un accusé de réception par email — s'il n'apparaît pas, pensez à regarder dans les indésirables. Je vous réponds sous 48 heures ouvrées."
+  },
+  "erreur": {
+    "titre": "L'envoi n'a pas abouti.",
+    "texte": "Quelque chose a bloqué de mon côté, et je ne veux pas que votre demande se perde. Écrivez-moi directement, je réponds aussi vite :"
+  },
+  "repli": {
+    "titre": "Vous préférez le téléphone ou l'email ?",
+    "texte": "Les deux marchent aussi bien."
+  }
+}
