@@ -15,17 +15,17 @@
     "cartes": [
       {
         "titre": "Vous refaites les mêmes saisies à la main ?",
-        "texte": "Saisie, relances, publication, facturation : je construis la chaîne qui s'en charge, je la documente, et je vous la laisse en main.",
+        "texte": "Saisie, relances, publication, facturation : je construis la chaîne qui s'en charge. Elle est documentée et je vous la laisse en main : vous n'avez pas besoin de moi pour la faire tourner.",
         "etiquette": "Automatiser"
       },
       {
         "titre": "Il vous manque un outil qui n'existe pas ?",
-        "texte": "Je construis une application ou un outil sur mesure, pour votre activité. Vivahop, l'agenda des sorties du Sud-Ardèche, est né comme ça et tourne aujourd'hui en production.",
+        "texte": "Je construis une application ou un outil sur mesure pour votre activité. Vivahop, l'agenda des sorties du Sud-Ardèche, est né comme ça et tourne en production.",
         "etiquette": "Construire"
       },
       {
         "titre": "Vos informations sont éparpillées ?",
-        "texte": "Fichiers clients, chiffres, notes, décisions : je remets tout au même endroit. Une base de données partagée et, si vous le souhaitez, votre « second cerveau » : un système où tout se retrouve en trois secondes, et que l'IA sait lire.",
+        "texte": "Fichiers, chiffres, notes, décisions : je remets tout au même endroit, dans une base partagée. En option, un « second cerveau » où tout se retrouve en trois secondes, et que l'IA sait lire.",
         "etiquette": "Rassembler"
       }
     ],
