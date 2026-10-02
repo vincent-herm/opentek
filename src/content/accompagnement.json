@@ -2,7 +2,7 @@
   "hero": {
     "badge": "TPE, PME et associations · Audit à prix affiché",
     "title": "Vous passez trop de temps à faire tourner la boutique.",
-    "sousTitre": "Ressaisir les mêmes informations, chercher un document, mettre à jour quatre tableurs qui se contredisent. Automatisation, outil sur mesure, structuration des données, second cerveau : je mets ça en place avec vous, et je vous le laisse en main.",
+    "sousTitre": "Ressaisir les mêmes informations, chercher un document, mettre à jour quatre tableurs qui se contredisent. Automatisation, structuration des données, second cerveau : je mets ça en place avec vous, et je vous le laisse en main.",
     "cta": "Décrire mon besoin →"
   },
   "constat": {
@@ -14,8 +14,8 @@
     "titre": "Quatre situations que je connais bien.",
     "cartes": [
       {
-        "titre": "Vous recopiez à la main, ou il vous manque un outil ?",
-        "texte": "Saisie, relances, facturation : je construis la chaîne qui s'en charge. Et quand l'outil n'existe pas, je le construis : Vivahop, l'agenda des sorties du Sud-Ardèche, est né comme ça."
+        "titre": "Vous recopiez les mêmes informations d'un outil à l'autre ?",
+        "texte": "Saisie, relances, publication, facturation : je construis la chaîne qui s'en charge, je la documente, et je vous la laisse en main."
       },
       {
         "titre": "Vous ne retrouvez pas ce que vous avez écrit il y a trois mois ?",
@@ -55,9 +55,9 @@
     "note": "Ces trois chantiers sont les miens, pas des références clients. C'est volontaire : je préfère ne vendre que ce que j'ai déjà construit et que je maintiens tous les jours."
   },
   "site": {
-    "titre": "Vous cherchez surtout un site internet ?",
-    "texte": "C'est ma seule prestation entièrement à prix affichés, et elle a sa propre page : page unique, site vitrine, ou reprise d'un site existant, avec votre fiche Google.",
-    "cta": "Voir les offres de site internet →"
+    "titre": "Vous cherchez un site, ou une application ?",
+    "texte": "Les sites ont leurs prix affichés, les applications se chiffrent sur devis. Tout est sur une page : page unique, site vitrine, reprise d'un site existant, application sur mesure.",
+    "cta": "Voir sites et applications →"
   },
   "faq": [
     {

@@ -70,10 +70,12 @@
     ]
   },
   "autre": {
-    "etiquette": "Autre besoin ?",
-    "titre": "Au-delà du site.",
-    "sousTitre": "Automatiser ce que vous recopiez à la main, structurer vos données, mettre en place votre second cerveau : ces missions se chiffrent après un appel de vingt minutes, et elles ont leur propre page.",
-    "cta": "Voir l'accompagnement IA →"
+    "etiquette": "Une application ?",
+    "titre": "Un site montre ce que vous faites. Une application le fait pour vous.",
+    "sousTitre": "Gérer des inscriptions, un agenda, des réservations, un suivi : quand l'outil dont vous avez besoin n'existe pas, je le construis sur mesure. Vivahop, l'agenda des sorties du Sud-Ardèche, est né comme ça et tourne aujourd'hui en production.",
+    "note": "Sur devis, après un appel de vingt minutes : le périmètre d'une application varie trop pour afficher un prix.",
+    "cta": "Décrire mon application →",
+    "lienAccompagnement": "Pour automatiser ou mieux organiser votre travail, voir l'accompagnement IA."
   },
   "qui": {
     "titre": "Vincent Hermitant",

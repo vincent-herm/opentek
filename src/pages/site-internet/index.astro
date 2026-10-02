@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import content from '../../content/site-internet.json';
 ---
 
-<Layout title="Site internet — Création de site et fiche Google, Sud-Ardèche" description="Site web et fiche Google pour artisans, commerçants et associations du Sud-Ardèche. Prix affichés, vous n'avez rien à rédiger.">
+<Layout title="Sites et applications — Création de site, fiche Google et applications sur mesure" description="Site web et fiche Google pour artisans, commerçants et associations du Sud-Ardèche, prix affichés. Applications sur mesure sur devis.">
   <section class="section-hero">
     <div class="wrap">
       <h1 class="titre-page">{content.hero.title}</h1>
@@ -95,10 +95,12 @@ import content from '../../content/site-internet.json';
     <div class="wrap">
       <p class="text-xs uppercase tracking-wide text-sauge-fonce mb-2">{content.autre.etiquette}</p>
       <h2 class="titre-section mb-3">{content.autre.titre}</h2>
-      <p class="mesure text-texte/80 mb-6">{content.autre.sousTitre}</p>
-      <a href="/accompagnement/" class="btn btn-ligne">
+      <p class="mesure text-texte/80">{content.autre.sousTitre}</p>
+      <p class="texte-secondaire mt-3 mesure">{content.autre.note}</p>
+      <a href="/contact/?offre=Application%20sur%20mesure&page=/site-internet/" class="btn btn-or mt-5">
         {content.autre.cta}
       </a>
+      <p class="texte-secondaire mt-4"><a href="/accompagnement/" class="text-sauge-fonce underline">{content.autre.lienAccompagnement}</a></p>
     </div>
   </section>
 

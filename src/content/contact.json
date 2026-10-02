@@ -29,6 +29,7 @@
     { "valeur": "Audit", "libelle": "Audit — demi-journée, 590 € HT" },
     { "valeur": "Accompagnement IA", "libelle": "Accompagnement IA — automatisation, données, second cerveau" },
     { "valeur": "Site internet", "libelle": "Site internet" },
+    { "valeur": "Application sur mesure", "libelle": "Application sur mesure" },
     { "valeur": "Autre / ne sait pas", "libelle": "Autre, ou je ne sais pas encore" }
   ],
   "statuts": [
