@@ -1,36 +1,36 @@
 {
   "hero": {
     "title": "Quand on vous cherche sur Google, que voit-on ?",
-    "subtitle": "Je crée votre site et je complète votre fiche Google, avec vos mots. Pour les artisans, commerçants et associations du Sud-Ardèche.",
-    "description": "Un prix fixe, affiché avant qu'on se parle. Pas de devis à négocier.",
+    "subtitle": "Je crée votre site à partir de ce que vous me racontez. Pour les artisans, commerçants et associations du Sud-Ardèche.",
+    "description": "Des tarifs affichés dès 470 € HT, avant même qu'on se parle.",
     "ctaMail": "Envoyer le nom de mon entreprise",
     "ctaTel": "Appeler le 06 46 24 61 99"
   },
   "constat": {
     "etiquette": "Site internet",
     "titre": "C'est là que se perdent les appels.",
-    "texte1": "Tapez votre métier et votre commune. Votre fiche est-elle complète ? Votre site s'affiche-t-il correctement sur un téléphone ? Existe-t-il seulement ?",
+    "texte1": "Tapez votre métier et votre commune. Votre site s'affiche-t-il correctement sur un téléphone ? Dit-il clairement ce que vous faites et comment vous joindre ? Existe-t-il seulement ?",
     "texte2": "Je ne vous vends pas « un site » : je corrige ce qui vous fait perdre des clients."
   },
   "offres": {
-    "titre": "Des prix affichés, sans devis.",
+    "titre": "Des prix affichés, sans mauvaise surprise.",
     "lignes": [
       {
         "nom": "Page unique",
-        "detail": "une page claire, avec votre fiche Google complétée (validation Google en sus, voir FAQ)",
-        "prix": "570 € HT",
+        "detail": "une page claire, faite pour le téléphone",
+        "prix": "dès 470 € HT",
         "delai": "48h"
       },
       {
         "nom": "Site vitrine",
-        "detail": "4 à 6 pages, fiche Google incluse (validation Google en sus, voir FAQ)",
-        "prix": "970 € HT",
+        "detail": "4 à 6 pages",
+        "prix": "dès 870 € HT",
         "delai": "2-3 sem."
       },
       {
         "nom": "Reprise d'un site existant",
         "detail": "Wix, Jimdo, ou site cassé",
-        "prix": "dès 670 € HT",
+        "prix": "dès 570 € HT",
         "delai": "selon état"
       },
       {
@@ -40,22 +40,21 @@
         "delai": "—"
       }
     ],
-    "note": "Association ou particulier : prix TTC. 50 % à la commande, solde à la livraison. Les délais courent à partir de l'entretien et des photos.",
+    "note": "Le prix final dépend du nombre de pages : je vous le confirme par écrit après l'entretien, avant que vous ne payiez quoi que ce soit. Association ou particulier : prix TTC. 50 % à la commande, solde à la livraison. Les délais courent à partir de l'entretien et des photos.",
     "wordpress": "Vous voulez modifier votre site vous-même ? Option WordPress éditable : + 300 €."
   },
   "processus": {
-    "titre": "Vous n'avez rien à rédiger : vous parlez, j'écris.",
-    "note": "Ce que j'attends de vous : 20 minutes d'entretien, une relecture, votre adresse, votre SIRET si vous en avez un, et le code de validation que Google enverra à votre établissement.",
+    "titre": "Vingt minutes de votre temps. Le reste, c'est moi.",
+    "note": "Ce que j'attends de vous : 20 minutes d'entretien, quelques photos de votre activité, et une relecture.",
     "etapes": [
       "Un entretien de 20 minutes chez vous ou au téléphone : vous me racontez votre métier, je prends des notes — et des photos si on se voit sur place.",
-      "Votre fiche Google créée ou revendiquée avec vous sur place ; sa validation par Google arrive ensuite, par un code envoyé à votre adresse.",
       "Je rédige et je construis le site, avec ce que vous m'avez raconté.",
       "Vous relisez, vous corrigez, et c'est en ligne. Le site est à vous."
     ]
   },
   "ia": {
     "titre": "Le faire vous-même, ou me le confier.",
-    "texte": "L'IA écrit une page en quelques minutes, je m'en sers tous les jours et c'est même ce que j'enseigne en formation. Ce qu'elle ne fait pas toute seule : venir chez vous, prendre vos photos, lancer et suivre la validation de votre fiche Google, et répondre quand ça ne marche plus. Si vous avez le temps d'apprendre, la formation vous rend autonome. Si vous ne l'avez pas, je m'en charge.",
+    "texte": "L'IA écrit une page en quelques minutes, je m'en sers tous les jours et c'est même ce que j'enseigne en formation. Ce qu'elle ne fait pas toute seule : venir chez vous, prendre vos photos, trouver les mots justes pour votre métier, et répondre quand ça ne marche plus. Si vous avez le temps d'apprendre, la formation vous rend autonome. Si vous ne l'avez pas, je m'en charge.",
     "note": "Apprendre à le faire vous-même, c'est par ici :",
     "lienFormation": "/formation/"
   },
@@ -83,7 +82,7 @@
   "faq": [
     {
       "question": "Combien de temps pour être en ligne ?",
-      "reponse": "Page unique : 48h après l'entretien et les photos. Site vitrine : 2-3 semaines. La fiche Google, elle, dépend de Google : sa validation peut prendre jusqu'à 5 jours ouvrés."
+      "reponse": "Page unique : 48h après l'entretien et les photos. Site vitrine : 2-3 semaines."
     },
     {
       "question": "Je n'ai pas de texte, pas de photos.",
