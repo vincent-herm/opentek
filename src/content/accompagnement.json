@@ -1,40 +1,44 @@
 {
   "hero": {
-    "badge": "Sur devis · TPE, PME et associations",
-    "title": "Faire entrer l'IA dans votre organisation, pas seulement dans vos conversations.",
-    "sousTitre": "Automatiser ce qui se refait à la main, structurer vos données, mettre en place votre second cerveau — ou simplement savoir par où commencer. Chaque mission se chiffre après un appel de vingt minutes.",
+    "badge": "TPE, PME et associations · Audit à prix affiché",
+    "title": "Vous passez trop de temps à faire tourner la boutique.",
+    "sousTitre": "Ressaisir les mêmes informations, chercher un document, mettre à jour quatre tableurs qui se contredisent. Automatisation, structuration des données, second cerveau : je mets ça en place avec vous, et je vous le laisse en main.",
     "cta": "Décrire mon besoin →"
   },
   "constat": {
-    "titre": "La différence entre tester l'IA et s'en servir.",
-    "texte": "Discuter avec un chatbot, tout le monde sait faire. Ce qui change une organisation, c'est autre chose : une tâche qui se fait toute seule pendant la nuit, un document qu'on retrouve en trois secondes, une base propre à la place de quatre tableurs qui se contredisent.",
+    "titre": "Ce que ça vous coûte, en vrai.",
+    "texte": "Une heure par jour de ressaisie, c'est plus de six semaines de travail par an. Un devis qu'on ne retrouve pas, c'est un client qui attend. Un tableur que personne ne met à jour, c'est une décision prise sur des chiffres faux. L'IA ne règle pas ça en discutant : elle le règle en faisant.",
     "note": "Si vous préférez apprendre à le faire vous-même plutôt que me le confier, c'est exactement l'objet des formations."
   },
   "offres": {
-    "titre": "Quatre façons de m'appeler.",
+    "titre": "Quatre situations que je connais bien.",
     "cartes": [
       {
-        "titre": "Automatiser ce qui se refait à la main",
-        "texte": "Saisie, relances, publication, facturation : si vous recopiez les mêmes informations d'un outil à l'autre, c'est automatisable. Je construis la chaîne, je la documente, et je vous la laisse en main."
+        "titre": "Vous recopiez les mêmes informations d'un outil à l'autre ?",
+        "texte": "Saisie, relances, publication, facturation : je construis la chaîne qui s'en charge, je la documente, et je vous la laisse en main."
       },
       {
-        "titre": "Mettre en place votre second cerveau",
+        "titre": "Vous ne retrouvez pas ce que vous avez écrit il y a trois mois ?",
         "texte": "Vos notes, vos projets et vos décisions dans un système que l'IA peut lire et où vous retrouvez tout. Pas un outil de plus : une méthode, et l'agent qui va avec."
       },
       {
-        "titre": "Structurer vos données",
-        "texte": "Un fichier clients que personne ne met à jour, quatre tableurs qui ne disent pas la même chose : je remets ça dans une base propre, partagée, connectée au reste de vos outils."
+        "titre": "Vos chiffres changent selon le fichier qu'on ouvre ?",
+        "texte": "Un fichier clients que personne ne met à jour, quatre tableurs qui se contredisent : je remets ça dans une base propre, partagée, connectée au reste de vos outils."
       },
       {
-        "titre": "Savoir par où commencer",
-        "texte": "Un audit court de votre activité : ce qui mérite d'être automatisé, ce qui ne le mérite pas, et dans quel ordre. Il arrive que la conclusion soit de ne rien automatiser — vous le saurez avant d'avoir dépensé."
+        "titre": "Vous ne savez pas par où commencer ?",
+        "prix": "590 € HT",
+        "texte": "Une demi-journée d'audit : ce qui mérite d'être automatisé chez vous, ce qui ne le mérite pas, et dans quel ordre. Vous repartez avec une feuille de route écrite. Il arrive que la conclusion soit de ne rien automatiser — vous le saurez avant d'avoir dépensé davantage.",
+        "note": "Déduits de la mission si vous décidez de la lancer."
       }
-    ]
+    ],
+    "note": "L'audit est le seul prix affiché : c'est la porte d'entrée. Les missions qui en découlent se chiffrent sur devis, parce qu'une automatisation de facturation et une mise en place de second cerveau n'ont ni le même périmètre ni la même durée."
   },
   "methode": {
     "titre": "Comment ça se passe.",
     "etapes": [
       "Un appel de vingt minutes : vous décrivez ce qui vous coûte du temps, je vous dis si c'est de mon ressort — et sinon, je vous le dis aussi.",
+      "L'audit d'une demi-journée, chez vous ou à distance : on regarde ensemble vos vrais fichiers et vos vraies habitudes.",
       "Une proposition écrite : ce que je fais, ce que ça coûte, en combien de temps.",
       "Je construis, vous testez à chaque étape plutôt qu'à la fin.",
       "Je vous forme à la prise en main : l'outil doit continuer à tourner sans moi."
@@ -43,18 +47,36 @@
   },
   "preuve": {
     "titre": "Ce qui tourne déjà.",
-    "intro": "Ces chantiers sont les miens, pas des références clients. C'est ma façon de ne vendre que ce que j'ai déjà construit et que je maintiens.",
     "items": [
       "Vivahop — l'agenda des sorties du Sud-Ardèche : une application complète, en production, utilisée par les habitants et les visiteurs.",
       "La billetterie d'une association — paiement en ligne, inscription enregistrée, confirmation envoyée et comptabilité à jour, enchaînés sans intervention.",
       "Ce site — contenu, mise en ligne et contrôles de cohérence pilotés depuis mon propre second cerveau."
-    ]
+    ],
+    "note": "Ces trois chantiers sont les miens, pas des références clients. C'est volontaire : je préfère ne vendre que ce que j'ai déjà construit et que je maintiens tous les jours."
   },
   "site": {
     "titre": "Vous cherchez surtout un site internet ?",
-    "texte": "C'est la seule de mes prestations à prix affiché, et elle a sa propre page : page unique, site vitrine, ou reprise d'un site existant, avec votre fiche Google.",
+    "texte": "C'est ma seule prestation entièrement à prix affichés, et elle a sa propre page : page unique, site vitrine, ou reprise d'un site existant, avec votre fiche Google.",
     "cta": "Voir les offres de site internet →"
   },
+  "faq": [
+    {
+      "question": "Est-ce finançable par mon OPCO ?",
+      "reponse": "Non. L'OPCO, le FIFPL et l'AGEFICE financent de la formation, pas des prestations. Si vous préférez apprendre à construire ces outils vous-même plutôt que me les confier, c'est l'objet des formations N1 à N5 — et celles-là sont finançables."
+    },
+    {
+      "question": "Combien de temps dure une mission ?",
+      "reponse": "Cela dépend entièrement du périmètre, et c'est justement ce que l'audit détermine. La proposition écrite qui en découle porte un délai ferme : vous ne vous engagez pas avant de le connaître."
+    },
+    {
+      "question": "Vous travaillez sur place ou à distance ?",
+      "reponse": "Les deux. L'audit gagne à se faire chez vous quand c'est possible — on regarde vos vrais fichiers. La construction se fait à distance, avec des points réguliers. Je me déplace en Ardèche et dans les départements limitrophes."
+    },
+    {
+      "question": "Et si l'outil tombe en panne dans six mois ?",
+      "reponse": "Tout ce que je livre est documenté, et la dernière étape de chaque mission est une séance de prise en main. L'objectif est que vous puissiez intervenir sans moi — et si vous préférez un suivi, il se contractualise à part."
+    }
+  ],
   "ctaFinal": {
     "titre": "Dites-moi ce qui vous coûte du temps.",
     "sousTitre": "Vingt minutes au téléphone suffisent pour savoir si c'est de mon ressort, et ce que ça coûterait.",

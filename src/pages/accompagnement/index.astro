@@ -32,11 +32,16 @@ import content from '../../content/accompagnement.json';
         {content.offres.cartes.map(c => (
           <div class="bg-white border border-sauge-clair rounded-xl p-5">
             <span class="block w-8 h-0.5 bg-dore mb-3"></span>
-            <h3 class="titre-carte">{c.titre}</h3>
+            <div class="flex flex-wrap items-baseline gap-3">
+              <h3 class="titre-carte">{c.titre}</h3>
+              {c.prix && <span class="titre-carte text-sauge-fonce">{c.prix}</span>}
+            </div>
             <p class="texte-secondaire mt-2">{c.texte}</p>
+            {c.note && <p class="legende mt-2">{c.note}</p>}
           </div>
         ))}
       </div>
+      <p class="texte-secondaire mt-5 mesure">{content.offres.note}</p>
     </div>
   </section>
 
@@ -58,12 +63,12 @@ import content from '../../content/accompagnement.json';
   <section class="section">
     <div class="wrap">
       <h2 class="titre-section mb-4">{content.preuve.titre}</h2>
-      <p class="mesure text-texte/80">{content.preuve.intro}</p>
-      <ul class="mesure space-y-3 mt-5">
+      <ul class="mesure space-y-3">
         {content.preuve.items.map(item => (
           <li class="flex gap-3 text-texte/80"><span class="text-sauge mt-1">●</span> {item}</li>
         ))}
       </ul>
+      <p class="texte-secondaire mt-5 mesure">{content.preuve.note}</p>
     </div>
   </section>
 
@@ -74,6 +79,23 @@ import content from '../../content/accompagnement.json';
       <a href="/site-internet/" class="btn btn-ligne mt-4">
         {content.site.cta}
       </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="titre-section mb-6">Questions fréquentes</h2>
+      <div class="border-t border-sauge-clair">
+        {content.faq.map((item, i) => (
+          <details class="border-b border-sauge-clair py-4" {i === 0 ? 'open' : ''}>
+            <summary class="cursor-pointer list-none titre-carte flex justify-between items-center">
+              {item.question}
+              <span class="text-sauge text-xl">{i === 0 ? '−' : '+'}</span>
+            </summary>
+            <p class="texte-secondaire mt-2">{item.reponse}</p>
+          </details>
+        ))}
+      </div>
     </div>
   </section>
 
