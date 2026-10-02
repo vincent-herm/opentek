@@ -95,16 +95,8 @@ import content from '../../content/site-internet.json';
     <div class="wrap">
       <p class="text-xs uppercase tracking-wide text-sauge-fonce mb-2">{content.autre.etiquette}</p>
       <h2 class="titre-section mb-3">{content.autre.titre}</h2>
-      <p class="texte-secondaire mb-6">{content.autre.sousTitre}</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {content.autre.cartes.map(c => (
-          <div class="bg-white border border-sauge-clair rounded-xl p-5">
-            <h3 class="titre-carte">{c.titre}</h3>
-            <p class="texte-secondaire mt-1">{c.texte}</p>
-          </div>
-        ))}
-      </div>
-      <a href="mailto:vincent@opentek.fr" class="btn btn-or mt-6">
+      <p class="mesure text-texte/80 mb-6">{content.autre.sousTitre}</p>
+      <a href="/accompagnement/" class="btn btn-ligne">
         {content.autre.cta}
       </a>
     </div>

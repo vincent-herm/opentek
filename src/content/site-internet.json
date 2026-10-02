@@ -71,19 +71,9 @@
   },
   "autre": {
     "etiquette": "Autre besoin ?",
-    "titre": "Au-delà du site, deux prestations sur mesure.",
-    "sousTitre": "Chaque mission se chiffre après un appel de 20 minutes. Je vous réponds avec une proposition claire.",
-    "cartes": [
-      {
-        "titre": "Vous recopiez les mêmes informations à la main ?",
-        "texte": "Je construis l'automatisation qui s'en charge : saisie, tri, relances, publication."
-      },
-      {
-        "titre": "Votre outil est livré mais vous ne l'utilisez pas ?",
-        "texte": "Une séance de prise en main, pour l'utiliser en autonomie."
-      }
-    ],
-    "cta": "Décrire mon besoin →"
+    "titre": "Au-delà du site.",
+    "sousTitre": "Automatiser ce que vous recopiez à la main, structurer vos données, mettre en place votre second cerveau : ces missions se chiffrent après un appel de vingt minutes, et elles ont leur propre page.",
+    "cta": "Voir l'accompagnement IA →"
   },
   "qui": {
     "titre": "Vincent Hermitant",
