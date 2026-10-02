@@ -62,12 +62,24 @@ import imageAtelier from '../../assets/formation/atelier-groupe.png';
           <p class="texte-secondaire">{content.probleme.stat2_texte}</p>
         </div>
       </div>
+      <p class="legende mt-3">{content.probleme.source}</p>
       <p class="mesure mt-8 text-texte/70 font-medium">{content.probleme.chute}</p>
     </div>
   </section>
 
+  <section class="section">
+    <div class="wrap">
+      <h2 class="titre-section mb-6">{content.pourQui.titre}</h2>
+      <ul class="mesure space-y-3">
+        {content.pourQui.items.map(item => (
+          <li class="flex gap-3 text-texte/80"><span class="text-sauge mt-1">●</span> {item}</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
   <span id="assistant-financement" class="block h-0 scroll-mt-24"></span>
-  <section id="financement" class="section">
+  <section id="financement" class="section bg-sauge-clair/50">
     <div class="wrap">
       <h2 class="titre-section mb-4">{content.financement.titre}</h2>
       <div class="text-texte/80 space-y-4">
@@ -100,7 +112,7 @@ import imageAtelier from '../../assets/formation/atelier-groupe.png';
     </div>
   </section>
 
-  <section class="section bg-sauge-clair/50">
+  <section class="section">
     <div class="wrap">
       <h2 class="titre-section mb-4">{content.promesse.titre}</h2>
       <p class="text-texte/80 mesure">{content.promesse.texte}</p>
@@ -116,7 +128,7 @@ import imageAtelier from '../../assets/formation/atelier-groupe.png';
     </div>
   </section>
 
-  <section class="section">
+  <section class="section bg-sauge-clair/50">
     <div class="wrap">
       <h2 class="titre-section mb-4">{content.format.titre}</h2>
       <ul class="mesure space-y-2 text-texte/80">
@@ -288,17 +300,6 @@ import imageAtelier from '../../assets/formation/atelier-groupe.png';
 
   <section class="section bg-sauge-clair/50">
     <div class="wrap">
-      <h2 class="titre-section mb-6">{content.pourQui.titre}</h2>
-      <ul class="mesure space-y-3">
-        {content.pourQui.items.map(item => (
-          <li class="flex gap-3 text-texte/80"><span class="text-sauge mt-1">●</span> {item}</li>
-        ))}
-      </ul>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
       <h2 class="titre-section mb-6">Questions fréquentes</h2>
       <div class="border-t border-sauge-clair">
         {content.faq.map((item, i) => (
@@ -314,16 +315,19 @@ import imageAtelier from '../../assets/formation/atelier-groupe.png';
     </div>
   </section>
 
-  <section class="section bg-sauge-clair/50 text-center">
+  <section id="contact" class="section bg-anthracite text-center scroll-mt-24">
     <div class="wrap">
-      <h2 class="titre-section mb-4">{content.ctaFinal.titre}</h2>
-      <p class="text-texte/70 mb-6">{content.ctaFinal.sousTitre}</p>
-      <a href="#contact" class="btn btn-or">
-        {content.ctaFinal.cta}
-      </a>
-      <p class="legende mt-4">{content.ctaFinal.mentions}</p>
+      <h2 class="titre-section text-white mb-4">{content.ctaFinal.titre}</h2>
+      <p class="mesure mx-auto text-white/70 text-sm mb-6">{content.ctaFinal.sousTitre}</p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="mailto:vincent@opentek.fr?subject=Formation%20IA" class="btn btn-or">
+          {content.ctaFinal.ctaMail}
+        </a>
+        <a href="tel:+33646246199" class="btn btn-ligne-sombre">
+          {content.ctaFinal.ctaTel}
+        </a>
+      </div>
+      <p class="text-white/70 text-sm mt-4">{content.ctaFinal.mentions}</p>
     </div>
   </section>
-
-  <span id="contact" class="block h-0 scroll-mt-24"></span>
 </Layout>

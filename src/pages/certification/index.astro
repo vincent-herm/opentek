@@ -28,7 +28,24 @@ import content from '../../content/certification.json';
       <h2 class="titre-section mb-4">{content.distinction.titre}</h2>
       <p class="mesure text-texte/80">{content.distinction.texte}</p>
       <p class="mesure text-texte/70 mt-3">{content.distinction.note}</p>
-      <a href="/formation/" class="text-sm text-sauge-fonce font-medium mt-3 inline-block hover:underline">{content.distinction.cta}</a>
+
+      <h3 class="titre-sous-section mt-8 mb-4">{content.distinction.comparatif.titre}</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {content.distinction.comparatif.colonnes.map(col => (
+          <div class="bg-white border border-sauge-clair rounded-xl p-5">
+            <span class="block w-8 h-0.5 bg-dore mb-3"></span>
+            <h4 class="titre-carte mb-3">{col.titre}</h4>
+            <ul class="space-y-2">
+              {col.lignes.map(l => (
+                <li class="texte-secondaire flex gap-2"><span class="text-sauge">●</span> {l}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <p class="mesure text-texte/80 mt-5 font-medium">{content.distinction.comparatif.critere}</p>
+
+      <a href="/formation/" class="text-sm text-sauge-fonce font-medium mt-4 inline-block hover:underline">{content.distinction.cta}</a>
     </div>
   </section>
 
@@ -61,6 +78,7 @@ import content from '../../content/certification.json';
       <p class="mesure text-texte/80">{content.financement.prix}</p>
       <p class="mesure text-texte/70 mt-2">{content.financement.exoneration}</p>
       <p class="texte-secondaire mt-4">{content.financement.note}</p>
+      <a href="/financement/" class="text-sm text-sauge-fonce font-medium mt-3 inline-block hover:underline">{content.financement.ctaGuichets}</a>
     </div>
   </section>
 

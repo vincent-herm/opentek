@@ -11,6 +11,32 @@
     "titre": "Une formation, et un titre à la clé.",
     "texte": "Dans ce parcours, la formation et le passage de la certification sont compris dans un prix unique : vous apprenez, puis vous démontrez ce que vous savez faire devant un jury, qui vous délivre un titre — à mettre sur un CV, montrer à un client, valoriser dans votre activité.",
     "note": "Ce parcours RS7344 n'est pas une suite aux formations N1 à N5 : c'est une autre offre, avec son propre contenu et son propre financement. À vous de choisir entre les deux offres — pas entre deux étapes d'un même parcours.",
+    "comparatif": {
+      "titre": "Lequel choisir ?",
+      "colonnes": [
+        {
+          "titre": "Formations N1 à N5",
+          "lignes": [
+            "Objectif : savoir vous servir de l'IA au quotidien",
+            "2 jours en présentiel (1 jour pour N5)",
+            "870 € net les deux jours",
+            "Financement OPCO, FIFPL ou AGEFICE",
+            "Vous repartez autonome sur les outils, sans titre"
+          ]
+        },
+        {
+          "titre": "Certification RS7344",
+          "lignes": [
+            "Objectif : faire reconnaître cette compétence",
+            "4 semaines à distance ou 5 jours en présentiel",
+            "1 650 € net, passage devant le jury compris",
+            "Financement CPF, en cours de référencement",
+            "Vous repartez avec un plan d'intégration et un titre"
+          ]
+        }
+      ],
+      "critere": "La règle simple : prenez N1 à N5 si votre objectif est de savoir faire. Prenez la certification si vous avez besoin de le prouver — à un client, à un employeur, sur un CV."
+    },
     "cta": "Voir les formations N1 à N5 →"
   },
   "projet": {
@@ -32,7 +58,8 @@
     "titre": "Le CPF financera l'essentiel — bientôt.",
     "prix": "Prix : 1 650 € net, formation et passage de la certification compris. Une fois la certification référencée, le CPF mobilisera jusqu'à 1 500 € de droits ; il restera une participation personnelle de 150 €.",
     "exoneration": "Demandeur d'emploi accompagné par France Travail : cette participation sera exonérée.",
-    "note": "Vos droits CPF sur Mon Compte Formation. Je ne peux promettre ni montant ni acceptation."
+    "note": "Vos droits CPF sur Mon Compte Formation. Je ne peux promettre ni montant ni acceptation.",
+    "ctaGuichets": "Comprendre les quatre guichets (OPCO, AGEFICE, FIFPL, CPF) →"
   },
   "ctaFinal": {
     "titre": "Soyez prévenu à l'ouverture.",

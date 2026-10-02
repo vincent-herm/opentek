@@ -18,10 +18,11 @@
     "titre": "Vous savez que l'IA pourrait vous aider... ",
     "texte1": "Mais entre les outils qui changent tous les trois mois, les tutoriels faits pour des ingénieurs et les offres qui promettent tout… vous ne savez pas par où commencer.",
     "texte2": "La plupart discutent avec un chatbot ; très peu transforment leur façon de travailler. C'est exactement cet écart que cette formation comble.",
-    "stat1_valeur": "34 %",
-    "stat1_texte": "des PME utilisent déjà l'IA — deux fois plus qu'il y a un an",
-    "stat2_valeur": "5 %",
+    "stat1_valeur": "40 %",
+    "stat1_texte": "des TPE-PME utilisent l'IA — 14 points de plus en un an",
+    "stat2_valeur": "11 %",
     "stat2_texte": "seulement automatisent réellement une tâche",
+    "source": "Baromètre France Num 2026, Direction générale des Entreprises (enquête auprès de plus de 9 000 entreprises, publiée le 28 septembre 2026).",
     "chute": "Et une chose que presque personne ne sait : ce budget, vous le payez déjà."
   },
   "promesse": {
@@ -194,8 +195,9 @@
   ],
   "ctaFinal": {
     "titre": "Qu'est-ce que vous feriez si plus rien ne vous bloquait ?",
-    "sousTitre": "Deux jours peuvent suffire à débloquer tout ça.",
-    "cta": "Réserver ma place",
+    "sousTitre": "Dites-moi quelle formation vous intéresse, je vous réponds avec les dates et les pièces du dossier de financement.",
+    "ctaMail": "Réserver ma place",
+    "ctaTel": "Appeler le 06 46 24 61 99",
     "mentions": "6 places maximum par session · Financement possible selon votre statut"
   }
 }
