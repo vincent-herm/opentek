@@ -138,6 +138,7 @@ const etiquette = "block titre-mini mb-1";
       var data = Object.fromEntries(new FormData(form).entries());
       data.consentement = document.getElementById('consentement').checked;
       data.page = params.get('page') || document.referrer || '/contact/';
+      data.source = params.get('source') || '';
 
       fetch('https://n8n.opentek.fr/webhook/opentek-demande', {
         method: 'POST',
