@@ -2,7 +2,7 @@
   "hero": {
     "badge": "TPE, PME et associations · Audit à prix affiché",
     "title": "Vous passez trop de temps à faire tourner la boutique.",
-    "sousTitre": "Ressaisir les mêmes informations, chercher un document, mettre à jour quatre tableurs qui se contredisent. Automatisation, structuration des données, second cerveau : je mets ça en place avec vous, et je vous le laisse en main.",
+    "sousTitre": "Ressaisir les mêmes informations, chercher un document, mettre à jour quatre tableurs qui se contredisent. Automatisation, outil sur mesure, structuration des données, second cerveau : je mets ça en place avec vous, et je vous le laisse en main.",
     "cta": "Décrire mon besoin →"
   },
   "constat": {
@@ -14,8 +14,8 @@
     "titre": "Quatre situations que je connais bien.",
     "cartes": [
       {
-        "titre": "Vous recopiez les mêmes informations d'un outil à l'autre ?",
-        "texte": "Saisie, relances, publication, facturation : je construis la chaîne qui s'en charge, je la documente, et je vous la laisse en main."
+        "titre": "Vous recopiez à la main, ou il vous manque un outil ?",
+        "texte": "Saisie, relances, facturation : je construis la chaîne qui s'en charge. Et quand l'outil n'existe pas, je le construis : Vivahop, l'agenda des sorties du Sud-Ardèche, est né comme ça."
       },
       {
         "titre": "Vous ne retrouvez pas ce que vous avez écrit il y a trois mois ?",
