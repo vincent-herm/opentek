@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Se désabonner" description="Ne plus recevoir de messages de Vincent Hermitant." noindex>
+  <section class="section-hero">
+    <div class="wrap">
+      <h1 class="titre-page">Se désabonner</h1>
+      <p class="chapo mt-4" id="intro">Confirmez pour ne plus recevoir de message de ma part.</p>
+    </div>
+  </section>
+
+  <section class="section bg-sauge-clair/50">
+    <div class="wrap">
+      <div id="action" class="mesure">
+        <button type="button" id="confirmer" class="btn btn-or">Me désabonner</button>
+        <p class="legende mt-3">Vos données restent enregistrées pour le suivi de votre demande, mais je ne vous écrirai plus. Pour les faire effacer, écrivez à <a href="mailto:vincent@opentek.fr" class="text-sauge-fonce underline">vincent@opentek.fr</a>.</p>
+      </div>
+      <div id="resultat" hidden class="mesure bg-white border-l-4 border-sauge rounded-r-xl p-6">
+        <p class="texte-secondaire" id="message"></p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script is:inline>
+  (function () {
+    var jeton = new URLSearchParams(window.location.search).get('t') || '';
+    var bouton = document.getElementById('confirmer');
+    var action = document.getElementById('action');
+    var resultat = document.getElementById('resultat');
+    var message = document.getElementById('message');
+
+    function afficher(texte) {
+      action.hidden = true;
+      message.textContent = texte;
+      resultat.hidden = false;
+    }
+
+    if (!jeton) { afficher('Ce lien de désabonnement est invalide.'); return; }
+
+    bouton.addEventListener('click', function () {
+      bouton.disabled = true;
+      fetch('https://n8n.opentek.fr/webhook/opentek-desabonnement', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ jeton: jeton })
+      }).then(function (r) {
+        if (!r.ok) throw new Error('réponse ' + r.status);
+        return r.json();
+      }).then(function (d) {
+        afficher(d.message);
+      }).catch(function () {
+        bouton.disabled = false;
+        afficher('Une erreur est survenue. Écrivez-moi à vincent@opentek.fr et je vous retire de ma liste.');
+      });
+    });
+  })();
+</script>
