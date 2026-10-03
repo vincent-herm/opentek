@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "Votre site internet, en ligne dès 48 heures.",
+    "title": "Votre site internet, en ligne en 4 jours.",
     "subtitle": "Je crée votre site à partir de ce que vous me racontez. Pour les artisans, commerçants et associations du Sud-Ardèche.",
     "description": "Des tarifs affichés dès 470 € HT, avant même qu'on se parle.",
     "ctaMail": "Envoyer le nom de mon entreprise",
@@ -9,7 +9,7 @@
   "constat": {
     "etiquette": "Site internet",
     "titre": "Un site illisible ou absent, ce sont des appels perdus.",
-    "texte1": "Tapez votre métier et votre commune. Votre site s'affiche-t-il correctement sur un téléphone ? Dit-il clairement ce que vous faites et comment vous joindre ? Existe-t-il seulement ?",
+    "texte1": "Ouvrez votre site sur votre téléphone. S'affiche-t-il correctement ? Dit-il clairement ce que vous faites et comment vous joindre ? Existe-t-il seulement ?",
     "texte2": "Je ne vous vends pas « un site » : je corrige ce qui vous fait perdre des clients."
   },
   "offres": {
@@ -19,7 +19,7 @@
         "nom": "Page unique",
         "detail": "une page claire, faite pour le téléphone",
         "prix": "dès 470 € HT",
-        "delai": "48h"
+        "delai": "4 jours"
       },
       {
         "nom": "Site vitrine",
@@ -82,7 +82,7 @@
   "faq": [
     {
       "question": "Combien de temps pour être en ligne ?",
-      "reponse": "Page unique : 48h après l'entretien et les photos. Site vitrine : 2-3 semaines."
+      "reponse": "Page unique : 4 jours après l'entretien et les photos. Site vitrine : 2-3 semaines."
     },
     {
       "question": "Je n'ai pas de texte, pas de photos.",
@@ -99,7 +99,7 @@
   ],
   "ctaFinal": {
     "titre": "Envoyez-moi le nom de votre entreprise.",
-    "sousTitre": "Je regarde comment on vous trouve aujourd'hui, et je vous dis ce que je corrigerais.",
+    "sousTitre": "Je regarde votre site actuel, ou son absence, et je vous dis ce que je ferais à votre place.",
     "ctaMail": "Envoyer le nom de mon entreprise",
     "ctaTel": "Appeler le 06 46 24 61 99"
   }
