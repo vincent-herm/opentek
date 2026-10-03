@@ -65,8 +65,8 @@
       }
     ],
     "cpf": {
-      "titre": "Le CPF, c'est pour bientôt",
-      "texte": "La certification RS7344 est en cours de référencement CPF. Laissez votre email pour être prévenu en priorité.",
+      "titre": "Le CPF, dès l'ouverture des inscriptions",
+      "texte": "Le financement CPF de la certification RS7344 arrive bientôt. Laissez votre email pour être prévenu en priorité.",
       "cta": "Voir la certification →"
     },
     "reserve": {
@@ -132,7 +132,7 @@
     "certification": {
       "titre": "Certification RS7344",
       "badge": "En préparation",
-      "texte": "Un parcours à part : une formation qui prépare au dossier de certification et à la soutenance devant jury, passage de la certification compris. Financement CPF, en cours de référencement.",
+      "texte": "Un parcours à part : une formation qui prépare au dossier de certification et à la soutenance devant jury, passage de la certification compris. Financement CPF bientôt.",
       "cta": "Voir la certification →"
     },
     "themes": {
@@ -174,7 +174,7 @@
   "faq": [
     {
       "question": "La formation est-elle finançable ?",
-      "reponse": "Oui, mais le guichet dépend de votre statut. N1 à N5 passent par votre OPCO, FIFPL ou AGEFICE. La certification RS7344 passera par le CPF. Je fournis les trois pièces du dossier."
+      "reponse": "Oui, mais le guichet dépend de votre statut. N1 à N5 passent par votre OPCO, FIFPL ou AGEFICE. La certification RS7344 passera par le CPF, dès l'ouverture des inscriptions. Je fournis les trois pièces du dossier."
     },
     {
       "question": "Faut-il des compétences techniques ?",
