@@ -29,7 +29,7 @@
           "lignes": [
             "Objectif : conduire un projet d'intégration dans votre entreprise",
             "22 h à distance ou 35 h en présentiel",
-            "1 650 € net, passage devant le jury compris",
+            "1 500 € net, passage devant le jury compris",
             "Financement CPF bientôt",
             "Vous repartez avec un plan appliqué et un titre"
           ]
@@ -56,8 +56,8 @@
   },
   "financement": {
     "titre": "Le CPF pourra financer l'essentiel, dès l'ouverture des inscriptions.",
-    "prix": "Prix : 1 650 € net, formation et passage de la certification compris. Dès l'ouverture des inscriptions, le CPF mobilisera jusqu'à 1 500 € de droits ; il restera une participation personnelle de 150 €.",
-    "exoneration": "Demandeur d'emploi accompagné par France Travail : cette participation sera exonérée.",
+    "prix": "Prix : 1 500 € net, formation et passage de la certification compris. Dès l'ouverture des inscriptions, le CPF pourra le financer jusqu'à 1 500 € de droits ; une participation personnelle de 150 € reste due, sauf exonération.",
+    "exoneration": "Demandeur d'emploi accompagné par France Travail : cette participation est exonérée, le reste à charge sera de 0 €, si vos droits CPF atteignent 1 500 €.",
     "note": "Vos droits CPF sur Mon Compte Formation. Je ne peux promettre ni montant ni acceptation.",
     "ctaGuichets": "Comprendre les quatre guichets (OPCO, AGEFICE, FIFPL, CPF) →"
   },
