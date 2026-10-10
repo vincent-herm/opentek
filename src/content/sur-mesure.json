@@ -79,7 +79,7 @@
     "ctaTel": "Appeler le 06 46 24 61 99"
   },
   "depart": {
-    "titre": "Trois étapes, chacune se prend seule.",
+    "titre": "Trois étapes. Vous choisissez jusqu'où aller.",
     "intro": "Vous pouvez vous arrêter après la première : le diagnostic vous reste, même si vous ne donnez pas suite.",
     "etapes": [
       {
