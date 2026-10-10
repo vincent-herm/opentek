@@ -2,16 +2,16 @@
   "hero": {
     "badge": "TPE, PME et associations · Sur devis",
     "title": "Vous passez trop de temps à faire tourner la boutique.",
-    "sousTitre": "Ressaisir les mêmes informations, chercher un document, mettre à jour quatre tableurs qui se contredisent. Automatisation, outil sur mesure, second cerveau : je mets ça en place avec vous, et je vous le laisse en main.",
-    "cta": "Décrire mon besoin →"
+    "sousTitre": "Ressaisir les mêmes informations, chercher un document, mettre à jour quatre tableurs qui se contredisent. Je commence par un diagnostic, je mets en place la piste qui rapporte, et je vous la laisse en main.",
+    "cta": "Réserver un diagnostic →"
   },
   "constat": {
     "titre": "Ce que ça vous coûte, en vrai.",
     "texte": "Une heure par jour de ressaisie, c'est plus de six semaines de travail par an. Un devis qu'on ne retrouve pas, c'est un client qui attend. Un tableur que personne ne met à jour, c'est une décision prise sur des chiffres faux. L'IA ne règle pas ça en discutant : elle le règle en faisant.",
-    "note": "Si vous préférez apprendre à le faire vous-même plutôt que me le confier, c'est exactement l'objet des formations."
+    "note": "Si vous préférez apprendre à le faire vous-même plutôt que me le confier, c'est l'objet de l'étape 3."
   },
   "offres": {
-    "titre": "Trois situations que je connais bien.",
+    "titre": "Ce que je peux mettre en place (étape 2).",
     "cartes": [
       {
         "titre": "Vous refaites les mêmes saisies à la main ?",
@@ -29,14 +29,14 @@
         "etiquette": "Rassembler"
       }
     ],
-    "note": "Ces missions se chiffrent sur devis : une automatisation de facturation, une application et un second cerveau n'ont ni le même périmètre ni la même durée. C'est justement ce que le point de départ ci-dessous permet de fixer."
+    "note": "Ces missions se chiffrent sur devis : une automatisation de facturation, une application et un second cerveau n'ont ni le même périmètre ni la même durée. C'est justement ce que le diagnostic permet de fixer."
   },
   "methode": {
-    "titre": "Ensuite, comment ça se passe.",
+    "titre": "Une mise en place, concrètement.",
     "etapes": [
       "Une proposition écrite : ce que je fais, ce que ça coûte, en combien de temps.",
       "Je construis, vous testez à chaque étape plutôt qu'à la fin.",
-      "Je vous forme à la prise en main : l'outil doit continuer à tourner sans moi."
+      "Une séance de prise en main : l'outil doit continuer à tourner sans moi."
     ],
     "note": "Je privilégie les outils que vous pouvez héberger vous-même. Un système que vous ne contrôlez pas est un système qui peut vous être retiré."
   },
@@ -57,15 +57,15 @@
   "faq": [
     {
       "question": "Est-ce finançable par mon OPCO ?",
-      "reponse": "Non. L'OPCO, le FIFPL et l'AGEFICE financent de la formation, pas des prestations. Si vous préférez apprendre à construire ces outils vous-même plutôt que me les confier, c'est l'objet des formations N1 à N5 — et celles-là sont finançables."
+      "reponse": "Les étapes 1 et 2 (diagnostic et mise en place) ne le sont pas : l'OPCO, le FIFPL et l'AGEFICE financent de la formation, pas des prestations. L'étape 3, les parcours N1 à N5 portés par POLLEN, l'est."
     },
     {
       "question": "Combien de temps dure une mission ?",
-      "reponse": "Cela dépend entièrement du périmètre, et c'est justement ce que l'audit détermine. La proposition écrite qui en découle porte un délai ferme : vous ne vous engagez pas avant de le connaître."
+      "reponse": "Cela dépend entièrement du périmètre, et c'est justement ce que le diagnostic détermine. La proposition écrite qui en découle porte un délai ferme : vous ne vous engagez pas avant de le connaître."
     },
     {
       "question": "Vous travaillez sur place ou à distance ?",
-      "reponse": "Les deux. L'audit gagne à se faire chez vous quand c'est possible — on regarde vos vrais fichiers. La construction se fait à distance, avec des points réguliers. Je me déplace en Ardèche et dans les départements limitrophes."
+      "reponse": "Les deux. Le diagnostic gagne à se faire chez vous quand c'est possible : on regarde vos vrais fichiers. La construction se fait à distance, avec des points réguliers. Je me déplace en Ardèche et dans les départements limitrophes ; le déplacement s'ajoute selon la distance."
     },
     {
       "question": "Et si l'outil tombe en panne dans six mois ?",
@@ -74,22 +74,32 @@
   ],
   "ctaFinal": {
     "titre": "Dites-moi ce qui vous coûte du temps.",
-    "sousTitre": "Vingt minutes au téléphone suffisent pour savoir si c'est de mon ressort, et ce que ça coûterait.",
+    "sousTitre": "Vingt minutes au téléphone suffisent pour savoir si un diagnostic a du sens chez vous.",
     "ctaMail": "Décrire mon besoin",
     "ctaTel": "Appeler le 06 46 24 61 99"
   },
   "depart": {
-    "titre": "Par où commencer ?",
+    "titre": "Trois étapes, chacune se prend seule.",
+    "intro": "Vous pouvez vous arrêter après la première : le diagnostic vous reste, même si vous ne donnez pas suite.",
     "etapes": [
       {
-        "titre": "Un appel gratuit de 20 minutes",
-        "texte": "Vous décrivez ce qui vous coûte du temps. Je vous dis si c'est de mon ressort — et sinon, je vous le dis aussi."
+        "etiquette": "Étape 1",
+        "titre": "Diagnostic IA",
+        "prix": "247 € HT",
+        "texte": "2 à 3 heures chez vous ou en visio, puis un rapport de 2 pages : où vous perdez du temps, trois pistes chiffrées, et laquelle commencer. Il arrive que la conclusion soit de ne rien automatiser.",
+        "note": "147 € HT pour les premiers diagnostics. Déplacement en plus, selon la distance. Déduit de la mise en place si vous la lancez."
       },
       {
-        "titre": "Un audit d'une demi-journée",
-        "prix": "270 € HT",
-        "texte": "Ce qui mérite d'être automatisé chez vous, ce qui ne le mérite pas, et dans quel ordre, avec une feuille de route écrite. Il arrive que la conclusion soit de ne rien automatiser.",
-        "note": "Déduits de la mission si vous décidez de la lancer."
+        "etiquette": "Étape 2",
+        "titre": "Mise en place",
+        "prix": "Sur devis",
+        "texte": "Je réalise la piste que vous avez choisie dans le rapport, vous testez à chaque étape, puis une séance de prise en main avec les personnes concernées. L'outil doit continuer à tourner sans moi."
+      },
+      {
+        "etiquette": "Étape 3",
+        "titre": "Monter en compétences",
+        "prix": "Finançable OPCO",
+        "texte": "Pour que vos équipes aillent plus loin seules, les parcours de la page Formation (niveaux N1 à N5) sont portés par POLLEN, organisme certifié Qualiopi."
       }
     ]
   }
