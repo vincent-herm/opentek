@@ -32,7 +32,7 @@
     "note": "Ces missions se chiffrent sur devis : une automatisation de facturation, une application et un second cerveau n'ont ni le même périmètre ni la même durée. C'est justement ce que le diagnostic permet de fixer."
   },
   "methode": {
-    "titre": "Une mise en place, concrètement.",
+    "titre": "Une mise en œuvre, concrètement.",
     "etapes": [
       "Une proposition écrite : ce que je fais, ce que ça coûte, en combien de temps.",
       "Je construis, vous testez à chaque étape plutôt qu'à la fin.",
@@ -57,7 +57,7 @@
   "faq": [
     {
       "question": "Est-ce finançable par mon OPCO ?",
-      "reponse": "Les étapes 1 et 2 (diagnostic et mise en place) ne le sont pas : l'OPCO, le FIFPL et l'AGEFICE financent de la formation, pas des prestations. L'étape 3, les parcours N1 à N5 portés par POLLEN, l'est."
+      "reponse": "Les étapes 1 et 2 (diagnostic et mise en œuvre) ne le sont pas : l'OPCO, le FIFPL et l'AGEFICE financent de la formation, pas des prestations. L'étape 3, les parcours N1 à N5 portés par POLLEN, l'est."
     },
     {
       "question": "Combien de temps dure une mission ?",
@@ -87,11 +87,11 @@
         "titre": "Diagnostic IA",
         "prix": "247 € HT",
         "texte": "2 à 3 heures chez vous ou en visio, puis un rapport de 2 pages : où vous perdez du temps, trois pistes chiffrées, et laquelle commencer. Il arrive que la conclusion soit de ne rien automatiser.",
-        "note": "147 € HT pour les premiers diagnostics. Déplacement en plus, selon la distance. Déduit de la mise en place si vous la lancez."
+        "note": "147 € HT pour les premiers diagnostics. Déplacement en plus, selon la distance. Déduit de la mise en œuvre si vous la lancez."
       },
       {
         "etiquette": "Étape 2",
-        "titre": "Mise en place",
+        "titre": "Mise en œuvre",
         "prix": "Sur devis",
         "texte": "Je réalise la piste que vous avez choisie dans le rapport, vous testez à chaque étape, puis une séance de prise en main avec les personnes concernées. L'outil doit continuer à tourner sans moi."
       },
