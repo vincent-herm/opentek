@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
+import sitemap from '@astrojs/sitemap';
 
 // Le site du fablab occupait opentek.fr jusqu'au 23/09/2026 ; il vit désormais
 // sur fablab.opentek.fr. On redirige ses 34 anciennes URL pour ne casser aucun
@@ -57,6 +58,7 @@ const redirects = {
 
 export default defineConfig({
   site: 'https://opentek.fr',
+  integrations: [sitemap()],
   redirects,
   vite: { plugins: [tailwindcss()] }
 });

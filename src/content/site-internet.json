@@ -35,12 +35,12 @@
       },
       {
         "nom": "Maintenance",
-        "detail": "hébergement, sauvegardes, modifications, une fois le site en ligne",
+        "detail": "hébergement, sauvegardes et 30 minutes de modifications par mois, une fois le site en ligne",
         "prix": "17 € / mois",
         "delai": "—"
       }
     ],
-    "note": "Le prix final dépend du nombre de pages : je vous le confirme par écrit après l'entretien, avant que vous ne payiez quoi que ce soit. Association ou particulier : prix TTC. 50 % à la commande, solde à la livraison. Les délais courent à partir de l'entretien et des photos.",
+    "note": "Le prix final dépend du nombre de pages : je vous le confirme par écrit après l'entretien, avant que vous ne payiez quoi que ce soit. Association ou particulier : prix TTC. 50 % à la commande, solde à la livraison. Les délais courent à partir de l'entretien et des photos. Au-delà de 30 minutes de modifications par mois, je vous chiffre le complément avant de commencer.",
     "wordpress": "Vous voulez modifier votre site vous-même ? Option WordPress éditable : + 300 €."
   },
   "processus": {

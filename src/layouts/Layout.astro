@@ -26,6 +26,53 @@ const {
     <title>{title} — Opentek</title>
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://opentek.fr/#vincent",
+          "name": "Vincent Hermitant",
+          "url": "https://opentek.fr",
+          "telephone": "+33646246199",
+          "jobTitle": "Formateur IA",
+          "description": "Formateur en intelligence artificielle pour TPE, indépendants et PME, basé en Sud-Ardèche.",
+          "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+              "@type": "GeoCoordinates",
+              "addressLocality": "Payzac",
+              "addressRegion": "Ardèche",
+              "addressCountry": "FR"
+            },
+            "description": "Sud-Ardèche et départements limitrophes"
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://opentek.fr/#opentek",
+          "name": "Opentek",
+          "url": "https://opentek.fr",
+          "telephone": "+33646246199",
+          "description": "Formation IA, certification RS7344 et prestations numériques — par Vincent Hermitant, formateur en Ardèche.",
+          "founder": { "@id": "https://opentek.fr/#vincent" },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Payzac",
+            "addressRegion": "Ardèche",
+            "postalCode": "07230",
+            "addressCountry": "FR"
+          },
+          "areaServed": [
+            "Ardèche",
+            "Gard",
+            "Lozère",
+            "Drôme",
+            "Aveyron"
+          ]
+        }
+      ]
+    })} />
   </head>
   <body class="min-h-screen flex flex-col">
     <Header />

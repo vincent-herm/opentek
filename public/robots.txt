@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://opentek.fr/sitemap-index.xml
