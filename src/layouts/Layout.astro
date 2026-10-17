@@ -26,6 +26,17 @@ const {
     <title>{title} — Opentek</title>
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Opentek" />
+    <meta property="og:title" content={`${title} — Opentek`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={new URL(Astro.url.pathname, "https://opentek.fr").toString()} />
+    <meta property="og:image" content="https://opentek.fr/og-image.jpg" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${title} — Opentek`} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://opentek.fr/og-image.jpg" />
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@graph": [
