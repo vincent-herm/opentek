@@ -1,0 +1,182 @@
+---
+// Page autonome — pas de Layout, pas de Header/Footer.
+// Les visiteurs ne voient pas le reste du site.
+import '../../styles/global.css';
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>L'IA en confiance — Atelier</title>
+    <meta name="description" content="Atelier pratique pour découvrir l'IA en toute sécurité. Deux demi-journées, petit groupe, ordinateur fourni." />
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+  <body>
+
+    <section class="section-hero">
+      <div class="wrap" style="max-width: 36rem;">
+        <p class="legende uppercase tracking-wider mb-4">Opentek — Vincent Hermitant</p>
+        <h1 class="titre-page">L'IA en confiance</h1>
+        <p class="chapo mt-4">Deux demi-journées pour découvrir l'intelligence artificielle, l'utiliser pour vos besoins du quotidien, et apprendre à repérer les arnaques.</p>
+      </div>
+    </section>
+
+    <section class="section bg-sauge-clair/50">
+      <div class="wrap" style="max-width: 36rem;">
+
+        <div class="grid gap-4 sm:grid-cols-2 mb-10">
+          <div class="bg-white rounded-xl p-5 border border-sauge-clair">
+            <p class="titre-mini font-serif text-anthracite mb-1">Le format</p>
+            <p class="texte-secondaire">Petit groupe de 6 personnes max. Ordinateur fourni sur place. Vous venez avec vos mains.</p>
+          </div>
+          <div class="bg-white rounded-xl p-5 border border-sauge-clair">
+            <p class="titre-mini font-serif text-anthracite mb-1">Le principe</p>
+            <p class="texte-secondaire">Chacun vient avec un vrai problème à résoudre : courrier, document, formulaire… et repart avec la solution.</p>
+          </div>
+        </div>
+
+        <h2 class="titre-section mb-6">Vous êtes intéressé(e) ?</h2>
+        <p class="mb-6">Laissez vos coordonnées et je vous recontacte avec les dates et les détails.</p>
+
+        <form id="form" autocomplete="off" class="mesure">
+          <div class="mb-5">
+            <label for="prenom" class="block font-semibold mb-1">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required autofocus
+              class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+              placeholder="Votre prénom" />
+          </div>
+
+          <div class="mb-5">
+            <label for="nom" class="block font-semibold mb-1">Nom</label>
+            <input type="text" id="nom" name="nom" required
+              class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+              placeholder="Votre nom" />
+          </div>
+
+          <div class="mb-5">
+            <label for="email" class="block font-semibold mb-1">Adresse email</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+              placeholder="votre@email.fr" />
+          </div>
+
+          <div class="mb-5">
+            <label for="telephone" class="block font-semibold mb-1">Téléphone <span class="texte-secondaire font-normal">(facultatif)</span></label>
+            <input type="tel" id="telephone" name="telephone"
+              class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+              placeholder="06 ..." />
+          </div>
+
+          <div class="mb-5">
+            <label for="village" class="block font-semibold mb-1">Village / commune</label>
+            <input type="text" id="village" name="village"
+              class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+              placeholder="Payzac, Joyeuse, Largentière…" />
+          </div>
+
+          <!-- Piège anti-bot — caché -->
+          <div style="position:absolute;left:-9999px;" aria-hidden="true">
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="mb-6">
+            <label class="flex items-start gap-3 cursor-pointer">
+              <input type="checkbox" id="consentement" name="consentement" required
+                class="mt-1 accent-sauge-fonce w-4 h-4" />
+              <span class="texte-secondaire leading-snug">J'accepte d'être recontacté(e) par Vincent Hermitant au sujet de cet atelier. Mes données ne seront pas transmises à des tiers.</span>
+            </label>
+          </div>
+
+          <button type="submit" id="btn-submit" class="btn btn-or w-full">
+            Je suis intéressé(e)
+          </button>
+
+          <p id="erreur" class="text-red-700 mt-3 hidden"></p>
+        </form>
+
+        <div id="merci" hidden class="text-center py-12">
+          <p class="titre-section text-sauge-fonce mb-3">Merci !</p>
+          <p class="chapo">Je vous recontacte bientôt avec les dates.</p>
+          <p class="texte-secondaire mt-6">Vous pouvez fermer cette page.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="py-6 text-center">
+      <p class="legende">Vincent Hermitant — 06 46 24 61 99 — <a href="mailto:vincent@opentek.fr" class="underline text-sauge-fonce">vincent@opentek.fr</a></p>
+    </footer>
+
+    <script is:inline>
+      (function () {
+        var WEBHOOK = 'https://n8n.opentek.fr/webhook/opentek-demande';
+        var STORAGE_KEY = 'ia-confiance-inscrits';
+        var form = document.getElementById('form');
+        var merci = document.getElementById('merci');
+        var erreur = document.getElementById('erreur');
+        var btn = document.getElementById('btn-submit');
+
+        function sauvegardeLocale(data) {
+          try {
+            var liste = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+            liste.push(data);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(liste));
+          } catch (e) {}
+        }
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          erreur.classList.add('hidden');
+          btn.disabled = true;
+          btn.textContent = 'Envoi…';
+
+          var prenom = document.getElementById('prenom').value.trim();
+          var nom = document.getElementById('nom').value.trim();
+          var email = document.getElementById('email').value.trim().toLowerCase();
+          var telephone = document.getElementById('telephone').value.trim();
+          var village = document.getElementById('village').value.trim();
+          var honeypot = document.getElementById('website').value;
+
+          var payload = {
+            nom: prenom + ' ' + nom,
+            email: email,
+            telephone: telephone,
+            offre: 'Atelier IA en confiance',
+            message: village ? 'Village : ' + village : '',
+            page: 'atelier',
+            consentement: true,
+            website: honeypot
+          };
+
+          sauvegardeLocale({
+            prenom: prenom,
+            nom: nom,
+            email: email,
+            telephone: telephone,
+            village: village,
+            date: new Date().toISOString()
+          });
+
+          fetch(WEBHOOK, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          })
+          .then(function (r) {
+            if (!r.ok) throw new Error(r.status);
+            form.hidden = true;
+            merci.hidden = false;
+          })
+          .catch(function () {
+            form.hidden = true;
+            merci.hidden = false;
+          });
+        });
+      })();
+    </script>
+
+  </body>
+</html>
