@@ -112,7 +112,7 @@ import '../../styles/global.css';
 
     <script is:inline>
       (function () {
-        var WEBHOOK = 'https://n8n.opentek.fr/webhook/opentek-demande';
+        var WEBHOOK = 'https://n8n.opentek.fr/webhook/atelier-ia';
         var STORAGE_KEY = 'ia-confiance-inscrits';
         var form = document.getElementById('form');
         var merci = document.getElementById('merci');
@@ -141,13 +141,11 @@ import '../../styles/global.css';
           var honeypot = document.getElementById('website').value;
 
           var payload = {
-            nom: prenom + ' ' + nom,
+            prenom: prenom,
+            nom: nom,
             email: email,
             telephone: telephone,
-            offre: 'Atelier IA en confiance',
-            message: village ? 'Village : ' + village : '',
-            page: 'atelier',
-            consentement: true,
+            village: village,
             website: honeypot
           };
 
