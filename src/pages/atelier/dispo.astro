@@ -111,6 +111,10 @@ import '../../styles/global.css';
         var merci = document.getElementById('merci');
         var erreur = document.getElementById('erreur');
         var btn = document.getElementById('btn-submit');
+        var emailInput = document.getElementById('email');
+
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('email')) emailInput.value = params.get('email');
 
         form.addEventListener('submit', function (e) {
           e.preventDefault();
