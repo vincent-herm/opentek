@@ -57,7 +57,7 @@
   "faq": [
     {
       "question": "Est-ce finançable par mon OPCO ?",
-      "reponse": "Les étapes 1 et 2 (diagnostic et mise en œuvre) ne le sont pas : l'OPCO, le FIFPL et l'AGEFICE financent de la formation, pas des prestations. L'étape 3, les parcours N1 à N5 portés par POLLEN, l'est."
+      "reponse": "Les étapes 1 et 2 (diagnostic et mise en œuvre) ne le sont pas : l'OPCO, le FIFPL et l'AGEFICE financent de la formation, pas des prestations. L'étape 3, les parcours 1 à 5 portés par POLLEN, l'est."
     },
     {
       "question": "Combien de temps dure une mission ?",
@@ -99,7 +99,7 @@
         "etiquette": "Étape 3",
         "titre": "Monter en compétences",
         "prix": "Finançable OPCO",
-        "texte": "Pour que vos équipes aillent plus loin seules, les parcours de la page Formation (niveaux N1 à N5) sont portés par POLLEN, organisme certifié Qualiopi."
+        "texte": "Pour que vos équipes aillent plus loin seules, les parcours de la page Formation (parcours 1 à 5) sont portés par POLLEN, organisme certifié Qualiopi."
       }
     ]
   }

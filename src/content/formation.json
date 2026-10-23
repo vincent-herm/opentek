@@ -8,7 +8,7 @@
     "cta2": "Voir les formations",
     "badges": [
       "Financement possible selon votre statut",
-      "De la demi-journée à 2 jours · 6 participants max en atelier",
+      "De la demi-journée à 3 jours · 6 participants max en atelier",
       "Chez vous partout en France, ou en Ardèche"
     ],
     "temoignage": "Depuis que j'ai intégré l'IA dans mon quotidien, je travaille dix fois plus vite, avec une charge mentale allégée, et je fais des choses que je n'aurais jamais pensé pouvoir faire.",
@@ -29,10 +29,22 @@
     "titre": "Quelques jours pour passer de « je teste » à « je délègue ».",
     "texte": "Vous apprenez à confier à l'IA du travail. Lui donner votre contexte — vos documents, vos projets — et la laisser avancer étape par étape, sous votre contrôle.",
     "cards": [
-      { "titre": "Obtenir exactement ce que vous voulez", "texte": "Finie la réponse générique. Vous apprenez à formuler pour que l'IA vous rende un travail qui sort du lot." },
-      { "titre": "Gagner des heures chaque semaine", "texte": "Ce qui vous prenait 2 heures se fait en 10 minutes. Mails, synthèses, plans, analyses." },
-      { "titre": "Produire ce que vous sous-traitiez", "texte": "Documents, visuels, tableaux de bord, mini-outils, votre site web — vous les faites vous-même." },
-      { "titre": "Passer de consommateur à créateur", "texte": "L'IA devient le moyen de réaliser des idées que vous n'auriez jamais concrétisées seul." }
+      {
+        "titre": "Obtenir exactement ce que vous voulez",
+        "texte": "Finie la réponse générique. Vous apprenez à formuler pour que l'IA vous rende un travail qui sort du lot."
+      },
+      {
+        "titre": "Gagner des heures chaque semaine",
+        "texte": "Ce qui vous prenait 2 heures se fait en 10 minutes. Mails, synthèses, plans, analyses."
+      },
+      {
+        "titre": "Produire ce que vous sous-traitiez",
+        "texte": "Documents, visuels, tableaux de bord, mini-outils, votre site web — vous les faites vous-même."
+      },
+      {
+        "titre": "Passer de consommateur à créateur",
+        "texte": "L'IA devient le moyen de réaliser des idées que vous n'auriez jamais concrétisées seul."
+      }
     ]
   },
   "preuve": {
@@ -96,7 +108,7 @@
     ]
   },
   "offres": {
-    "titre": "Une porte d'entrée, deux parcours de deux jours, une journée sécurité — et une certification.",
+    "titre": "Une porte d'entrée, cinq parcours à choisir ou à enchaîner — et une certification.",
     "initiation": {
       "titre": "Initiation à l'IA — comprendre, nommer, décider",
       "badge": "La porte d'entrée",
@@ -104,30 +116,6 @@
       "texte": "Une demi-journée, en intra, à partir de 6 personnes (jusqu'à 12). Trois heures et demie pour que toute l'équipe parte avec les mêmes repères. Aucun ordinateur, rien à installer.",
       "infos": "Public : toute l'équipe. Aucun prérequis. · Financement : OPCO, FIFPL ou AGEFICE.",
       "cta": "Réserver pour mon équipe →"
-    },
-    "n1n2": {
-      "titre": "N1 + N2 — De zéro à l'autonomie",
-      "prix": "870 € net",
-      "texte": "2 jours en présentiel · par personne. Un seul parcours, pas deux formations à la carte. Support de cours inclus. Prix net, exonéré de TVA · 435 €/jour.",
-      "n1": { "titre": "N1 — Les fondamentaux", "texte": "Parler à l'IA, obtenir des résultats concrets, éviter les pièges, prendre en main Cowork et Claude Code." },
-      "n2": { "titre": "N2 — L'autonomie", "texte": "Projets structurés, délégation avec Cowork, automatisation avec Routines, gouvernance et cadre légal." },
-      "infos": "Financement : OPCO, FIFPL ou AGEFICE. · En intra : 3 000 € le groupe (2 jours), jusqu'à 6 personnes.",
-      "cta": "Réserver ma place →"
-    },
-    "n3n4": {
-      "titre": "N3 + N4 — Automatiser sans dépendre",
-      "prix": "870 € net",
-      "texte": "2 jours en présentiel · par personne. Le second parcours, pour qui a les fondamentaux.",
-      "badge": "Session pilote",
-      "infos": "Prérequis : N1+N2 ou équivalent. · Financement : OPCO, FIFPL ou AGEFICE.",
-      "cta": "Rejoindre la liste de la session pilote"
-    },
-    "n5": {
-      "titre": "N5 — Sécuriser l'IA dans votre entreprise",
-      "prix": "470 € net",
-      "texte": "1 journée présentiel · par personne. Où vont vos données, comment on vous vole avec des deepfakes, ce que le RGPD et l'AI Act vous demandent vraiment. Atelier charte d'usage : chacun repart avec la sienne.",
-      "infos": "Public : dirigeants, RH — aucun prérequis technique. · Financement : OPCO, FIFPL ou AGEFICE.",
-      "cta": "Réserver cette journée →"
     },
     "certification": {
       "titre": "Certification RS7344",
@@ -140,6 +128,122 @@
       "prix": "Sur devis",
       "texte": "Une journée, un sujet, un résultat — le programme se construit avec vous.",
       "cta": "Discuter de mon thème →"
+    },
+    "parcours": [
+      {
+        "id": "P1",
+        "offre": "P1",
+        "titre": "Parcours 1 — Découvrir et déléguer",
+        "prix": "870 € net",
+        "texte": "2 jours en présentiel · par personne. Un seul parcours, pas deux formations à la carte. Support de cours inclus. Prix net, exonéré de TVA · 435 €/jour.",
+        "points": [
+          {
+            "titre": "Parler à l'IA",
+            "texte": "Obtenir des résultats concrets, éviter les pièges, prendre en main Cowork et Claude Code."
+          },
+          {
+            "titre": "Déléguer à l'IA",
+            "texte": "Projets structurés, délégation à des agents, premières automatisations, gouvernance et cadre légal."
+          }
+        ],
+        "infos": "Aucun prérequis. · Financement : OPCO, FIFPL ou AGEFICE. · En intra : 3 000 € le groupe (2 jours), jusqu'à 6 personnes.",
+        "cta": "Réserver ma place →"
+      },
+      {
+        "id": "P2",
+        "offre": "P2",
+        "titre": "Parcours 2 — Reprendre la main",
+        "prix": "870 € net",
+        "badge": "Session pilote",
+        "texte": "2 jours en présentiel · par personne. Où vivent vos données, ce que vous voulez en faire, et ce qu'il reste à construire : vous repartez avec le point de départ de votre second cerveau et le plan de votre système d'IA. Prix net, exonéré de TVA · 435 €/jour.",
+        "points": [
+          {
+            "titre": "Votre second cerveau",
+            "texte": "Un coffre de notes rangé sur votre ordinateur, que l'IA sait lire : le point de départ de votre système."
+          },
+          {
+            "titre": "Votre indépendance",
+            "texte": "Portabilité, choix des hébergeurs, grille de souveraineté, cahier de mise en œuvre et feuille de route."
+          }
+        ],
+        "infos": "Prérequis : Parcours 1 ou pratique équivalente. · Financement : OPCO, FIFPL ou AGEFICE. · En intra : 3 000 € le groupe (2 jours), jusqu'à 6 personnes. · La mise en place de votre système par mes soins est une prestation distincte, sur devis.",
+        "cta": "Rejoindre la liste de la session pilote"
+      },
+      {
+        "id": "P3",
+        "offre": "P3",
+        "titre": "Parcours 3 — Claude Code en production",
+        "prix": "470 € net",
+        "badge": "Session pilote",
+        "texte": "1 jour en présentiel · par personne. Faire passer Claude Code de la découverte à l'usage réel, sur vos propres cas. On travaille sur vos outils et vos documents, pas sur des exemples. Prix net, exonéré de TVA.",
+        "points": [
+          {
+            "titre": "Vos outils branchés",
+            "texte": "Des connecteurs (MCP) vers votre messagerie, vos documents, votre base clients."
+          },
+          {
+            "titre": "Des agents qui travaillent pour vous",
+            "texte": "Routines, plusieurs agents sur un même livrable, méthodes réutilisables (Skills), et les limites de ce que vous déléguez."
+          }
+        ],
+        "infos": "Prérequis : Parcours 1 ou pratique équivalente, et un abonnement Claude payant. · Financement : OPCO, FIFPL ou AGEFICE.",
+        "cta": "Rejoindre la liste de la session pilote"
+      },
+      {
+        "id": "P4",
+        "offre": "P4",
+        "titre": "Parcours 4 — Monter son système souverain",
+        "prix": "1 270 € net",
+        "badge": "Session pilote",
+        "texte": "3 jours en présentiel · par personne. Vous construisez pour de vrai : un serveur à vous, une base qui contient vos données, des automatisations qui travaillent sans vous, des sauvegardes. Vous repartez avec une adresse qui répond, et vous savez la réparer. Prix net, exonéré de TVA.",
+        "points": [
+          {
+            "titre": "Votre serveur et votre base",
+            "texte": "Un serveur à votre nom, une base de données à vous, vos informations importées."
+          },
+          {
+            "titre": "Vos automatisations",
+            "texte": "n8n d'abord en ligne, puis chez vous ; une IA branchée sur votre base ; sauvegardes et fiabilité."
+          }
+        ],
+        "infos": "Prérequis : Parcours 2. À votre charge : un nom de domaine à votre nom et un serveur (environ 10 €/mois, sans engagement). Après ces trois jours, c'est vous qui tenez le système : la dernière demi-journée y est consacrée. · Financement : OPCO, FIFPL ou AGEFICE.",
+        "cta": "Rejoindre la liste de la session pilote"
+      },
+      {
+        "id": "P5",
+        "offre": "P5",
+        "titre": "Parcours 5 — Sécuriser l'IA dans votre entreprise",
+        "prix": "470 € net",
+        "texte": "1 journée présentiel · par personne. Où vont vos données, comment on vous vole avec des deepfakes, ce que le RGPD et l'AI Act vous demandent vraiment. Atelier charte d'usage : chacun repart avec la sienne.",
+        "points": [],
+        "infos": "Public : dirigeants, RH — aucun prérequis technique. · Financement : OPCO, FIFPL ou AGEFICE.",
+        "cta": "Réserver cette journée →"
+      }
+    ],
+    "groupes": {
+      "titre": "Ou enchaînez deux parcours.",
+      "texte": "Le prix est simplement la somme des deux parcours. En intra, sur devis.",
+      "items": [
+        {
+          "offre": "P1+P2",
+          "nom": "Parcours 1 + 2 — Découvrir, puis reprendre la main",
+          "duree": "4 jours",
+          "prix": "1 740 € net"
+        },
+        {
+          "offre": "P1+P3",
+          "nom": "Parcours 1 + 3 — Découvrir, puis passer en production",
+          "duree": "3 jours",
+          "prix": "1 340 € net"
+        },
+        {
+          "offre": "P2+P4",
+          "nom": "Parcours 2 + 4 — Reprendre la main, puis monter son système",
+          "duree": "5 jours",
+          "prix": "2 140 € net"
+        }
+      ],
+      "cta": "Réserver cet enchaînement →"
     }
   },
   "intraInter": {
@@ -156,10 +260,51 @@
       "titre": "Le calcul est vite fait",
       "texte": "À partir de 4 personnes, l'intra revient moins cher que l'inter.",
       "lignes": [
-        ["Initiation · ½ journée", "—", "850 € le groupe"],
-        ["N1+N2 · 2 jours", "870 € / pers.", "3 000 € le groupe"],
-        ["N3+N4 · 2 jours", "870 € / pers.", "3 000 € le groupe"],
-        ["N5 · 1 jour", "470 € / pers.", "1 500 € le groupe"]
+        [
+          "Initiation · ½ journée",
+          "—",
+          "850 € le groupe"
+        ],
+        [
+          "Parcours 1 · 2 jours",
+          "870 € / pers.",
+          "3 000 € le groupe"
+        ],
+        [
+          "Parcours 2 · 2 jours",
+          "870 € / pers.",
+          "3 000 € le groupe"
+        ],
+        [
+          "Parcours 3 · 1 jour",
+          "470 € / pers.",
+          "sur devis"
+        ],
+        [
+          "Parcours 4 · 3 jours",
+          "1 270 € / pers.",
+          "sur devis"
+        ],
+        [
+          "Parcours 5 · 1 jour",
+          "470 € / pers.",
+          "1 500 € le groupe"
+        ],
+        [
+          "Parcours 1 + 2 · 4 jours",
+          "1 740 € / pers.",
+          "sur devis"
+        ],
+        [
+          "Parcours 1 + 3 · 3 jours",
+          "1 340 € / pers.",
+          "sur devis"
+        ],
+        [
+          "Parcours 2 + 4 · 5 jours",
+          "2 140 € / pers.",
+          "sur devis"
+        ]
       ],
       "note": "Jusqu'à 6 participants pour les ateliers sur ordinateur, jusqu'à 12 pour l'Initiation. Prix nets, exonérés de TVA (art. 261-4-4°a du CGI)."
     },
@@ -174,7 +319,7 @@
   "faq": [
     {
       "question": "La formation est-elle finançable ?",
-      "reponse": "Oui, mais le guichet dépend de votre statut. N1 à N5 passent par votre OPCO, FIFPL ou AGEFICE. La certification RS7344 passera par le CPF, dès l'ouverture des inscriptions. Je fournis les trois pièces du dossier."
+      "reponse": "Oui, mais le guichet dépend de votre statut. Les parcours 1 à 5 passent par votre OPCO, FIFPL ou AGEFICE. La certification RS7344 passera par le CPF, dès l'ouverture des inscriptions. Je fournis les trois pièces du dossier."
     },
     {
       "question": "Faut-il des compétences techniques ?",
@@ -182,7 +327,7 @@
     },
     {
       "question": "Faut-il un compte IA payant ?",
-      "reponse": "Pour N1 à N4, oui : un compte Claude Pro ou Max (~20 €/mois). Je vous guide avant la formation. Pour l'Initiation, non."
+      "reponse": "Pour les parcours 1 à 4, oui : un compte Claude Pro ou Max (~20 €/mois). Je vous guide avant la formation. Pour l'Initiation, non."
     },
     {
       "question": "Que faut-il apporter ?",

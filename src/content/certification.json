@@ -10,16 +10,16 @@
   "distinction": {
     "titre": "Une formation, et un titre à la clé.",
     "texte": "Dans ce parcours, la formation et le passage de la certification sont compris dans un prix unique : vous apprenez, puis vous démontrez ce que vous savez faire devant un jury, qui vous délivre un titre — à mettre sur un CV, montrer à un client, valoriser dans votre activité.",
-    "note": "Ce parcours RS7344 n'est pas une suite aux formations N1 à N5 : c'est une autre offre, avec son propre contenu et son propre financement. À vous de choisir entre les deux offres — pas entre deux étapes d'un même parcours.",
+    "note": "Ce parcours RS7344 n'est pas une suite aux parcours 1 à 5 : c'est une autre offre, avec son propre contenu et son propre financement. À vous de choisir entre les deux offres — pas entre deux étapes d'un même parcours.",
     "comparatif": {
       "titre": "Lequel choisir ?",
       "colonnes": [
         {
-          "titre": "Formations N1 à N5",
+          "titre": "Parcours 1 à 5",
           "lignes": [
             "Objectif : maîtriser les outils au quotidien",
-            "De 1 à 2 jours par parcours (5 jours en tout)",
-            "470 à 870 € net selon le parcours",
+            "De 1 à 3 jours par parcours",
+            "470 à 1 270 € net selon le parcours",
             "Financement OPCO, FIFPL ou AGEFICE",
             "Vous gagnez du temps dès le lendemain"
           ]
@@ -35,9 +35,9 @@
           ]
         }
       ],
-      "critere": "La règle simple : prenez N1 à N5 pour maîtriser les outils. Prenez la certification pour transformer votre entreprise avec — et repartir avec un titre qui l'atteste. Et si votre employeur ne finance pas, le CPF reste le seul budget que vous décidez vous-même."
+      "critere": "La règle simple : prenez les parcours 1 à 5 pour maîtriser les outils. Prenez la certification pour transformer votre entreprise avec — et repartir avec un titre qui l'atteste. Et si votre employeur ne finance pas, le CPF reste le seul budget que vous décidez vous-même."
     },
-    "cta": "Voir les formations N1 à N5 →"
+    "cta": "Voir les parcours 1 à 5 →"
   },
   "projet": {
     "titre": "Un projet sur votre propre activité.",

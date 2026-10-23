@@ -170,50 +170,47 @@ import imageAtelier from '../../assets/formation/atelier-groupe.png';
         </a>
       </div>
 
-      <div class="bg-white border border-sauge-clair rounded-xl p-6 mb-4">
-        <div class="flex flex-wrap items-baseline gap-3 mb-3">
-          <h3 class="titre-carte">{content.offres.n1n2.titre}</h3>
-          <span class="titre-carte text-sauge-fonce">{content.offres.n1n2.prix}</span>
-        </div>
-        <p class="texte-secondaire">{content.offres.n1n2.texte}</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-          <div class="bg-sauge-clair/30 rounded-lg p-4">
-            <h4 class="titre-mini">{content.offres.n1n2.n1.titre}</h4>
-            <p class="legende mt-1">{content.offres.n1n2.n1.texte}</p>
+      {content.offres.parcours.map((p, i) => (
+        <div class="bg-white border border-sauge-clair rounded-xl p-6 mb-4">
+          <div class="flex flex-wrap items-baseline gap-3 mb-3">
+            <h3 class="titre-carte">{p.titre}</h3>
+            <span class="titre-carte text-sauge-fonce">{p.prix}</span>
+            {p.badge && <span class="bg-dore/20 text-dore font-bold text-xs uppercase rounded-full px-2 py-0.5">{p.badge}</span>}
           </div>
-          <div class="bg-sauge-clair/30 rounded-lg p-4">
-            <h4 class="titre-mini">{content.offres.n1n2.n2.titre}</h4>
-            <p class="legende mt-1">{content.offres.n1n2.n2.texte}</p>
-          </div>
+          <p class="texte-secondaire">{p.texte}</p>
+          {p.points.length > 0 && (
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+              {p.points.map(pt => (
+                <div class="bg-sauge-clair/30 rounded-lg p-4">
+                  <h4 class="titre-mini">{pt.titre}</h4>
+                  <p class="legende mt-1">{pt.texte}</p>
+                </div>
+              ))}
+            </div>
+          )}
+          <p class="texte-secondaire mt-3">{p.infos}</p>
+          <a href={`/contact/?offre=${encodeURIComponent(p.offre)}&page=/formation/`} class={`btn ${i === 0 ? 'btn-or' : 'btn-ligne'} mt-3`}>
+            {p.cta}
+          </a>
         </div>
-        <p class="texte-secondaire mt-3">{content.offres.n1n2.infos}</p>
-        <a href="/contact/?offre=N1%2BN2&page=/formation/" class="btn btn-or mt-3">
-          {content.offres.n1n2.cta}
-        </a>
-      </div>
+      ))}
 
       <div class="bg-white border border-sauge-clair rounded-xl p-6 mb-4">
-        <div class="flex flex-wrap items-baseline gap-3 mb-3">
-          <h3 class="titre-carte">{content.offres.n3n4.titre}</h3>
-          <span class="titre-carte text-sauge-fonce">{content.offres.n3n4.prix}</span>
+        <h3 class="titre-carte">{content.offres.groupes.titre}</h3>
+        <p class="texte-secondaire mt-2">{content.offres.groupes.texte}</p>
+        <div class="grid grid-cols-1 gap-3 mt-4">
+          {content.offres.groupes.items.map(g => (
+            <div class="bg-sauge-clair/30 rounded-lg p-4 flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <h4 class="titre-mini">{g.nom}</h4>
+                <p class="legende mt-1">{g.duree} · <strong>{g.prix}</strong></p>
+              </div>
+              <a href={`/contact/?offre=${encodeURIComponent(g.offre)}&page=/formation/`} class="btn btn-ligne">
+                {content.offres.groupes.cta}
+              </a>
+            </div>
+          ))}
         </div>
-        <p class="texte-secondaire">{content.offres.n3n4.texte} <span class="bg-dore/20 text-dore font-bold text-xs uppercase rounded-full px-2 py-0.5">{content.offres.n3n4.badge}</span></p>
-        <p class="texte-secondaire mt-3">{content.offres.n3n4.infos}</p>
-        <a href="/contact/?offre=N3%2BN4&page=/formation/" class="btn btn-ligne mt-3">
-          {content.offres.n3n4.cta}
-        </a>
-      </div>
-
-      <div class="bg-white border border-sauge-clair rounded-xl p-6 mb-4">
-        <div class="flex flex-wrap items-baseline gap-3 mb-3">
-          <h3 class="titre-carte">{content.offres.n5.titre}</h3>
-          <span class="titre-carte text-sauge-fonce">{content.offres.n5.prix}</span>
-        </div>
-        <p class="texte-secondaire">{content.offres.n5.texte}</p>
-        <p class="texte-secondaire mt-3">{content.offres.n5.infos}</p>
-        <a href="/contact/?offre=N5&page=/formation/" class="btn btn-ligne mt-3">
-          {content.offres.n5.cta}
-        </a>
       </div>
 
       <div class="bg-white border border-sauge-clair rounded-xl p-6 mb-4">

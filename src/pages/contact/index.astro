@@ -121,7 +121,7 @@ const etiquette = "block titre-mini mb-1";
     var bouton = document.getElementById('envoyer');
     var params = new URLSearchParams(window.location.search);
 
-    // Pré-remplissage depuis l'URL : /contact/?offre=N1%2BN2&page=/formation/
+    // Pré-remplissage depuis l'URL : /contact/?offre=P1%2BP2&page=/formation/
     var offre = params.get('offre');
     if (offre) {
       var select = document.getElementById('offre');
