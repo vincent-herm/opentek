@@ -146,7 +146,7 @@
             "texte": "Projets structurés, délégation à des agents, premières automatisations, gouvernance et cadre légal."
           }
         ],
-        "infos": "Aucun prérequis. · Financement : OPCO, FIFPL ou AGEFICE. · En intra : 3 000 € le groupe (2 jours), jusqu'à 6 personnes.",
+        "infos": "Aucun prérequis. · Financement : OPCO, FIFPL ou AGEFICE. · En intra : 2 700 € le groupe (2 jours), jusqu'à 6 personnes.",
         "cta": "Réserver ma place →"
       },
       {
@@ -166,7 +166,7 @@
             "texte": "Portabilité, choix des hébergeurs, grille de souveraineté, cahier de mise en œuvre et feuille de route."
           }
         ],
-        "infos": "Prérequis : Parcours 1 ou pratique équivalente. · Financement : OPCO, FIFPL ou AGEFICE. · En intra : 3 000 € le groupe (2 jours), jusqu'à 6 personnes. · La mise en place de votre système par mes soins est une prestation distincte, sur devis.",
+        "infos": "Prérequis : Parcours 1 ou pratique équivalente. · Financement : OPCO, FIFPL ou AGEFICE. · En intra : 2 700 € le groupe (2 jours), jusqu'à 6 personnes. · La mise en place de votre système par mes soins est une prestation distincte, sur devis.",
         "cta": "Rejoindre la liste de la session pilote"
       },
       {
@@ -186,7 +186,7 @@
             "texte": "Routines, plusieurs agents sur un même livrable, méthodes réutilisables (Skills), et les limites de ce que vous déléguez."
           }
         ],
-        "infos": "Prérequis : Parcours 1 ou pratique équivalente, et un abonnement Claude payant. · Financement : OPCO, FIFPL ou AGEFICE.",
+        "infos": "Prérequis : Parcours 1 ou pratique équivalente, et un abonnement Claude payant. · Financement : OPCO, FIFPL ou AGEFICE. · En intra : 1 500 € le groupe (1 jour), jusqu'à 6 personnes.",
         "cta": "Rejoindre la liste de la session pilote"
       },
       {
@@ -206,7 +206,7 @@
             "texte": "n8n d'abord en ligne, puis chez vous ; une IA branchée sur votre base ; sauvegardes et fiabilité."
           }
         ],
-        "infos": "Prérequis : Parcours 2. À votre charge : un nom de domaine à votre nom et un serveur (environ 10 €/mois, sans engagement). Après ces trois jours, c'est vous qui tenez le système : la dernière demi-journée y est consacrée. · Financement : OPCO, FIFPL ou AGEFICE.",
+        "infos": "Prérequis : Parcours 2. À votre charge : un nom de domaine à votre nom et un serveur (environ 10 €/mois, sans engagement). Après ces trois jours, c'est vous qui tenez le système : la dernière demi-journée y est consacrée. · Financement : OPCO, FIFPL ou AGEFICE. · En intra : 4 000 € le groupe (3 jours), jusqu'à 6 personnes.",
         "cta": "Rejoindre la liste de la session pilote"
       },
       {
@@ -216,7 +216,7 @@
         "prix": "470 € net",
         "texte": "1 journée présentiel · par personne. Où vont vos données, comment on vous vole avec des deepfakes, ce que le RGPD et l'AI Act vous demandent vraiment. Atelier charte d'usage : chacun repart avec la sienne.",
         "points": [],
-        "infos": "Public : dirigeants, RH — aucun prérequis technique. · Financement : OPCO, FIFPL ou AGEFICE.",
+        "infos": "Public : dirigeants, RH — aucun prérequis technique. · Financement : OPCO, FIFPL ou AGEFICE. · En intra : 1 500 € le groupe (1 jour), jusqu'à 6 personnes.",
         "cta": "Réserver cette journée →"
       }
     ],
@@ -268,22 +268,22 @@
         [
           "Parcours 1 · 2 jours",
           "870 € / pers.",
-          "3 000 € le groupe"
+          "2 700 € le groupe"
         ],
         [
           "Parcours 2 · 2 jours",
           "870 € / pers.",
-          "3 000 € le groupe"
+          "2 700 € le groupe"
         ],
         [
           "Parcours 3 · 1 jour",
           "470 € / pers.",
-          "sur devis"
+          "1 500 € le groupe"
         ],
         [
           "Parcours 4 · 3 jours",
           "1 270 € / pers.",
-          "sur devis"
+          "4 000 € le groupe"
         ],
         [
           "Parcours 5 · 1 jour",
