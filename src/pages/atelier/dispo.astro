@@ -28,10 +28,25 @@ import '../../styles/global.css';
 
         <form id="form" autocomplete="off" class="mesure">
 
+          <div class="mb-6 grid grid-cols-2 gap-4">
+            <div>
+              <label for="prenom" class="block font-semibold mb-1">Prénom</label>
+              <input type="text" id="prenom" name="prenom" required autofocus
+                class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+                placeholder="Votre prénom" />
+            </div>
+            <div>
+              <label for="nom" class="block font-semibold mb-1">Nom</label>
+              <input type="text" id="nom" name="nom" required
+                class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+                placeholder="Votre nom" />
+            </div>
+          </div>
+
           <div class="mb-6">
             <label for="email" class="block font-semibold mb-1">Votre adresse email</label>
             <p class="texte-secondaire mb-2">Pour vous recontacter avec les détails pratiques.</p>
-            <input type="email" id="email" name="email" required autofocus
+            <input type="email" id="email" name="email" required
               class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
               placeholder="votre@email.fr" />
           </div>
@@ -128,9 +143,13 @@ import '../../styles/global.css';
         var erreur = document.getElementById('erreur');
         var btn = document.getElementById('btn-submit');
         var emailInput = document.getElementById('email');
+        var prenomInput = document.getElementById('prenom');
+        var nomInput = document.getElementById('nom');
 
         var params = new URLSearchParams(window.location.search);
         if (params.get('email')) emailInput.value = params.get('email');
+        if (params.get('prenom')) prenomInput.value = params.get('prenom');
+        if (params.get('nom')) nomInput.value = params.get('nom');
 
         form.addEventListener('submit', function (e) {
           e.preventDefault();
@@ -139,6 +158,8 @@ import '../../styles/global.css';
           btn.textContent = 'Envoi…';
 
           var payload = {
+            prenom: document.getElementById('prenom').value.trim(),
+            nom: document.getElementById('nom').value.trim(),
             email: document.getElementById('email').value.trim().toLowerCase(),
             ven6: form.ven6.checked,
             sam7m: form.sam7m.checked,
