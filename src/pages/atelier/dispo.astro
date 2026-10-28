@@ -57,6 +57,11 @@ import '../../styles/global.css';
             </label>
 
             <p class="texte-secondaire mt-1">Aucune case cochée = aucun créneau ne convient. Je vous proposerai d'autres dates.</p>
+
+            <label class="flex items-start gap-3 cursor-pointer mt-4 pt-4 border-t border-sauge-clair">
+              <input type="checkbox" name="liste" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+              <span class="texte-secondaire">Aucun créneau ne me convient pour l'instant — prévenez-moi de la prochaine session.</span>
+            </label>
           </div>
 
           <div class="mb-8">
@@ -87,7 +92,7 @@ import '../../styles/global.css';
           </div>
 
           <button type="submit" id="btn-submit" class="btn btn-or w-full">
-            Envoyer mes disponibilités
+            J'envoie mes choix
           </button>
 
           <p id="erreur" class="text-red-700 mt-3 hidden"></p>
@@ -138,6 +143,7 @@ import '../../styles/global.css';
             ven6: form.ven6.checked,
             sam7m: form.sam7m.checked,
             sam7a: form.sam7a.checked,
+            liste: form.liste.checked,
             audit: form.audit.checked,
             creation: form.creation.checked,
             autre: document.getElementById('autre').value.trim(),
