@@ -15,13 +15,6 @@ import Layout from '../../layouts/Layout.astro';
 
       <div id="form-zone" class="mesure space-y-6">
 
-        <!-- Mot de passe -->
-        <div>
-          <label class="block titre-mini mb-1" for="mdp">Mot de passe</label>
-          <input id="mdp" type="password" autocomplete="current-password"
-            class="w-full rounded-lg border border-sauge-clair bg-white px-3 py-2 text-texte focus:border-sauge focus:outline-none" />
-        </div>
-
         <!-- Photo -->
         <div>
           <label class="block titre-mini mb-1">Photo de la carte</label>
@@ -106,7 +99,6 @@ const btnDicter   = document.getElementById('btn-dicter') as HTMLButtonElement;
 const labelMicro  = document.getElementById('label-micro') as HTMLElement;
 const aideMicro   = document.getElementById('aide-micro') as HTMLElement;
 const btnEnvoyer  = document.getElementById('btn-envoyer') as HTMLButtonElement;
-const mdp         = document.getElementById('mdp') as HTMLInputElement;
 const formZone    = document.getElementById('form-zone') as HTMLElement;
 const resultat    = document.getElementById('resultat') as HTMLElement;
 const spinner     = document.getElementById('spinner') as HTMLElement;
@@ -168,7 +160,6 @@ if (!SpeechRecognition) {
 // Envoi
 btnEnvoyer.addEventListener('click', async () => {
   const file = photoInput.files?.[0];
-  if (!mdp.value.trim()) { alert('Mot de passe requis.'); mdp.focus(); return; }
   if (!file) { alert('Choisissez une photo.'); return; }
 
   const photoBase64: string = await new Promise((res, rej) => {
@@ -189,7 +180,6 @@ btnEnvoyer.addEventListener('click', async () => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        password: mdp.value.trim(),
         photoBase64,
         photoType: file.type || 'image/jpeg',
         commentaire: commentaire.value.trim(),
@@ -221,7 +211,6 @@ document.getElementById('btn-nouvelle')!.addEventListener('click', () => {
   preview.classList.add('hidden');
   labelPhoto.textContent = 'Appuyer pour photographier';
   commentaire.value = '';
-  mdp.value = '';
   formZone.classList.remove('hidden');
   resultat.classList.add('hidden');
 });
