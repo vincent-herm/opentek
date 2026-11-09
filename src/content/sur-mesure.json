@@ -25,11 +25,11 @@
       },
       {
         "titre": "Vos informations sont éparpillées ?",
-        "texte": "Fichiers, chiffres, notes, décisions : je remets tout au même endroit, dans une base partagée. En option, un « second cerveau » où tout se retrouve en trois secondes, et que l'IA sait lire.",
+        "texte": "Fichiers, chiffres, notes, décisions : je remets tout au même endroit, dans une base partagée. En option, une « base documentaire durable » où tout se retrouve en trois secondes, et que l'IA sait lire.",
         "etiquette": "Rassembler"
       }
     ],
-    "note": "Ces missions se chiffrent sur devis : une automatisation de facturation, une application et un second cerveau n'ont ni le même périmètre ni la même durée. C'est justement ce que le diagnostic permet de fixer."
+    "note": "Ces missions se chiffrent sur devis : une automatisation de facturation, une application et une base documentaire durable n'ont ni le même périmètre ni la même durée. C'est justement ce que le diagnostic permet de fixer."
   },
   "methode": {
     "titre": "Une mise en œuvre, concrètement.",
@@ -45,7 +45,7 @@
     "items": [
       "Vivahop — l'agenda des sorties du Sud-Ardèche : une application complète, en production, utilisée par les habitants et les visiteurs.",
       "La billetterie d'une association — paiement en ligne, inscription enregistrée et confirmation envoyée, enchaînés sans intervention.",
-      "Ce site — contenu, mise en ligne et contrôles de cohérence pilotés depuis mon propre second cerveau."
+      "Ce site — contenu, mise en ligne et contrôles de cohérence pilotés depuis ma propre base documentaire durable."
     ],
     "note": "Ces trois chantiers sont les miens, pas des références clients. C'est volontaire : je préfère ne vendre que ce que j'ai déjà construit et que je maintiens tous les jours."
   },
