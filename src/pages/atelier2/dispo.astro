@@ -20,6 +20,7 @@ import '../../styles/global.css';
         <h1 class="titre-page">L'IA en confiance — niveau 2</h1>
         <p class="chapo mt-4">La suite de l'atelier du 6 novembre : aller plus loin avec l'IA sur votre propre ordinateur, toujours à votre rythme.</p>
         <p class="texte-secondaire mt-3">Confirmez simplement votre présence.</p>
+        <p id="places" class="texte-secondaire mt-3" hidden></p>
       </div>
     </section>
 
@@ -86,8 +87,8 @@ import '../../styles/global.css';
         </form>
 
         <div id="merci" hidden class="text-center py-12">
-          <p class="titre-section text-sauge-fonce mb-3">Merci !</p>
-          <p class="chapo">Votre réponse est enregistrée. Je vous recontacte si besoin.</p>
+          <p class="titre-section text-sauge-fonce mb-3" id="merci-titre">Merci !</p>
+          <p class="chapo" id="merci-texte">Votre réponse est enregistrée. Je vous recontacte si besoin.</p>
           <p class="texte-secondaire mt-6"><a href="/atelier2/dispo" class="underline text-sauge-fonce">Retour au formulaire</a></p>
         </div>
 
@@ -110,8 +111,12 @@ import '../../styles/global.css';
     <script is:inline>
       (function () {
         var WEBHOOK = 'https://n8n.opentek.fr/webhook/atelier2-dispo';
+        var PLACES = 'https://n8n.opentek.fr/webhook/atelier2-places';
         var form = document.getElementById('form');
         var merci = document.getElementById('merci');
+        var merciTitre = document.getElementById('merci-titre');
+        var merciTexte = document.getElementById('merci-texte');
+        var placesEl = document.getElementById('places');
         var erreur = document.getElementById('erreur');
         var btn = document.getElementById('btn-submit');
         var emailInput = document.getElementById('email');
@@ -122,6 +127,19 @@ import '../../styles/global.css';
         if (params.get('email')) emailInput.value = params.get('email');
         if (params.get('prenom')) prenomInput.value = params.get('prenom');
         if (params.get('nom')) nomInput.value = params.get('nom');
+
+        fetch(PLACES)
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            if (!d.afficher) return;
+            placesEl.hidden = false;
+            if (d.complet) {
+              placesEl.innerHTML = '<span class="font-semibold text-dore">COMPLET</span> — vous serez mis·e en liste d\'attente, prévenu·e automatiquement si une place se libère.';
+            } else {
+              placesEl.innerHTML = 'Il reste <span class="font-semibold text-dore">' + d.restantes + ' place' + (d.restantes > 1 ? 's' : '') + '</span> sur ' + d.max + '.';
+            }
+          })
+          .catch(function () {});
 
         form.addEventListener('submit', function (e) {
           e.preventDefault();
@@ -146,10 +164,25 @@ import '../../styles/global.css';
           })
           .then(function (r) {
             if (!r.ok) throw new Error(r.status);
+            return r.json().catch(function () { return null; });
+          })
+          .then(function (rep) {
+            if (payload.sam14 && rep && rep.complet) {
+              merciTitre.textContent = "Vous êtes en liste d'attente";
+              merciTexte.textContent = "Le 14 novembre est complet (6 places). Si une place se libère, vous serez inscrit·e automatiquement — vous recevrez un email.";
+            } else if (payload.sam14) {
+              merciTitre.textContent = 'Merci !';
+              merciTexte.textContent = 'Votre présence est confirmée. Un email de confirmation vous est envoyé.';
+            } else {
+              merciTitre.textContent = 'Merci !';
+              merciTexte.textContent = 'Votre réponse est enregistrée. Je vous recontacte si besoin.';
+            }
             form.hidden = true;
             merci.hidden = false;
           })
           .catch(function () {
+            merciTitre.textContent = 'Merci !';
+            merciTexte.textContent = 'Votre réponse est enregistrée. Je vous recontacte si besoin.';
             form.hidden = true;
             merci.hidden = false;
           });
