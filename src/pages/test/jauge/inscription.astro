@@ -21,6 +21,7 @@ import '../../../styles/global.css';
         <p class="legende uppercase tracking-wider mb-4">Opentek — bac à sable de test</p>
         <h1 class="titre-page">TEST — jauge 6 places</h1>
         <p class="chapo mt-4">Page de test permanente : jauge de 6 places, déjà occupées par des fiches factices. Toute nouvelle inscription part en liste d'attente.</p>
+        <p id="places" class="texte-secondaire mt-3">Vérification des places…</p>
       </div>
     </section>
 
@@ -64,8 +65,8 @@ import '../../../styles/global.css';
         </form>
 
         <div id="merci" hidden class="text-center py-12">
-          <p class="titre-section text-sauge-fonce mb-3">Merci !</p>
-          <p class="chapo">Votre réponse est enregistrée. Regardez votre boîte mail.</p>
+          <p class="titre-section text-sauge-fonce mb-3" id="merci-titre">Merci !</p>
+          <p class="chapo" id="merci-texte">Votre réponse est enregistrée. Regardez votre boîte mail.</p>
           <p class="texte-secondaire mt-6"><a href="/test/jauge/inscription" class="underline text-sauge-fonce">Retour au formulaire</a></p>
         </div>
 
@@ -81,8 +82,12 @@ import '../../../styles/global.css';
     <script is:inline>
       (function () {
         var WEBHOOK = 'https://n8n.opentek.fr/webhook/test-jauge-inscription';
+        var PLACES = 'https://n8n.opentek.fr/webhook/test-jauge-places';
         var form = document.getElementById('form');
         var merci = document.getElementById('merci');
+        var merciTitre = document.getElementById('merci-titre');
+        var merciTexte = document.getElementById('merci-texte');
+        var placesEl = document.getElementById('places');
         var erreur = document.getElementById('erreur');
         var btn = document.getElementById('btn-submit');
         var emailInput = document.getElementById('email');
@@ -93,6 +98,24 @@ import '../../../styles/global.css';
         if (params.get('email')) emailInput.value = params.get('email');
         if (params.get('prenom')) prenomInput.value = params.get('prenom');
         if (params.get('nom')) nomInput.value = params.get('nom');
+
+        function majPlaces() {
+          fetch(PLACES)
+            .then(function (r) { return r.json(); })
+            .then(function (d) {
+              if (d.complet) {
+                placesEl.innerHTML = '<span class="font-semibold text-dore">COMPLET</span> — toute inscription part en liste d\'attente.';
+                btn.textContent = "Je m'inscris (liste d'attente)";
+              } else {
+                placesEl.textContent = d.restantes + ' place' + (d.restantes > 1 ? 's' : '') + ' restante' + (d.restantes > 1 ? 's' : '') + ' sur ' + d.max + '.';
+                btn.textContent = "Je m'inscris (test)";
+              }
+            })
+            .catch(function () {
+              placesEl.textContent = '';
+            });
+        }
+        majPlaces();
 
         form.addEventListener('submit', function (e) {
           e.preventDefault();
@@ -114,10 +137,22 @@ import '../../../styles/global.css';
           })
           .then(function (r) {
             if (!r.ok) throw new Error(r.status);
+            return r.json().catch(function () { return null; });
+          })
+          .then(function (rep) {
+            if (rep && rep.complet) {
+              merciTitre.textContent = "Vous êtes en liste d'attente";
+              merciTexte.textContent = "La jauge de test (6 places) est pleine. Si une place se libère, vous serez promu·e automatiquement — regardez votre boîte mail.";
+            } else {
+              merciTitre.textContent = 'Merci !';
+              merciTexte.textContent = 'Votre inscription est confirmée. Un email de confirmation vous est envoyé.';
+            }
             form.hidden = true;
             merci.hidden = false;
           })
           .catch(function () {
+            merciTitre.textContent = 'Merci !';
+            merciTexte.textContent = 'Votre réponse est enregistrée. Regardez votre boîte mail.';
             form.hidden = true;
             merci.hidden = false;
           });
