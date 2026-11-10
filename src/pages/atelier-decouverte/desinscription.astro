@@ -1,0 +1,83 @@
+---
+// Page autonome — pas de Layout, pas de Header/Footer.
+import '../../styles/global.css';
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Me désinscrire — L'IA en confiance</title>
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+  <body>
+
+    <section class="section-hero">
+      <div class="wrap" style="max-width: 36rem;">
+        <p class="legende uppercase tracking-wider mb-4">Opentek — Vincent Hermitant</p>
+        <h1 class="titre-page">Me désinscrire</h1>
+      </div>
+    </section>
+
+    <section class="section bg-sauge-clair/50">
+      <div class="wrap" style="max-width: 36rem;">
+        <div id="bloc" class="rounded-lg border-2 border-sauge-clair bg-white p-6 sm:p-8">
+          <p id="question" class="mb-6"></p>
+          <div class="flex flex-wrap items-center gap-4">
+            <button id="confirmer" type="button" class="btn btn-or">Oui, je me désinscris</button>
+            <a href="/atelier-decouverte/dispo" class="btn btn-ligne">Non, je garde ma place</a>
+          </div>
+          <p id="statut" role="status" aria-live="polite" class="texte-secondaire mt-4"></p>
+        </div>
+        <p class="texte-secondaire mt-6">Un souci avec ce lien ? Écrivez à <a href="mailto:vincent@opentek.fr" class="underline text-sauge-fonce">vincent@opentek.fr</a> ou appelez le 06 46 24 61 99.</p>
+      </div>
+    </section>
+
+  </body>
+
+  <script is:inline>
+    (function () {
+      var WEBHOOK = 'https://n8n.opentek.fr/webhook/atelier-decouverte-desinscription';
+      var t = new URLSearchParams(window.location.search).get('t') || '';
+      var question = document.getElementById('question');
+      var bouton = document.getElementById('confirmer');
+      var statut = document.getElementById('statut');
+
+      if (!t) {
+        question.textContent = "Ce lien n'est pas valide. Utilisez le lien reçu dans votre email de confirmation.";
+        bouton.style.display = 'none';
+      } else {
+        question.textContent = "Voulez-vous vous désinscrire de l'atelier « L'IA en confiance » (jeudi 3 décembre, 14h30) ?";
+      }
+
+      bouton.addEventListener('click', function () {
+        bouton.disabled = true;
+        statut.textContent = 'Un instant…';
+        fetch(WEBHOOK, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ t: t })
+        })
+        .then(function (r) { return r.json().catch(function () { return null; }); })
+        .then(function (rep) {
+          if (rep && rep.ok && rep.deja) {
+            statut.textContent = 'Votre désinscription était déjà prise en compte.';
+            bouton.style.display = 'none';
+          } else if (rep && rep.ok) {
+            statut.textContent = "C'est fait : votre désinscription est enregistrée. Un email de confirmation vous est envoyé.";
+            bouton.style.display = 'none';
+          } else {
+            statut.textContent = (rep && rep.erreur) || 'Une erreur est survenue. Écrivez-moi à vincent@opentek.fr.';
+            bouton.disabled = false;
+          }
+        })
+        .catch(function () {
+          statut.textContent = 'Une erreur est survenue. Écrivez-moi à vincent@opentek.fr.';
+          bouton.disabled = false;
+        });
+      });
+    })();
+  </script>
+</html>

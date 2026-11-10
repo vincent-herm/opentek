@@ -1,0 +1,194 @@
+---
+// Page autonome — pas de Layout, pas de Header/Footer.
+import '../../styles/global.css';
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Confirmez votre place — L'IA en confiance</title>
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+  <body>
+
+    <section class="section-hero">
+      <div class="wrap" style="max-width: 36rem;">
+        <p class="legende uppercase tracking-wider mb-4">Opentek — Vincent Hermitant</p>
+        <h1 class="titre-page">L'IA en confiance</h1>
+        <p class="chapo mt-4">La suite de l'atelier du 3 décembre : aller plus loin avec l'IA sur votre propre ordinateur, toujours à votre rythme.</p>
+        <p class="texte-secondaire mt-3">Confirmez simplement votre présence.</p>
+        <p id="places" class="texte-secondaire mt-3" hidden></p>
+      </div>
+    </section>
+
+    <section class="section bg-sauge-clair/50">
+      <div class="wrap" style="max-width: 36rem;">
+
+        <form id="form" autocomplete="off" class="mesure">
+
+          <div class="mb-6 grid grid-cols-2 gap-4">
+            <div>
+              <label for="prenom" class="block font-semibold mb-1">Prénom</label>
+              <input type="text" id="prenom" name="prenom" required autofocus
+                class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+                placeholder="Votre prénom" />
+            </div>
+            <div>
+              <label for="nom" class="block font-semibold mb-1">Nom</label>
+              <input type="text" id="nom" name="nom" required
+                class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+                placeholder="Votre nom" />
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <label for="email" class="block font-semibold mb-1">Votre adresse email</label>
+            <p class="texte-secondaire mb-2">Pour vous recontacter avec les détails pratiques.</p>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+              placeholder="votre@email.fr" />
+          </div>
+
+          <div class="mb-8">
+            <p class="font-semibold mb-1">Samedi 12 décembre, 14h30 - 17h (accueil 14h)</p>
+            <p class="texte-secondaire mb-2">Mairie de Payzac. Paiement sur place en espèces ou par chèque à l'ordre de <strong>POLLEN SCOP</strong>.</p>
+
+            <label class="flex items-start gap-3 cursor-pointer mb-3">
+              <input type="radio" name="presence" value="oui" required class="mt-1 accent-sauge-fonce w-4 h-4" />
+              <span>Oui, je viens le 12 décembre</span>
+            </label>
+
+            <label class="flex items-start gap-3 cursor-pointer mb-3">
+              <input type="radio" name="presence" value="non" required class="mt-1 accent-sauge-fonce w-4 h-4" />
+              <span>Non, je ne peux pas — tenez-moi au courant d'une autre date</span>
+            </label>
+          </div>
+
+          <div class="mb-6">
+            <label for="autre" class="block font-semibold mb-1">Remarque <span class="texte-secondaire font-normal">(facultatif)</span></label>
+            <input type="text" id="autre" name="autre"
+              class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+              placeholder="Une question, une précision..." />
+          </div>
+
+          <!-- Piège anti-bot -->
+          <div style="position:absolute;left:-9999px;" aria-hidden="true">
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <button type="submit" id="btn-submit" class="btn btn-or w-full">
+            Je confirme
+          </button>
+
+          <p id="erreur" class="text-red-700 mt-3 hidden"></p>
+        </form>
+
+        <div id="merci" hidden class="text-center py-12">
+          <p class="titre-section text-sauge-fonce mb-3" id="merci-titre">Merci !</p>
+          <p class="chapo" id="merci-texte">Votre réponse est enregistrée. Je vous recontacte si besoin.</p>
+          <p class="texte-secondaire mt-6"><a href="/atelier-decouverte2/dispo" class="underline text-sauge-fonce">Retour au formulaire</a></p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="py-10">
+      <div class="wrap" style="max-width: 36rem;">
+        <p class="legende text-center mb-6">Vincent Hermitant — 06 46 24 61 99 — <a href="mailto:vincent@opentek.fr" class="underline text-sauge-fonce">vincent@opentek.fr</a></p>
+
+        <div class="border-t border-sauge-clair pt-6 text-center">
+          <p class="legende">
+            <a href="/mentions-legales/" class="underline text-sauge-fonce">Mentions légales</a>
+            · <a href="/confidentialite/" class="underline text-sauge-fonce">Politique de confidentialité</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script is:inline>
+      (function () {
+        var WEBHOOK = 'https://n8n.opentek.fr/webhook/atelier-decouverte2-dispo';
+        var PLACES = 'https://n8n.opentek.fr/webhook/atelier-decouverte2-places';
+        var form = document.getElementById('form');
+        var merci = document.getElementById('merci');
+        var merciTitre = document.getElementById('merci-titre');
+        var merciTexte = document.getElementById('merci-texte');
+        var placesEl = document.getElementById('places');
+        var erreur = document.getElementById('erreur');
+        var btn = document.getElementById('btn-submit');
+        var emailInput = document.getElementById('email');
+        var prenomInput = document.getElementById('prenom');
+        var nomInput = document.getElementById('nom');
+
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('email')) emailInput.value = params.get('email');
+        if (params.get('prenom')) prenomInput.value = params.get('prenom');
+        if (params.get('nom')) nomInput.value = params.get('nom');
+
+        fetch(PLACES)
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            if (!d.afficher) return;
+            placesEl.hidden = false;
+            if (d.complet) {
+              placesEl.innerHTML = '<span class="font-semibold text-dore">COMPLET</span> — vous serez mis·e en liste d\'attente, prévenu·e automatiquement si une place se libère.';
+            } else {
+              placesEl.innerHTML = 'Il reste <span class="font-semibold text-dore">' + d.restantes + ' place' + (d.restantes > 1 ? 's' : '') + '</span> sur ' + d.max + '.';
+            }
+          })
+          .catch(function () {});
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          erreur.classList.add('hidden');
+          btn.disabled = true;
+          btn.textContent = 'Envoi…';
+
+          var payload = {
+            prenom: document.getElementById('prenom').value.trim(),
+            nom: document.getElementById('nom').value.trim(),
+            email: document.getElementById('email').value.trim().toLowerCase(),
+            sam1212: form.presence.value === 'oui',
+            liste: form.presence.value === 'non',
+            autre: document.getElementById('autre').value.trim(),
+            website: document.getElementById('website').value
+          };
+
+          fetch(WEBHOOK, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          })
+          .then(function (r) {
+            if (!r.ok) throw new Error(r.status);
+            return r.json().catch(function () { return null; });
+          })
+          .then(function (rep) {
+            if (payload.sam1212 && rep && rep.complet) {
+              merciTitre.textContent = "Vous êtes en liste d'attente";
+              merciTexte.textContent = "Le 12 décembre est complet. Si une place se libère, vous serez inscrit·e automatiquement — vous recevrez un email.";
+            } else if (payload.sam1212) {
+              merciTitre.textContent = 'Merci !';
+              merciTexte.textContent = 'Votre présence est confirmée. Un email de confirmation vous est envoyé.';
+            } else {
+              merciTitre.textContent = 'Merci !';
+              merciTexte.textContent = 'Votre réponse est enregistrée. Je vous recontacte si besoin.';
+            }
+            form.hidden = true;
+            merci.hidden = false;
+          })
+          .catch(function () {
+            merciTitre.textContent = 'Merci !';
+            merciTexte.textContent = 'Votre réponse est enregistrée. Je vous recontacte si besoin.';
+            form.hidden = true;
+            merci.hidden = false;
+          });
+        });
+      })();
+    </script>
+
+  </body>
+</html>
