@@ -1,0 +1,129 @@
+---
+// Page autonome — pas de Layout, pas de Header/Footer.
+// Bac à sable permanent pour tester jauge / liste d'attente / désinscription / promotion.
+// Ne pas confondre avec une vraie page d'atelier : table et workflow dédiés "TEST".
+import '../../../styles/global.css';
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>TEST — jauge et liste d'attente</title>
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+  <body>
+
+    <section class="section-hero">
+      <div class="wrap" style="max-width: 36rem;">
+        <p class="legende uppercase tracking-wider mb-4">Opentek — bac à sable de test</p>
+        <h1 class="titre-page">TEST — jauge 6 places</h1>
+        <p class="chapo mt-4">Page de test permanente : jauge de 6 places, déjà occupées par des fiches factices. Toute nouvelle inscription part en liste d'attente.</p>
+      </div>
+    </section>
+
+    <section class="section bg-sauge-clair/50">
+      <div class="wrap" style="max-width: 36rem;">
+
+        <form id="form" autocomplete="off" class="mesure">
+
+          <div class="mb-6 grid grid-cols-2 gap-4">
+            <div>
+              <label for="prenom" class="block font-semibold mb-1">Prénom</label>
+              <input type="text" id="prenom" name="prenom" required autofocus
+                class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+                placeholder="Votre prénom" />
+            </div>
+            <div>
+              <label for="nom" class="block font-semibold mb-1">Nom</label>
+              <input type="text" id="nom" name="nom" required
+                class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+                placeholder="Votre nom" />
+            </div>
+          </div>
+
+          <div class="mb-8">
+            <label for="email" class="block font-semibold mb-1">Votre adresse email</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+              placeholder="votre@email.fr" />
+          </div>
+
+          <!-- Piège anti-bot -->
+          <div style="position:absolute;left:-9999px;" aria-hidden="true">
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <button type="submit" id="btn-submit" class="btn btn-or w-full">
+            Je m'inscris (test)
+          </button>
+
+          <p id="erreur" class="text-red-700 mt-3 hidden"></p>
+        </form>
+
+        <div id="merci" hidden class="text-center py-12">
+          <p class="titre-section text-sauge-fonce mb-3">Merci !</p>
+          <p class="chapo">Votre réponse est enregistrée. Regardez votre boîte mail.</p>
+          <p class="texte-secondaire mt-6"><a href="/test/jauge/inscription" class="underline text-sauge-fonce">Retour au formulaire</a></p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="py-10">
+      <div class="wrap" style="max-width: 36rem;">
+        <p class="legende text-center">Page de test — ne pas partager, ne pas indexer.</p>
+      </div>
+    </footer>
+
+    <script is:inline>
+      (function () {
+        var WEBHOOK = 'https://n8n.opentek.fr/webhook/test-jauge-inscription';
+        var form = document.getElementById('form');
+        var merci = document.getElementById('merci');
+        var erreur = document.getElementById('erreur');
+        var btn = document.getElementById('btn-submit');
+        var emailInput = document.getElementById('email');
+        var prenomInput = document.getElementById('prenom');
+        var nomInput = document.getElementById('nom');
+
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('email')) emailInput.value = params.get('email');
+        if (params.get('prenom')) prenomInput.value = params.get('prenom');
+        if (params.get('nom')) nomInput.value = params.get('nom');
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          erreur.classList.add('hidden');
+          btn.disabled = true;
+          btn.textContent = 'Envoi…';
+
+          var payload = {
+            prenom: document.getElementById('prenom').value.trim(),
+            nom: document.getElementById('nom').value.trim(),
+            email: document.getElementById('email').value.trim().toLowerCase(),
+            website: document.getElementById('website').value
+          };
+
+          fetch(WEBHOOK, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          })
+          .then(function (r) {
+            if (!r.ok) throw new Error(r.status);
+            form.hidden = true;
+            merci.hidden = false;
+          })
+          .catch(function () {
+            form.hidden = true;
+            merci.hidden = false;
+          });
+        });
+      })();
+    </script>
+
+  </body>
+</html>
