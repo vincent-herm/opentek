@@ -54,6 +54,8 @@ const redirects = {
   '/prestations': '/site-internet/',
   // La page Accompagnement est devenue Sur mesure (02/10/2026).
   '/accompagnement': '/sur-mesure/',
+  // Ancien chemin de la page d'inscription ateliers (18/11/2026).
+  '/atelier-decouverte/dispo': '/atelier-decouverte/',
 };
 
 export default defineConfig({
