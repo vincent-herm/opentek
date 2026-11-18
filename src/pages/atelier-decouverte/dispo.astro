@@ -9,7 +9,7 @@ import '../../styles/global.css';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Confirmez votre place — L'IA en confiance</title>
+    <title>Ateliers Découverte IA — L'IA en confiance</title>
     <meta name="robots" content="noindex, nofollow" />
   </head>
   <body>
@@ -18,9 +18,7 @@ import '../../styles/global.css';
       <div class="wrap" style="max-width: 36rem;">
         <p class="legende uppercase tracking-wider mb-4">Opentek — Vincent Hermitant</p>
         <h1 class="titre-page">L'IA en confiance</h1>
-        <p class="chapo mt-4">Un atelier pratique de 2h30 pour apprendre à utiliser l'IA sur votre propre ordinateur, à votre rythme.</p>
-        <p class="texte-secondaire mt-3">Confirmez simplement votre présence.</p>
-        <p id="places" class="texte-secondaire mt-3" hidden></p>
+        <p class="chapo mt-4">Deux ateliers pratiques de 3 heures pour découvrir l'intelligence artificielle sur votre propre ordinateur. Petit groupe, rythme humain, zéro jargon.</p>
       </div>
     </section>
 
@@ -52,21 +50,114 @@ import '../../styles/global.css';
               placeholder="votre@email.fr" />
           </div>
 
+          <!-- Atelier 1 -->
           <div class="mb-8">
-            <p class="font-semibold mb-1">Jeudi 3 décembre, 14h30 - 17h (accueil 14h)</p>
-            <p class="texte-secondaire mb-2">Mairie de Payzac. Paiement sur place en espèces ou par chèque à l'ordre de <strong>POLLEN SCOP</strong>.</p>
+            <div class="mb-4">
+              <span class="block w-8 h-0.5 bg-dore mb-3"></span>
+              <p class="titre-carte font-serif text-anthracite">Atelier 1 — Découverte</p>
+              <p class="texte-secondaire mt-1">Premiers pas avec l'IA : poser les bonnes questions, rédiger, créer une image, résumer un document — et reconnaître ce qu'il ne faut jamais lui confier.</p>
+              <p class="texte-secondaire mt-1">3 heures · 30 € · Prérequis : être à l'aise avec son ordinateur (naviguer sur le web, retrouver un fichier dans un dossier)</p>
+            </div>
 
-            <label class="flex items-start gap-3 cursor-pointer mb-3">
-              <input type="radio" name="presence" value="oui" required class="mt-1 accent-sauge-fonce w-4 h-4" />
-              <span>Oui, je viens le 3 décembre</span>
-            </label>
+            <p class="font-semibold mb-2">Choisissez votre créneau :</p>
 
-            <label class="flex items-start gap-3 cursor-pointer mb-3">
-              <input type="radio" name="presence" value="non" required class="mt-1 accent-sauge-fonce w-4 h-4" />
-              <span>Non, je ne peux pas — tenez-moi au courant d'une autre date</span>
+            <div class="rounded-lg border-2 border-sauge-clair bg-white p-4 mb-3">
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input type="checkbox" name="a1_mar2_matin" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+                <div>
+                  <span class="font-semibold">Mardi 2 décembre, 9h30 - 12h30</span>
+                  <span class="texte-secondaire block">Accueil dès 9h15 · Mairie de Payzac</span>
+                  <span id="places-a1-mar2" class="texte-secondaire block" hidden></span>
+                </div>
+              </label>
+            </div>
+
+            <div class="rounded-lg border-2 border-sauge-clair bg-white p-4 mb-3">
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input type="checkbox" name="a1_jeu3_matin" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+                <div>
+                  <span class="font-semibold">Jeudi 3 décembre, 9h30 - 12h30</span>
+                  <span class="texte-secondaire block">Accueil dès 9h15 · Mairie de Payzac</span>
+                  <span id="places-a1-jeu3" class="texte-secondaire block" hidden></span>
+                </div>
+              </label>
+            </div>
+
+            <div class="rounded-lg border-2 border-sauge-clair bg-white p-4">
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input type="checkbox" name="a1_sam12_matin" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+                <div>
+                  <span class="font-semibold">Samedi 12 décembre, 9h30 - 12h30</span>
+                  <span class="texte-secondaire block">Accueil dès 9h15 · Mairie de Payzac</span>
+                  <span id="places-a1-sam12" class="texte-secondaire block" hidden></span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Atelier 2 -->
+          <div class="mb-8">
+            <div class="mb-4">
+              <span class="block w-8 h-0.5 bg-dore mb-3"></span>
+              <p class="titre-carte font-serif text-anthracite">Atelier 2 — Approfondissement</p>
+              <p class="texte-secondaire mt-1">Aller plus loin : automatiser des tâches, utiliser l'IA pour votre activité, comprendre les limites et les bons réflexes à garder.</p>
+              <p class="texte-secondaire mt-1">3 heures · 30 € · Prérequis : avoir suivi l'atelier 1 (ou déjà utiliser l'IA régulièrement)</p>
+            </div>
+
+            <p class="font-semibold mb-2">Choisissez votre créneau :</p>
+
+            <div class="rounded-lg border-2 border-sauge-clair bg-white p-4 mb-3">
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input type="checkbox" name="a2_jeu3_aprem" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+                <div>
+                  <span class="font-semibold">Jeudi 3 décembre, 14h - 17h</span>
+                  <span class="texte-secondaire block">Accueil dès 13h45 · Mairie de Payzac</span>
+                  <span id="places-a2-jeu3" class="texte-secondaire block" hidden></span>
+                </div>
+              </label>
+            </div>
+
+            <div class="rounded-lg border-2 border-sauge-clair bg-white p-4 mb-3">
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input type="checkbox" name="a2_jeu4_aprem" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+                <div>
+                  <span class="font-semibold">Jeudi 4 décembre, 14h - 17h</span>
+                  <span class="texte-secondaire block">Accueil dès 13h45 · Mairie de Payzac</span>
+                  <span id="places-a2-jeu4" class="texte-secondaire block" hidden></span>
+                </div>
+              </label>
+            </div>
+
+            <div class="rounded-lg border-2 border-sauge-clair bg-white p-4">
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input type="checkbox" name="a2_sam12_aprem" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+                <div>
+                  <span class="font-semibold">Samedi 12 décembre, 14h - 17h</span>
+                  <span class="texte-secondaire block">Accueil dès 13h45 · Mairie de Payzac</span>
+                  <span id="places-a2-sam12" class="texte-secondaire block" hidden></span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Aucun créneau -->
+          <div class="mb-8 pt-4 border-t border-sauge-clair">
+            <label class="flex items-start gap-3 cursor-pointer">
+              <input type="checkbox" name="liste_attente" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+              <span class="texte-secondaire">Aucun créneau ne me convient — prévenez-moi de la prochaine session.</span>
             </label>
           </div>
 
+          <!-- Qui vous a parlé de cet atelier -->
+          <div class="mb-6" id="bloc-ref">
+            <label for="ref_visible" class="block font-semibold mb-1">Qui vous a parlé de cet atelier ? <span class="texte-secondaire font-normal">(facultatif)</span></label>
+            <input type="text" id="ref_visible" name="ref_visible"
+              class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+              placeholder="Prénom ou nom de la personne" />
+          </div>
+          <input type="hidden" id="ref" name="ref" />
+
+          <!-- Remarque -->
           <div class="mb-6">
             <label for="autre" class="block font-semibold mb-1">Remarque <span class="texte-secondaire font-normal">(facultatif)</span></label>
             <input type="text" id="autre" name="autre"
@@ -79,8 +170,12 @@ import '../../styles/global.css';
             <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
           </div>
 
+          <div class="mb-6">
+            <p class="texte-secondaire">Paiement sur place en espèces ou par chèque à l'ordre de <strong>POLLEN SCOP</strong>. 30 € par atelier.</p>
+          </div>
+
           <button type="submit" id="btn-submit" class="btn btn-or w-full">
-            Je confirme
+            Je m'inscris
           </button>
 
           <p id="erreur" class="text-red-700 mt-3 hidden"></p>
@@ -88,7 +183,7 @@ import '../../styles/global.css';
 
         <div id="merci" hidden class="text-center py-12">
           <p class="titre-section text-sauge-fonce mb-3" id="merci-titre">Merci !</p>
-          <p class="chapo" id="merci-texte">Votre réponse est enregistrée. Je vous recontacte si besoin.</p>
+          <p class="chapo" id="merci-texte">Votre inscription est enregistrée. Un email de confirmation vous est envoyé.</p>
           <p class="texte-secondaire mt-6"><a href="/atelier-decouverte/dispo" class="underline text-sauge-fonce">Retour au formulaire</a></p>
         </div>
 
@@ -111,50 +206,82 @@ import '../../styles/global.css';
     <script is:inline>
       (function () {
         var WEBHOOK = 'https://n8n.opentek.fr/webhook/atelier-decouverte-dispo';
-        var PLACES = 'https://n8n.opentek.fr/webhook/atelier-decouverte-places';
+        var PLACES  = 'https://n8n.opentek.fr/webhook/atelier-decouverte-places';
         var form = document.getElementById('form');
         var merci = document.getElementById('merci');
         var merciTitre = document.getElementById('merci-titre');
         var merciTexte = document.getElementById('merci-texte');
-        var placesEl = document.getElementById('places');
         var erreur = document.getElementById('erreur');
         var btn = document.getElementById('btn-submit');
-        var emailInput = document.getElementById('email');
-        var prenomInput = document.getElementById('prenom');
-        var nomInput = document.getElementById('nom');
 
         var params = new URLSearchParams(window.location.search);
-        if (params.get('email')) emailInput.value = params.get('email');
-        if (params.get('prenom')) prenomInput.value = params.get('prenom');
-        if (params.get('nom')) nomInput.value = params.get('nom');
+        if (params.get('prenom')) document.getElementById('prenom').value = params.get('prenom');
+        if (params.get('nom'))    document.getElementById('nom').value = params.get('nom');
+        if (params.get('email'))  document.getElementById('email').value = params.get('email');
+
+        var refParam = params.get('ref') || '';
+        if (refParam) {
+          document.getElementById('ref').value = refParam;
+          document.getElementById('bloc-ref').hidden = true;
+        }
+
+        var CRENEAUX = [
+          { champ: 'a1_mar2_matin',  el: 'places-a1-mar2' },
+          { champ: 'a1_jeu3_matin',  el: 'places-a1-jeu3' },
+          { champ: 'a1_sam12_matin', el: 'places-a1-sam12' },
+          { champ: 'a2_jeu3_aprem',  el: 'places-a2-jeu3' },
+          { champ: 'a2_jeu4_aprem',  el: 'places-a2-jeu4' },
+          { champ: 'a2_sam12_aprem', el: 'places-a2-sam12' }
+        ];
 
         fetch(PLACES)
           .then(function (r) { return r.json(); })
           .then(function (d) {
-            if (!d.afficher) return;
-            placesEl.hidden = false;
-            if (d.complet) {
-              placesEl.innerHTML = '<span class="font-semibold text-dore">COMPLET</span> — vous serez mis·e en liste d\'attente, prévenu·e automatiquement si une place se libère.';
-            } else {
-              placesEl.innerHTML = 'Il reste <span class="font-semibold text-dore">' + d.restantes + ' place' + (d.restantes > 1 ? 's' : '') + '</span> sur ' + d.max + '.';
-            }
+            CRENEAUX.forEach(function (c) {
+              var info = d[c.champ];
+              if (!info || !info.afficher) return;
+              var el = document.getElementById(c.el);
+              el.hidden = false;
+              if (info.complet) {
+                el.innerHTML = '<span class="font-semibold text-dore">COMPLET</span> — inscription en liste d\'attente';
+              } else {
+                el.innerHTML = 'Il reste <span class="font-semibold text-dore">' + info.restantes + ' place' + (info.restantes > 1 ? 's' : '') + '</span> sur ' + info.max + '.';
+              }
+            });
           })
           .catch(function () {});
 
         form.addEventListener('submit', function (e) {
           e.preventDefault();
           erreur.classList.add('hidden');
+
+          var choix = ['a1_mar2_matin', 'a1_jeu3_matin', 'a1_sam12_matin', 'a2_jeu3_aprem', 'a2_jeu4_aprem', 'a2_sam12_aprem', 'liste_attente'];
+          var auMoinsUn = choix.some(function (n) { return form[n] && form[n].checked; });
+          if (!auMoinsUn) {
+            erreur.textContent = 'Cochez au moins un créneau (ou la case « aucun créneau »).';
+            erreur.classList.remove('hidden');
+            return;
+          }
+
           btn.disabled = true;
           btn.textContent = 'Envoi…';
 
+          var ref = document.getElementById('ref').value || document.getElementById('ref_visible').value.trim();
+
           var payload = {
-            prenom: document.getElementById('prenom').value.trim(),
-            nom: document.getElementById('nom').value.trim(),
-            email: document.getElementById('email').value.trim().toLowerCase(),
-            jeu0312: form.presence.value === 'oui',
-            liste: form.presence.value === 'non',
-            autre: document.getElementById('autre').value.trim(),
-            website: document.getElementById('website').value
+            prenom:         document.getElementById('prenom').value.trim(),
+            nom:            document.getElementById('nom').value.trim(),
+            email:          document.getElementById('email').value.trim().toLowerCase(),
+            a1_mar2_matin:  form.a1_mar2_matin.checked,
+            a1_jeu3_matin:  form.a1_jeu3_matin.checked,
+            a1_sam12_matin: form.a1_sam12_matin.checked,
+            a2_jeu3_aprem:  form.a2_jeu3_aprem.checked,
+            a2_jeu4_aprem:  form.a2_jeu4_aprem.checked,
+            a2_sam12_aprem: form.a2_sam12_aprem.checked,
+            liste_attente:  form.liste_attente.checked,
+            ref:            ref,
+            autre:          document.getElementById('autre').value.trim(),
+            website:        document.getElementById('website').value
           };
 
           fetch(WEBHOOK, {
@@ -167,22 +294,34 @@ import '../../styles/global.css';
             return r.json().catch(function () { return null; });
           })
           .then(function (rep) {
-            if (payload.jeu0312 && rep && rep.complet) {
+            var complets = [];
+            if (rep) {
+              CRENEAUX.forEach(function (c) {
+                if (payload[c.champ] && rep[c.champ] && rep[c.champ].complet) {
+                  complets.push(c.champ);
+                }
+              });
+            }
+
+            if (complets.length > 0 && complets.length === choix.filter(function (n) { return n !== 'liste_attente' && payload[n]; }).length) {
               merciTitre.textContent = "Vous êtes en liste d'attente";
-              merciTexte.textContent = "Le 3 décembre est complet. Si une place se libère, vous serez inscrit·e automatiquement — vous recevrez un email.";
-            } else if (payload.jeu0312) {
+              merciTexte.textContent = "Les créneaux choisis sont complets. Si une place se libère, vous serez inscrit·e automatiquement — vous recevrez un email.";
+            } else if (complets.length > 0) {
               merciTitre.textContent = 'Merci !';
-              merciTexte.textContent = 'Votre présence est confirmée. Un email de confirmation vous est envoyé.';
+              merciTexte.textContent = "Certains créneaux sont complets : vous y êtes en liste d'attente. Pour les autres, votre inscription est confirmée.";
+            } else if (payload.liste_attente && !choix.some(function (n) { return n !== 'liste_attente' && payload[n]; })) {
+              merciTitre.textContent = 'Merci !';
+              merciTexte.textContent = 'Votre demande est enregistrée. Je vous préviendrai des prochaines dates.';
             } else {
               merciTitre.textContent = 'Merci !';
-              merciTexte.textContent = 'Votre réponse est enregistrée. Je vous recontacte si besoin.';
+              merciTexte.textContent = 'Votre inscription est enregistrée. Un email de confirmation vous est envoyé.';
             }
             form.hidden = true;
             merci.hidden = false;
           })
           .catch(function () {
             merciTitre.textContent = 'Merci !';
-            merciTexte.textContent = 'Votre réponse est enregistrée. Je vous recontacte si besoin.';
+            merciTexte.textContent = 'Votre inscription est enregistrée. Je vous recontacte rapidement.';
             form.hidden = true;
             merci.hidden = false;
           });

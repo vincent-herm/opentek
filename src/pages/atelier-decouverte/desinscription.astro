@@ -40,16 +40,28 @@ import '../../styles/global.css';
   <script is:inline>
     (function () {
       var WEBHOOK = 'https://n8n.opentek.fr/webhook/atelier-decouverte-desinscription';
-      var t = new URLSearchParams(window.location.search).get('t') || '';
+      var params = new URLSearchParams(window.location.search);
+      var t = params.get('t') || '';
+      var creneau = params.get('c') || '';
       var question = document.getElementById('question');
       var bouton = document.getElementById('confirmer');
       var statut = document.getElementById('statut');
+
+      var LABELS = {
+        a1_mar2_matin:  'Atelier 1 — mardi 2 décembre, 9h30',
+        a1_jeu3_matin:  'Atelier 1 — jeudi 3 décembre, 9h30',
+        a1_sam12_matin: 'Atelier 1 — samedi 12 décembre, 9h30',
+        a2_jeu3_aprem:  'Atelier 2 — jeudi 3 décembre, 14h',
+        a2_jeu4_aprem:  'Atelier 2 — jeudi 4 décembre, 14h',
+        a2_sam12_aprem: 'Atelier 2 — samedi 12 décembre, 14h'
+      };
 
       if (!t) {
         question.textContent = "Ce lien n'est pas valide. Utilisez le lien reçu dans votre email de confirmation.";
         bouton.style.display = 'none';
       } else {
-        question.textContent = "Voulez-vous vous désinscrire de l'atelier « L'IA en confiance » (jeudi 3 décembre, 14h30) ?";
+        var label = LABELS[creneau] || "l'atelier « L'IA en confiance »";
+        question.textContent = 'Voulez-vous vous désinscrire de ' + label + ' ?';
       }
 
       bouton.addEventListener('click', function () {
@@ -58,7 +70,7 @@ import '../../styles/global.css';
         fetch(WEBHOOK, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ t: t })
+          body: JSON.stringify({ t: t, creneau: creneau })
         })
         .then(function (r) { return r.json().catch(function () { return null; }); })
         .then(function (rep) {
