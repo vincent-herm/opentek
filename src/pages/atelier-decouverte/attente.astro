@@ -1,0 +1,102 @@
+---
+// Page autonome — pas de Layout, pas de Header/Footer.
+import '../../styles/global.css';
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Place disponible — L'IA en confiance</title>
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+  <body>
+
+    <section class="section-hero">
+      <div class="wrap" style="max-width: 36rem;">
+        <p class="legende uppercase tracking-wider mb-4">Opentek — Vincent Hermitant</p>
+        <h1 class="titre-page">Place disponible</h1>
+      </div>
+    </section>
+
+    <section class="section bg-sauge-clair/50">
+      <div class="wrap" style="max-width: 36rem;">
+        <div id="bloc" class="rounded-lg border-2 border-sauge-clair bg-white p-6 sm:p-8">
+          <p id="message" class="mb-6"></p>
+          <div id="boutons" class="flex flex-wrap items-center gap-4">
+            <button id="btn-confirmer" type="button" class="btn btn-or">Oui, je prends la place</button>
+            <button id="btn-refuser" type="button" class="btn btn-ligne">Non merci</button>
+          </div>
+          <p id="statut" role="status" aria-live="polite" class="texte-secondaire mt-4"></p>
+        </div>
+        <p class="texte-secondaire mt-6">Un souci avec ce lien ? Écrivez à <a href="mailto:vincent@opentek.fr" class="underline text-sauge-fonce">vincent@opentek.fr</a> ou appelez le 06 46 24 61 99.</p>
+      </div>
+    </section>
+
+  </body>
+
+  <script is:inline>
+    (function () {
+      var WEBHOOK = 'https://n8n.opentek.fr/webhook/atelier-decouverte-attente-reponse';
+      var params = new URLSearchParams(window.location.search);
+      var token = params.get('t') || '';
+      var action = params.get('a') || '';
+      var message = document.getElementById('message');
+      var boutons = document.getElementById('boutons');
+      var btnConfirmer = document.getElementById('btn-confirmer');
+      var btnRefuser = document.getElementById('btn-refuser');
+      var statut = document.getElementById('statut');
+
+      if (!token) {
+        message.textContent = "Ce lien n'est pas valide. Utilisez le lien reçu dans votre email.";
+        boutons.style.display = 'none';
+        return;
+      }
+
+      if (action === 'confirmer') {
+        message.textContent = 'Une place s’est libérée. Voulez-vous confirmer votre inscription ?';
+      } else if (action === 'refuser') {
+        message.textContent = 'Voulez-vous refuser cette place ? Elle sera proposée à la personne suivante.';
+        btnConfirmer.style.display = 'none';
+        btnRefuser.textContent = 'Oui, je refuse la place';
+      } else {
+        message.textContent = 'Une place s’est libérée. Que souhaitez-vous faire ?';
+      }
+
+      function envoyer(act) {
+        btnConfirmer.disabled = true;
+        btnRefuser.disabled = true;
+        statut.textContent = 'Un instant…';
+        fetch(WEBHOOK, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ t: token, a: act })
+        })
+        .then(function (r) { return r.json().catch(function () { return null; }); })
+        .then(function (rep) {
+          if (rep && rep.ok && rep.action === 'confirmer') {
+            statut.textContent = 'Votre inscription est confirmée pour ' + (rep.label || 'cet atelier') + '. Un email de confirmation vous est envoyé.';
+            boutons.style.display = 'none';
+          } else if (rep && rep.ok && rep.action === 'refuser') {
+            statut.textContent = 'La place sera proposée à la personne suivante. Merci de votre réponse.';
+            boutons.style.display = 'none';
+          } else {
+            statut.textContent = (rep && rep.erreur) || 'Une erreur est survenue. Écrivez-moi à vincent@opentek.fr.';
+            btnConfirmer.disabled = false;
+            btnRefuser.disabled = false;
+          }
+        })
+        .catch(function () {
+          statut.textContent = 'Une erreur est survenue. Écrivez-moi à vincent@opentek.fr.';
+          btnConfirmer.disabled = false;
+          btnRefuser.disabled = false;
+        });
+      }
+
+      btnConfirmer.addEventListener('click', function () { envoyer('confirmer'); });
+      btnRefuser.addEventListener('click', function () { envoyer('refuser'); });
+    })();
+  </script>
+</html>
