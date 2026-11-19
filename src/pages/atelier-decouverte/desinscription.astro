@@ -70,7 +70,7 @@ import '../../styles/global.css';
         fetch(WEBHOOK, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ t: t, creneau: creneau })
+          body: JSON.stringify({ t: t, c: creneau })
         })
         .then(function (r) { return r.json().catch(function () { return null; }); })
         .then(function (rep) {
