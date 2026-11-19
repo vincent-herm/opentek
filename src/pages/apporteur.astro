@@ -78,7 +78,7 @@ import '../styles/global.css';
                 <tr class="border-b border-sauge-clair">
                   <th class="text-left p-3 legende uppercase tracking-wider">Prénom</th>
                   <th class="text-left p-3 legende uppercase tracking-wider">Date</th>
-                  <th class="text-right p-3 legende uppercase tracking-wider">Commission</th>
+                  <th class="text-right p-3 legende uppercase tracking-wider">Statut</th>
                 </tr>
               </thead>
               <tbody id="liste-amenes"></tbody>
@@ -88,7 +88,7 @@ import '../styles/global.css';
 
         <!-- Rappel des règles -->
         <div class="mt-8 pt-6 border-t border-sauge-clair">
-          <p class="texte-secondaire">30 € par personne amenée (une seule fois par personne, quel que soit le nombre d'ateliers). La commission est versée en cash si vous avez une micro-entreprise, en crédit sur mes services sinon.</p>
+          <p class="texte-secondaire">30 € par personne amenée (une seule fois par personne, quel que soit le nombre d'ateliers), validée après sa venue à l'atelier. La commission est versée en cash si vous avez une micro-entreprise, en crédit sur mes services sinon.</p>
         </div>
 
       </div>
@@ -159,10 +159,15 @@ import '../styles/global.css';
             d.amenes.forEach(function (a) {
               var tr = document.createElement('tr');
               tr.className = 'border-b border-sauge-clair last:border-0';
+              var commLabel = a.statut_commission === 'validée' ? '30 €'
+                : a.statut_commission === 'à valider' ? 'à valider'
+                : 'en attente';
+              var commClass = a.statut_commission === 'validée' ? 'font-semibold text-dore'
+                : 'texte-secondaire';
               tr.innerHTML =
                 '<td class="p-3">' + (a.prenom || '—') + '</td>' +
                 '<td class="p-3 texte-secondaire">' + (a.date || '—') + '</td>' +
-                '<td class="p-3 text-right font-semibold text-dore">' + (a.commission ? '30 €' : '—') + '</td>';
+                '<td class="p-3 text-right ' + commClass + '">' + commLabel + '</td>';
               tbody.appendChild(tr);
             });
             document.getElementById('bloc-liste').hidden = false;
