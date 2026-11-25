@@ -28,7 +28,7 @@ import '../../styles/global.css';
       <div class="wrap" style="max-width: 36rem;">
 
         <h2 class="titre-section mb-6">Vous êtes intéressé(e) ?</h2>
-        <p class="mb-6">Laissez vos coordonnées et cochez ce qui vous concerne — je vous recontacte avec les détails.</p>
+        <p class="mb-6">Laissez vos coordonnées et cochez ce qui vous concerne. Rien ne vous engage, à part le simple souhait de rester en contact — je vous recontacte avec les détails selon ce que vous aurez coché.</p>
 
         <form id="form" autocomplete="off" class="mesure">
           <div class="mb-5">
@@ -70,19 +70,24 @@ import '../../styles/global.css';
             <p class="font-semibold mb-1">Ce qui vous intéresse</p>
             <p class="texte-secondaire mb-3">Cochez une ou plusieurs propositions :</p>
 
-            <label class="flex items-start gap-3 cursor-pointer mb-3">
-              <input type="checkbox" id="atelier" name="atelier" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
-              <span><strong>Atelier « L'IA en confiance »</strong> — deux demi-journées en petit groupe (3 à 6 pers.) pour découvrir l'IA, l'utiliser au quotidien et repérer les arnaques</span>
+            <label class="flex items-start gap-3 cursor-pointer mb-3 pb-3 border-b border-sauge-clair">
+              <input type="checkbox" id="liste" name="liste" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+              <span><strong>Rester en contact</strong> — aucun engagement, je vous tiens simplement informé(e)</span>
             </label>
 
             <label class="flex items-start gap-3 cursor-pointer mb-3">
-              <input type="checkbox" id="audit" name="audit" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
-              <span><strong>Audit IA</strong> — diagnostic personnalisé de votre activité professionnelle</span>
+              <input type="checkbox" id="atelier" name="atelier" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+              <span><strong>Atelier d'initiation</strong> — « L'IA en confiance », deux demi-journées en petit groupe (3 à 6 pers.) pour découvrir l'IA, l'utiliser au quotidien et repérer les arnaques</span>
             </label>
 
             <label class="flex items-start gap-3 cursor-pointer mb-3">
               <input type="checkbox" id="creation" name="creation" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
               <span><strong>Création accompagnée</strong> — livre, site web, application...</span>
+            </label>
+
+            <label class="flex items-start gap-3 cursor-pointer mb-3">
+              <input type="checkbox" id="audit" name="audit" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+              <span><strong>Audit IA</strong> — diagnostic personnalisé de votre activité professionnelle</span>
             </label>
 
             <label class="flex items-start gap-3 cursor-pointer mb-3">
@@ -159,6 +164,7 @@ import '../../styles/global.css';
           var email = document.getElementById('email').value.trim().toLowerCase();
           var telephone = document.getElementById('telephone').value.trim();
           var village = document.getElementById('village').value.trim();
+          var liste = document.getElementById('liste').checked;
           var atelier = document.getElementById('atelier').checked;
           var audit = document.getElementById('audit').checked;
           var creation = document.getElementById('creation').checked;
@@ -172,6 +178,7 @@ import '../../styles/global.css';
             email: email,
             telephone: telephone,
             village: village,
+            liste: liste,
             atelier: atelier,
             audit: audit,
             creation: creation,
@@ -186,6 +193,7 @@ import '../../styles/global.css';
             email: email,
             telephone: telephone,
             village: village,
+            liste: liste,
             atelier: atelier,
             audit: audit,
             creation: creation,
