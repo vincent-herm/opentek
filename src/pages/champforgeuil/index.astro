@@ -77,6 +77,28 @@ import '../../styles/global.css';
               placeholder="Champforgeuil, Chalon-sur-Saône…" />
           </div>
 
+          <div class="mb-8 pt-2">
+            <p class="font-semibold mb-1">Autres prestations</p>
+            <p class="texte-secondaire mb-3">Vous pouvez aussi exprimer votre intérêt pour un accompagnement individuel :</p>
+
+            <label class="flex items-start gap-3 cursor-pointer mb-3">
+              <input type="checkbox" id="audit" name="audit" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+              <span><strong>Audit IA</strong> — diagnostic personnalisé de votre activité professionnelle</span>
+            </label>
+
+            <label class="flex items-start gap-3 cursor-pointer mb-3">
+              <input type="checkbox" id="creation" name="creation" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+              <span><strong>Création accompagnée</strong> — livre, site web, application...</span>
+            </label>
+          </div>
+
+          <div class="mb-6">
+            <label for="autre" class="block font-semibold mb-1">Autre demande <span class="texte-secondaire font-normal">(facultatif)</span></label>
+            <input type="text" id="autre" name="autre"
+              class="w-full px-4 py-3 rounded-lg border-2 border-sauge-clair bg-white text-texte focus:border-sauge-fonce outline-none transition"
+              placeholder="Dites-moi ce dont vous avez besoin" />
+          </div>
+
           <!-- Piège anti-bot — caché -->
           <div style="position:absolute;left:-9999px;" aria-hidden="true">
             <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
@@ -138,6 +160,9 @@ import '../../styles/global.css';
           var email = document.getElementById('email').value.trim().toLowerCase();
           var telephone = document.getElementById('telephone').value.trim();
           var village = document.getElementById('village').value.trim();
+          var audit = document.getElementById('audit').checked;
+          var creation = document.getElementById('creation').checked;
+          var autre = document.getElementById('autre').value.trim();
           var honeypot = document.getElementById('website').value;
 
           var payload = {
@@ -146,6 +171,9 @@ import '../../styles/global.css';
             email: email,
             telephone: telephone,
             village: village,
+            audit: audit,
+            creation: creation,
+            autre: autre,
             website: honeypot
           };
 
@@ -155,6 +183,9 @@ import '../../styles/global.css';
             email: email,
             telephone: telephone,
             village: village,
+            audit: audit,
+            creation: creation,
+            autre: autre,
             date: new Date().toISOString()
           });
 
