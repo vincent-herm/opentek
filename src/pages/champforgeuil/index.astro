@@ -10,8 +10,8 @@ import '../../styles/global.css';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>L'IA en confiance — Atelier (Champforgeuil)</title>
-    <meta name="description" content="Atelier pratique pour découvrir l'IA en toute sécurité. Deux demi-journées, petit groupe, ordinateur fourni." />
+    <title>Atelier, audit, création, formation — Champforgeuil</title>
+    <meta name="description" content="Après la conférence : atelier IA en confiance, audit IA, création accompagnée ou formation professionnelle. Laissez vos coordonnées." />
     <meta name="robots" content="noindex, nofollow" />
   </head>
   <body>
@@ -19,27 +19,16 @@ import '../../styles/global.css';
     <section class="section-hero">
       <div class="wrap" style="max-width: 36rem;">
         <p class="legende uppercase tracking-wider mb-4">Opentek — Vincent Hermitant</p>
-        <h1 class="titre-page">L'IA en confiance</h1>
-        <p class="chapo mt-4">Deux demi-journées pour découvrir l'intelligence artificielle, l'utiliser pour vos besoins du quotidien, et apprendre à repérer les arnaques.</p>
+        <h1 class="titre-page">Pour aller plus loin</h1>
+        <p class="chapo mt-4">Après la conférence, quatre façons de continuer : un atelier pratique, un audit de votre activité, une création accompagnée, ou une formation professionnelle.</p>
       </div>
     </section>
 
     <section class="section bg-sauge-clair/50">
       <div class="wrap" style="max-width: 36rem;">
 
-        <div class="grid gap-4 sm:grid-cols-2 mb-10">
-          <div class="bg-white rounded-xl p-5 border border-sauge-clair">
-            <p class="titre-mini font-serif text-anthracite mb-1">Simple et concret</p>
-            <p class="texte-secondaire">Pas de jargon, pas de technique. On démystifie l'IA ensemble, et vous repartez en sachant vous en servir.</p>
-          </div>
-          <div class="bg-white rounded-xl p-5 border border-sauge-clair">
-            <p class="titre-mini font-serif text-anthracite mb-1">En petit groupe</p>
-            <p class="texte-secondaire">6 personnes maximum. On avance à votre rythme, avec vos vraies questions et vos vrais besoins.</p>
-          </div>
-        </div>
-
         <h2 class="titre-section mb-6">Vous êtes intéressé(e) ?</h2>
-        <p class="mb-6">Laissez vos coordonnées et je vous recontacte avec les dates et les détails de l'atelier dans le secteur de Champforgeuil.</p>
+        <p class="mb-6">Laissez vos coordonnées et cochez ce qui vous concerne — je vous recontacte avec les détails.</p>
 
         <form id="form" autocomplete="off" class="mesure">
           <div class="mb-5">
@@ -78,8 +67,13 @@ import '../../styles/global.css';
           </div>
 
           <div class="mb-8 pt-2">
-            <p class="font-semibold mb-1">Autres prestations</p>
-            <p class="texte-secondaire mb-3">Vous pouvez aussi exprimer votre intérêt pour un accompagnement individuel :</p>
+            <p class="font-semibold mb-1">Ce qui vous intéresse</p>
+            <p class="texte-secondaire mb-3">Cochez une ou plusieurs propositions :</p>
+
+            <label class="flex items-start gap-3 cursor-pointer mb-3">
+              <input type="checkbox" id="atelier" name="atelier" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+              <span><strong>Atelier « L'IA en confiance »</strong> — deux demi-journées en petit groupe (3 à 6 pers.) pour découvrir l'IA, l'utiliser au quotidien et repérer les arnaques</span>
+            </label>
 
             <label class="flex items-start gap-3 cursor-pointer mb-3">
               <input type="checkbox" id="audit" name="audit" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
@@ -89,6 +83,11 @@ import '../../styles/global.css';
             <label class="flex items-start gap-3 cursor-pointer mb-3">
               <input type="checkbox" id="creation" name="creation" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
               <span><strong>Création accompagnée</strong> — livre, site web, application...</span>
+            </label>
+
+            <label class="flex items-start gap-3 cursor-pointer mb-3">
+              <input type="checkbox" id="formation" name="formation" value="1" class="mt-1 accent-sauge-fonce w-4 h-4" />
+              <span><strong>Formation professionnelle</strong> — formation certifiante, finançable par votre OPCO</span>
             </label>
           </div>
 
@@ -108,7 +107,7 @@ import '../../styles/global.css';
             <label class="flex items-start gap-3 cursor-pointer">
               <input type="checkbox" id="consentement" name="consentement" required
                 class="mt-1 accent-sauge-fonce w-4 h-4" />
-              <span class="texte-secondaire leading-snug">J'accepte d'être recontacté(e) par Vincent Hermitant au sujet de cet atelier. Mes données ne seront pas transmises à des tiers.</span>
+              <span class="texte-secondaire leading-snug">J'accepte d'être recontacté(e) par Vincent Hermitant au sujet de ma demande. Mes données ne seront pas transmises à des tiers.</span>
             </label>
           </div>
 
@@ -121,7 +120,7 @@ import '../../styles/global.css';
 
         <div id="merci" hidden class="text-center py-12">
           <p class="titre-section text-sauge-fonce mb-3">Merci !</p>
-          <p class="chapo">Je vous recontacte bientôt avec les dates.</p>
+          <p class="chapo">Je vous recontacte bientôt.</p>
           <p class="texte-secondaire mt-6"><a href="/champforgeuil/" class="underline text-sauge-fonce">Retour au formulaire</a></p>
         </div>
 
@@ -160,8 +159,10 @@ import '../../styles/global.css';
           var email = document.getElementById('email').value.trim().toLowerCase();
           var telephone = document.getElementById('telephone').value.trim();
           var village = document.getElementById('village').value.trim();
+          var atelier = document.getElementById('atelier').checked;
           var audit = document.getElementById('audit').checked;
           var creation = document.getElementById('creation').checked;
+          var formation = document.getElementById('formation').checked;
           var autre = document.getElementById('autre').value.trim();
           var honeypot = document.getElementById('website').value;
 
@@ -171,8 +172,10 @@ import '../../styles/global.css';
             email: email,
             telephone: telephone,
             village: village,
+            atelier: atelier,
             audit: audit,
             creation: creation,
+            formation: formation,
             autre: autre,
             website: honeypot
           };
@@ -183,8 +186,10 @@ import '../../styles/global.css';
             email: email,
             telephone: telephone,
             village: village,
+            atelier: atelier,
             audit: audit,
             creation: creation,
+            formation: formation,
             autre: autre,
             date: new Date().toISOString()
           });
